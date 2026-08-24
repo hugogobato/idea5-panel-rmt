@@ -1,0 +1,59 @@
+# Global seed registry (seeds.yaml)
+# Every table/figure states its seed range; derivation formulas live inside each notebook.
+# Convention: numpy default_rng(seed) with PCG64.
+
+project: idea5_panel_rmt
+created: 2026-08-24
+environment:
+  python: "3.12.3"
+  numpy: "2.4.3"
+  scipy: "1.17.1"
+  matplotlib: "3.10.8"
+
+witnesses:
+  witness_1_subthreshold:
+    notebook: notebooks/witness_subthreshold.ipynb
+    seed_scan_master: 50101        # one stream: per grid point, loadings draw then R replications
+    seed_null_pool: 50102          # 600 pure-noise reps, split into 6 pools of 100 for median KS
+    config:
+      n: 120
+      T0: 240
+      c: 0.5
+      sigma: 1.0
+      kappa_alpha: 3.0             # alpha = 3 * s_d
+      R_grid: 300
+      R_null: 600
+      m_grid: "linspace(0.55, 1.65, 23)"
+  witness_2_misalignment:
+    notebook: notebooks/witness_misalignment.ipynb
+    base_seed: 50201               # per-rep rng = default_rng(50201 + j); arms share draws (paired)
+    config:
+      n: 120
+      T0: 240
+      T_post: 100
+      s_spike: 6.0                 # donor ||a||^2 = 6 sigma^2
+      alpha_align: "3 * sqrt(s/(n-1))"
+      R_reps: 400
+
+phase_c_reserved:
+  replication_seeds: "10000+i per preregistration.md (frozen 2026-08-24); i = 0..499 within every cell"
+  onset_slice:
+    seed_scan_master: 51101       # one stream across sizes: per m point, one loadings draw then R replications
+    seed_null_pools: "51102 + n per size (600 pure-noise reps, six pools of 100)"
+  c2iii_calibration:
+    simulated_null_z_seed: 7770001
+    bootstrap_seed: 8880001
+    multiplier_measurement_seed: 12345
+  c4_scaling: "32000+j, j = 0..2 per size"
+
+phase_b:
+  smoke_run:
+    script: code/run_smoke.py
+    seeds: "7000+j, j = 0..19"
+  pilot_decisive_cell:
+    script: code/run_pilot.py
+    seeds: "20000+j, j = 0..9"
+    config: {n: 250, T0: 250, T_post: 125, r: 1, s: 2.0, theta: 0.5, alignment: first}
+  scaling_probe:
+    seeds: "31000-31001"
+    sizes: "(125,125,63), (250,250,125), (400,400,200)"

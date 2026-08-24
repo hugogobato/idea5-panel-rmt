@@ -1,0 +1,52 @@
+{
+  "witness": "w2_misalignment",
+  "config": {
+    "n": 120,
+    "T0": 240,
+    "T_post": 100,
+    "c": 0.5,
+    "sigma": 1.0,
+    "s_spike": 6.0,
+    "alpha_align": 0.6736330697086077,
+    "R": 400,
+    "base_seed": 50201
+  },
+  "results": {
+    "mean_top_eig": {
+      "null": 2.820126321166871,
+      "misaligned": 7.6068938486621365,
+      "aligned": 7.6068938486621365
+    },
+    "mean_rmse": {
+      "null": {
+        "donor_mean": 1.0021570912032962,
+        "ridge_sc": 1.0030560088224825,
+        "simplex_scm": 1.0294500538266886,
+        "spectral_ht": 1.002278537587321
+      },
+      "misaligned": {
+        "donor_mean": 1.0023822782475043,
+        "ridge_sc": 1.0029969131563545,
+        "simplex_scm": 1.0301202391372053,
+        "spectral_ht": 1.0027783427144459
+      },
+      "aligned": {
+        "donor_mean": 1.2102362633366075,
+        "ridge_sc": 1.0758769826431815,
+        "simplex_scm": 1.1060037682792148,
+        "spectral_ht": 1.0394527964427842
+      }
+    }
+  },
+  "verdicts": {
+    "Q1": true,
+    "Q2": {
+      "donor_mean": true,
+      "ridge_sc": true,
+      "simplex_scm": true,
+      "spectral_ht": true
+    },
+    "Q3": true
+  },
+  "overall_pass": true
+}

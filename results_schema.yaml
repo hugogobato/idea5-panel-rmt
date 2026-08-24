@@ -1,0 +1,50 @@
+{
+ "row_schema": {
+  "meta_cols": [
+   "experiment",
+   "shard",
+   "cell_id",
+   "c",
+   "n",
+   "T0",
+   "T_post",
+   "r",
+   "m",
+   "arm",
+   "theta",
+   "delta",
+   "noise",
+   "rho",
+   "het_ratio",
+   "rep_seed"
+  ],
+  "value_cols": [
+   "method",
+   "rmse",
+   "att_bias",
+   "k_selected",
+   "ridge_lambda",
+   "mc_lambda",
+   "solver_ok",
+   "ci_cover",
+   "z_boot_p",
+   "z_tw_p",
+   "trend_p",
+   "cv_rank",
+   "lambda1",
+   "edge",
+   "wall_ms"
+  ],
+  "units": {
+   "rmse": "sigma",
+   "att_bias": "sigma",
+   "wall_ms": "milliseconds"
+  }
+ },
+ "files": {
+  "c1": "results_c1/risk_curves.parquet",
+  "c2ii": "results_c2/c2ii.parquet",
+  "c2iii": "results_c2/c2iii.parquet",
+  "c2iv": "results_c2/c2iv.parquet"
+ }
+}

@@ -1,0 +1,7844 @@
+{
+ "created": "2026-08-24",
+ "seed_base": 10000,
+ "notebooks": [
+  {
+   "family": "c1",
+   "file": "nb_c1_shard01_of42.ipynb",
+   "shard": 1,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.10_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m3.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "5155d53462cadd6f9e1fce9af01383115a47cb76eb85f3b55088b4cadf9441d2"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard02_of42.ipynb",
+   "shard": 2,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.10_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m3.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "58677f665a70db6394c799cda4a60e5a0724d27fef8070735b52b02543048159"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard03_of42.ipynb",
+   "shard": 3,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m3.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "50f5ba3821778a07c34579ab1499df944228048bdd4f6d2c6e5b1310cdc192e7"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard04_of42.ipynb",
+   "shard": 4,
+   "cells": [
+    {
+     "cell_id": "c2.0_m2.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m3.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "e27c560df7fcc8db93b06d72bcf00125db64995ce72a35e335eb8c67a6cd8d42"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard05_of42.ipynb",
+   "shard": 5,
+   "cells": [
+    {
+     "cell_id": "c2.0_m0.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.10_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "85324a3d0e55d2fd458e5155aab0aff4d7eb36f9d9a6c00e0f36b62b66b5f592"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard06_of42.ipynb",
+   "shard": 6,
+   "cells": [
+    {
+     "cell_id": "c2.0_m0.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.10_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "8a83482e41b632dd9128fc18cc843553ec069bb072e5cccabe35fbfa2f8d2f2e"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard07_of42.ipynb",
+   "shard": 7,
+   "cells": [
+    {
+     "cell_id": "c2.0_m0.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.10_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "5584c2ee5d2eee7565149a590f5dd9ea74a83ae0ae3e894ed9fb0c79e3a42d8a"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard08_of42.ipynb",
+   "shard": 8,
+   "cells": [
+    {
+     "cell_id": "c2.0_m0.90_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "cf598ff0cab5d006dc7f5b5e547b0360601ee0a25c671099b9ac033a5dd38c89"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard09_of42.ipynb",
+   "shard": 9,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "87911c01d1e640d8d7d88e1c5e999c81d1bd1b456054a7b777e3582245f15871"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard10_of42.ipynb",
+   "shard": 10,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.10_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "28e1bdac76676b70059e8f1dc1068a2c9d6ac10e76d8cdaf319f5945412c604a"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard11_of42.ipynb",
+   "shard": 11,
+   "cells": [
+    {
+     "cell_id": "c2.0_m1.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m3.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.10_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m3.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m3.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "c1d4386bf82ef46c6555892f365e14a8808d6469a1b81dfc7b19a6e6c759a8ec"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard12_of42.ipynb",
+   "shard": 12,
+   "cells": [
+    {
+     "cell_id": "c0.25_m0.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.10_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.10_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "41370c60d1814398cbc985c0bf4e33347fe34c32b291bf96ce2a8bea0dc2ef4b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard13_of42.ipynb",
+   "shard": 13,
+   "cells": [
+    {
+     "cell_id": "c0.25_m0.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.10_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.10_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "e05b8a80e333ea470a5ed4a6f6961e1bead3eef6693772de5b2955d30765f02b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard14_of42.ipynb",
+   "shard": 14,
+   "cells": [
+    {
+     "cell_id": "null_c4.0",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.25_m0.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.10_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "69af6761bac5eff37b0d984ac6872762bd095e0fa074995da2fd74382a6f0c3b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard15_of42.ipynb",
+   "shard": 15,
+   "cells": [
+    {
+     "cell_id": "null_c1.0",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.25_m0.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "e07ecccb5fa9817affd842cc0d6e1f6394001a6b617a5a456393d30ed0778fc2"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard16_of42.ipynb",
+   "shard": 16,
+   "cells": [
+    {
+     "cell_id": "null_c2.0",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.25_m0.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "23e74c129e4583bd75f31eed9e69e715c9402bc8662568b80a4b4a0551308e4d"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard17_of42.ipynb",
+   "shard": 17,
+   "cells": [
+    {
+     "cell_id": "null_c0.25",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.25_m0.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "27da630616c4dd9212554276d4a3666e06c987497aa8680e0a7af224670df83b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard18_of42.ipynb",
+   "shard": 18,
+   "cells": [
+    {
+     "cell_id": "null_c0.5",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.25_m0.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "661691036c541b746d0dd85e05355e2fafe06a974aa3237605c1dcf10e02c08e"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard19_of42.ipynb",
+   "shard": 19,
+   "cells": [
+    {
+     "cell_id": "null_prod250",
+     "experiment": "c2i",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "c0.5_m2.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.90_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "436c8c09d04f383db13d2c7f1a8b9a38753af79bf07dc604024bb36e25b01b39"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard20_of42.ipynb",
+   "shard": 20,
+   "cells": [
+    {
+     "cell_id": "c0.5_m0.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "1877df5b990951d3beaa4df2275109a55c0e5703f83eab106cf029b1092bfa62"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard21_of42.ipynb",
+   "shard": 21,
+   "cells": [
+    {
+     "cell_id": "c0.5_m0.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "68889ac60a7a4c30de6ae4a6f887c71246aeca7fbd8dc42a64a2ea4e2005329c"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard22_of42.ipynb",
+   "shard": 22,
+   "cells": [
+    {
+     "cell_id": "c0.5_m0.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "75bbddaac71541d792d1074f0e0517cd612e8147f2bc6903b70aa462e960857f"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard23_of42.ipynb",
+   "shard": 23,
+   "cells": [
+    {
+     "cell_id": "c0.5_m0.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "6897265c140c6aade9d85adf5bebb74901ab500e0a091b5a3636e2cd31b7691b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard24_of42.ipynb",
+   "shard": 24,
+   "cells": [
+    {
+     "cell_id": "c0.5_m0.90_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "cab7eaf43457b209d5544a02b2b7a9ff506ac35b39fff8896d65641ad7c7b63b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard25_of42.ipynb",
+   "shard": 25,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "e687ddd0611b49cca186956a7d0c17bea01d1ee2a85cd410ae6e12ecd19502a9"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard26_of42.ipynb",
+   "shard": 26,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.10_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "b38becef8917f4942ec2b6e39b658762ae08121cb9167cd4b0c6350e469bb547"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard27_of42.ipynb",
+   "shard": 27,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "213dba7119c097930ff5d891448148492d4411fe112e0acaf8abb335f0a34118"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard28_of42.ipynb",
+   "shard": 28,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "bdd8d668a5f899123b8982f10c01ae732628cbb61c655e2df196773d0584b0b9"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard29_of42.ipynb",
+   "shard": 29,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "72e6b7dcb8bc34cf62e20d19c885abcafeaca015bca9cd4d86ea850f6121881f"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard30_of42.ipynb",
+   "shard": 30,
+   "cells": [
+    {
+     "cell_id": "c0.5_m1.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "b781cff27faaf638faa33df256db9826854e08729e7a0a4f3a1f29ee7da59e50"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard31_of42.ipynb",
+   "shard": 31,
+   "cells": [
+    {
+     "cell_id": "c0.5_m2.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m3.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.90_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "8ee888ed4fae2e55ff40751874d5f4e920cc62bebe0acaa877e194a4b2909135"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard32_of42.ipynb",
+   "shard": 32,
+   "cells": [
+    {
+     "cell_id": "c0.5_m2.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.10_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.90_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "37c9b389a2e692a180c5c048592b11a4a897ef4a565660c4ef2c05f6109f1b9b"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard33_of42.ipynb",
+   "shard": 33,
+   "cells": [
+    {
+     "cell_id": "c0.5_m2.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.10_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.90_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.90_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "017e121163ca561977a49918eb9efb2a2f20d317bde2a16ff0d69a7c61da8683"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard34_of42.ipynb",
+   "shard": 34,
+   "cells": [
+    {
+     "cell_id": "c0.5_m2.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.90_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.90_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "b8b7b5a77e0fc48b1926cc72e1c8c5f551e81f776891970280f128f82d0cfc60"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard35_of42.ipynb",
+   "shard": 35,
+   "cells": [
+    {
+     "cell_id": "c0.5_m2.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.90_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.90_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "07a788116e0116d50431db1104eee2433169e692af996578b28cf63209aead42"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard36_of42.ipynb",
+   "shard": 36,
+   "cells": [
+    {
+     "cell_id": "c0.5_m3.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.90_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m0.90_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m2.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "917d3f243a8511330c1d0a44c7c9532c492d86dde03bb7e3f7f897e8546c31bd"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard37_of42.ipynb",
+   "shard": 37,
+   "cells": [
+    {
+     "cell_id": "c2.0_m0.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.80_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.20_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m3.00_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "5cb53d514b98b45539c4113aaa26bb91636a7a35c5ff4f706411adab0a79a37a"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard38_of42.ipynb",
+   "shard": 38,
+   "cells": [
+    {
+     "cell_id": "c2.0_m2.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m1.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.20_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m2.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "f5dfb544c5dd17b5dcec8c32a8195d41ab32f016d0ff6a8e491ed55ac4b90f0f"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard39_of42.ipynb",
+   "shard": 39,
+   "cells": [
+    {
+     "cell_id": "c2.0_m2.40_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m1.80_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.20_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m3.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.40_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "9fee0740e462d744c3b1964d854c22f23d74a7cbd968cd08a14c452c42722618"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard40_of42.ipynb",
+   "shard": 40,
+   "cells": [
+    {
+     "cell_id": "c2.0_m2.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m3.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.60_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "c8452407e8b335ffa3c218098338142f51fd3f5b642ec6574f0166263874701a"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard41_of42.ipynb",
+   "shard": 41,
+   "cells": [
+    {
+     "cell_id": "c2.0_m2.80_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.20_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.40_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m3.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.60_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "73883cc3055ed12a761c121bc33826d4fdd41a320f9400ec8aa91f3649dc5e13"
+  },
+  {
+   "family": "c1",
+   "file": "nb_c1_shard42_of42.ipynb",
+   "shard": 42,
+   "cells": [
+    {
+     "cell_id": "c2.0_m3.00_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m0.90_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.25_m2.00_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m0.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m1.40_orthogonal_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c1.0_m2.60_full_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m0.90_full_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c4.0_m2.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m0.40_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m1.40_orthogonal_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c0.5_m3.00_partial_r3",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "c2.0_m1.60_partial_r1",
+     "experiment": "c1",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "ab6f6c7662faaccfea792cdb0aa4550a21fb8697ea983b6ee970a4d802723112"
+  },
+  {
+   "family": "c2ii",
+   "file": "nb_c2ii_dense_weak.ipynb",
+   "shard": "single",
+   "cells": [
+    {
+     "cell_id": "dense_r8_m0.6",
+     "experiment": "c2ii",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "dense_r8_m0.8",
+     "experiment": "c2ii",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "dense_r16_m0.6",
+     "experiment": "c2ii",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    },
+    {
+     "cell_id": "dense_r16_m0.8",
+     "experiment": "c2ii",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv"
+     ],
+     "diag": "light"
+    }
+   ],
+   "sha256": "3da7af89b963decccd0d6538a9e4ccb2d18fb22322c657c5c7e50981f18f194c"
+  },
+  {
+   "family": "c2iv",
+   "file": "nb_c2iv_structural_break.ipynb",
+   "shard": "single",
+   "cells": [
+    {
+     "cell_id": "break_d1_aligned",
+     "experiment": "c2iv",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "break_d2_aligned",
+     "experiment": "c2iv",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "break_d2_orthogonal",
+     "experiment": "c2iv",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "control_d0_aligned",
+     "experiment": "c2iv",
+     "reps": 500,
+     "methods": [
+      "donor_mean",
+      "scm_simplex",
+      "ridge_sc",
+      "spectral_gated",
+      "spectral_ungated",
+      "mc_nn_cv",
+      "sdid"
+     ],
+     "diag": "full"
+    }
+   ],
+   "sha256": "a83f55fecb59f2fc5c91122be409b037771665e078a122dee2299d00b82e98d6"
+  },
+  {
+   "family": "c2iii",
+   "file": "nb_c2iii_calibration.ipynb",
+   "shard": "single",
+   "cells": [
+    {
+     "cell_id": "null_gaussian",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "spiked_gaussian",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "null_ar1_r03",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "spiked_ar1_r03",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "null_ar1_r07",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "spiked_ar1_r07",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "null_het",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    },
+    {
+     "cell_id": "spiked_het",
+     "experiment": "c2iii",
+     "reps": 500,
+     "methods": [
+      "spectral_gated",
+      "spectral_ungated",
+      "ridge_sc"
+     ],
+     "diag": "full"
+    }
+   ],
+   "extra": "bootstrap multiplier measured first",
+   "sha256": "8eda163cbcc549ab56d90b464b9bd608353392d9dfdb6a04ba3b9355a5bb570e"
+  },
+  {
+   "family": "onset",
+   "file": "nb_onset_slice.ipynb",
+   "shard": "single",
+   "cells": "special",
+   "sha256": "5f9bd44346258c80cccc7f2ceb7cbe7d132d2b084ea77b7bd1676532f975181b"
+  },
+  {
+   "family": "c4",
+   "file": "nb_c4_scaling.ipynb",
+   "shard": "single",
+   "cells": "special",
+   "sha256": "735f282001f9fcc1e493b5641b3ffa964c6b3dcd2e949e9874d05a305a16d16e"
+  }
+ ]
+}
