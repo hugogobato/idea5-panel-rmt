@@ -14,6 +14,8 @@ generated artifacts; do not edit their parameters. Source of truth:
 | `nb_c2iv_structural_break` | 1 | WP-C2(iv) A4-violation detectability |
 | `nb_c4_scaling` | 1 | WP-C4 spectral-family scaling to n = T0 = 5000 |
 | `nb_onset_slice` | 1 | inherited falsifier: detectability onset -> m = 1 as n grows |
+| `nb_c5a_shard01_of1`, `nb_c5b_shard01..04_of4` | 5 | C.5 confirmation: corrected kink estimator (fresh seeds 15000+i); theta=3 bite extension (seeds 16000+i) |
+| `nb_c5c_diagv2_battery`, `nb_c5d_break_formal` | 2 | C.5 diagnostics-v2 calibration battery (z_shift/gate_lrv; seeds 17000+i); break formalization (post-window statistic; seeds 18000+i) |
 
 Each shard targets <= 4.5 h worst case (loaded-unit projection; expect
 ~2 h on an unloaded Colab VM), checkpoints every 25 reps, and verifies its

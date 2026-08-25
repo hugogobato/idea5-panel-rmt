@@ -45,6 +45,11 @@ phase_c_reserved:
     bootstrap_seed: 8880001
     multiplier_measurement_seed: 12345
   c4_scaling: "32000+j, j = 0..2 per size"
+c5_addendum:
+  c5a_kink_confirm: "15000+i per cell, i = 0..499 (fresh seeds, preregistration_c5_addendum.md)"
+  c5b_bite_extension: "16000+i per cell, i = 0..399"
+  c5c_diagv2: "17000+j per state-law cell, j = 0..299"
+  c5d_break_formal: "18000+j per delta cell, j = 0..399"
 
 phase_b:
   smoke_run:

@@ -115,6 +115,44 @@ def build_c2iii_cells():
     return cells
 
 
+# ----------------------------- C5 addendum families ------------------------
+
+C5A_SEED_BASE = 15_000
+C5B_SEED_BASE = 16_000
+C5C_SEED_BASE = 17_000
+C5D_SEED_BASE = 18_000
+
+
+def build_c5a_cells():
+    """Kink confirmation: corrected estimator, fresh seeds, spectral-only."""
+    m_grid = [round(0.6 + i * (1.0 / 20), 10) for i in range(21)]
+    cells = []
+    for c, (n, T0, Tp) in GEOM.items():
+        for m in m_grid:
+            cells.append(dict(
+                experiment="c5a", cell_id=f"c{c}_m{m:.2f}_full_r1",
+                c=c, n=n, T0=T0, T_post=Tp, r=1, m=m,
+                arm="full", theta=1.0, delta=None,
+                methods=["spectral_gated", "donor_mean"], diag="light",
+                reps=REPS))
+    return cells
+
+
+def build_c5b_cells():
+    """Bite extension: theta = 3 arm (predicted plateau sqrt(4) = 2 sigma)."""
+    m_grid = sorted({round(v, 10) for v in np_linspace(0.2, 3.0, 15) + [0.9, 1.1]})
+    cells = []
+    for c in (0.5, 1.0, 2.0):
+        n, T0, Tp = GEOM[c]
+        for m in m_grid:
+            cells.append(dict(
+                experiment="c5b", cell_id=f"c{c}_m{m:.2f}_full_r1",
+                c=c, n=n, T0=T0, T_post=Tp, r=1, m=m,
+                arm="full", theta=3.0, delta=None,
+                methods=list(FULL6), diag="light", reps=400))
+    return cells
+
+
 # ----------------------------------------------------------- cost model ----
 
 def rep_seconds(cell):
@@ -343,6 +381,181 @@ print(f"bootstrap multiplier (B=200 vs obs-only): {BOOT_MULTIPLIER:.1f}x "
 '''
 
 
+C5C_CELLS = [
+    dict(law="gaussian", lk=dict(noise="gaussian"), state="null"),
+    dict(law="gaussian", lk=dict(noise="gaussian"), state="spiked"),
+    dict(law="gaussian", lk=dict(noise="gaussian"), state="break_d1"),
+    dict(law="gaussian", lk=dict(noise="gaussian"), state="break_d2"),
+    dict(law="ar1_r03", lk=dict(noise="ar1", rho=0.3), state="null"),
+    dict(law="ar1_r03", lk=dict(noise="ar1", rho=0.3), state="spiked"),
+    dict(law="ar1_r03", lk=dict(noise="ar1", rho=0.3), state="break_d1"),
+    dict(law="ar1_r03", lk=dict(noise="ar1", rho=0.3), state="break_d2"),
+    dict(law="ar1_r07", lk=dict(noise="ar1", rho=0.7), state="null"),
+    dict(law="ar1_r07", lk=dict(noise="ar1", rho=0.7), state="spiked"),
+    dict(law="ar1_r07", lk=dict(noise="ar1", rho=0.7), state="break_d1"),
+    dict(law="ar1_r07", lk=dict(noise="ar1", rho=0.7), state="break_d2"),
+    dict(law="het", lk=dict(noise="heteroskedastic", het_ratio=4.0),
+         state="null"),
+    dict(law="het", lk=dict(noise="heteroskedastic", het_ratio=4.0),
+         state="spiked"),
+    dict(law="het", lk=dict(noise="heteroskedastic", het_ratio=4.0),
+         state="break_d1"),
+    dict(law="het", lk=dict(noise="heteroskedastic", het_ratio=4.0),
+         state="break_d2"),
+]
+
+C5C_BODY = SETUP_CODE + '''
+import scm_frontier_flat as sf
+
+OUT = Path("idea5_out"); OUT.mkdir(exist_ok=True)
+CSV = OUT / "c5c_diagv2.csv"
+
+def make_flush(csv_path, cols):
+    import csv as _csv
+    def flush(rows):
+        new = not Path(csv_path).exists()
+        with open(csv_path, "a", newline="") as fh:
+            w = _csv.DictWriter(fh, fieldnames=cols)
+            if new:
+                w.writeheader()
+            w.writerows(rows)
+    return flush
+
+flush = make_flush(CSV, ["cell_id", "law", "state", "rep_seed",
+                         "z_shift_p", "z_perm_p", "z_tw_p", "trend_p",
+                         "gate_lrv_k", "gate_mp_k"])
+CELLS = json.loads(r\'\'\'
+''' + json.dumps(C5C_CELLS, indent=1) + '''
+\'\'\')
+N, T0, TPOST = 160, 160, 80
+REPS_C5C, SEED0 = 300, ''' f"{C5C_SEED_BASE}" '''
+T_NB = time.perf_counter()
+TB = T0 - TPOST // 2
+null_z = sf.simulated_null_z(N - 1, TB, TPOST // 2, 1.0, (N - 1) / TB,
+                             G=300, seed=7_770_001)
+for cell in CELLS:
+    law, lk, state = cell["law"], cell["lk"], cell["state"]
+    cid = f"{state}_{law}"
+    for j in range(REPS_C5C):
+        pan_kw = dict(n=N, T0=T0, T_post=TPOST, sigma=1.0,
+                      noise=lk.get("noise", "gaussian"),
+                      rho=lk.get("rho", 0.5),
+                      het_ratio=lk.get("het_ratio", 4.0))
+        if state == "null":
+            pan_kw.update(r=0, spike_strengths=(), treated_share=(),
+                          alignment="none")
+        else:
+            s_spk = 1.6 * np.sqrt(N / T0)
+            pan_kw.update(r=1, spike_strengths=(s_spk,),
+                          treated_share=(1.0,), alignment="first")
+        pan_kw["structural_break"] = {"break_d1": 1.0,
+                                      "break_d2": 2.0}.get(state)
+        pan = sf.generate_panel(seed=SEED0 + j, **pan_kw)
+        Ypre = pan["Y"][1:, :T0]
+        p_shift, _, _ = sf.z_shift_pvalue(Ypre, 1.0, TPOST, B=200)
+        p_perm, _, _ = sf.z_perm_pvalue(Ypre, 1.0, TPOST, B=200, block=20)
+        z_obs, _ = sf.resid_statistic(Ypre[:, :TB], Ypre[:, TB:], 1.0,
+                                      (N - 1) / TB)
+        p_ztw = sf.z_tw_pvalue(z_obs, null_z)
+        trend_p = sf.classical_trend_ttest(pan["Y"][0, :T0])
+        flush([dict(cell_id=cid, law=law, state=state,
+                    rep_seed=SEED0 + j, z_shift_p=round(p_shift, 6),
+                    z_perm_p=round(p_perm, 6), z_tw_p=round(p_ztw, 6),
+                    trend_p=round(trend_p, 6),
+                    gate_lrv_k=sf.gate_lrv(Ypre),
+                    gate_mp_k=int(sf.gated_rank(sf.scree(Ypre), 1.0,
+                                                N / T0)))])
+    print(f"{cid} done ({time.perf_counter() - T_NB:.0f}s)")
+
+(Path("idea5_out") / "c5c_done.json").write_text(json.dumps(
+    {"rows_expected": len(CELLS) * REPS_C5C}, indent=1))
+try:
+    from google.colab import files
+    files.download(str(CSV)); files.download(str(OUT / "c5c_done.json"))
+except Exception as e:
+    print("(Not on Colab / download skipped):", e)
+'''
+
+
+def build_c5c_nb():
+    nb = new_nb("nb_c5c_diagv2_battery")
+    nb["cells"].append(md_cell(
+        "# C5c diagnostics-v2 calibration battery\n\n"
+        "Preregistration_c5_addendum C5c. Laws x states; z_shift primary,\n"
+        "z_perm20 secondary, z_tw/t-test references, gate_lrv vs gate_mp.\n"))
+    nb["cells"].append(module_cell())
+    nb["cells"].append(code_cell(C5C_BODY.strip("\n")))
+    return nb
+
+
+C5D_BODY = SETUP_CODE + '''
+import scm_frontier_flat as sf
+
+OUT = Path("idea5_out"); OUT.mkdir(exist_ok=True)
+CSV = OUT / "c5d_break_formal.csv"
+
+def make_flush(csv_path, cols):
+    import csv as _csv
+    def flush(rows):
+        new = not Path(csv_path).exists()
+        with open(csv_path, "a", newline="") as fh:
+            w = _csv.DictWriter(fh, fieldnames=cols)
+            if new:
+                w.writeheader()
+            w.writerows(rows)
+    return flush
+
+flush = make_flush(CSV, ["cell_id", "rep_seed", "p_post", "z_post",
+                         "rmse_spectral"])
+CELLS = json.loads(r\'\'\'
+''' + json.dumps([
+    dict(cell_id=f"delta{d}", delta=d, arm=("none" if d == "orth" else "first"))
+    for d in [0, 0.5, 1.0, 2.0]
+] + [dict(cell_id="delta2_orthogonal", delta=2.0, arm="none")], indent=1) + '''
+\'\'\')
+N, T0, TPOST, REPS_D, SEED0 = 160, 160, 80, 400, ''' f"{C5D_SEED_BASE}" '''
+T_NB = time.perf_counter()
+for cell in CELLS:
+    cid = str(cell["cell_id"])
+    pan_null = None
+    null_z = sf.simulated_null_z(N - 1, T0, TPOST, 1.0, (N - 1) / T0,
+                                 G=300, seed=7_770_001)
+    align = cell["arm"]
+    th = 0.0 if align == "none" else 1.0
+    for j in range(REPS_D):
+        pan = sf.generate_panel(seed=SEED0 + j, n=N, T0=T0, T_post=TPOST,
+                                r=1, spike_strengths=(2.0,),
+                                treated_share=(th,), alignment=align,
+                                sigma=1.0, structural_break=cell["delta"])
+        Y = pan["Y"]
+        out = sf.pre_trends_post_test(Y[1:, :T0], Y[1:, T0:], 1.0,
+                                      null_z=null_z)
+        spec = sf.spectral_sc_full(Y[1:], Y[0, :T0], sigma=1.0, c=N / T0)
+        y_star = Y[0, T0:]
+        rmse = float(np.sqrt(np.mean((spec["pred_gated"] - y_star) ** 2)))
+        flush([dict(cell_id=cid, rep_seed=SEED0 + j,
+                    p_post=round(out["p"], 6), z_post=round(out["z"], 6),
+                    rmse_spectral=round(rmse, 6))])
+    print(f"{cid} done ({time.perf_counter() - T_NB:.0f}s)")
+try:
+    from google.colab import files
+    files.download(str(CSV))
+except Exception as e:
+    print("(Not on Colab / download skipped):", e)
+'''
+
+
+def build_c5d_nb():
+    nb = new_nb("nb_c5d_break_formal")
+    nb["cells"].append(md_cell(
+        "# C5d break-detection formalization\n\n"
+        "Preregistration_c5_addendum C5d: post-window statistic on real\n"
+        "donor post outcomes, simulated iid null; delta dose-response.\n"))
+    nb["cells"].append(module_cell())
+    nb["cells"].append(code_cell(C5D_BODY.strip("\n")))
+    return nb
+
+
 def build_onset_nb():
     nb_name = "nb_onset_slice"
     sizes = [(81, 81), (121, 121), (161, 161), (241, 241), (361, 361),
@@ -559,6 +772,35 @@ def main():
                         reps=c["reps"], methods=c["methods"],
                         diag=c["diag"]) for c in cs]))
 
+    # ---- C5a/C5b experiment families (fresh-seed confirmation grids) -------
+    c5a_cells = build_c5a_cells()
+    c5b_cells = build_c5b_cells()
+    for fam_name, cs, sbase in (("c5a", c5a_cells, C5A_SEED_BASE),
+                                ("c5b", c5b_cells, C5B_SEED_BASE)):
+        shards, loads = lpt_balance(cs, 4 if fam_name == "c5b" else 1)
+        n_sh = len(shards)
+        for i, shard in enumerate(shards, start=1):
+            name = f"nb_{fam_name}_shard{i:02d}_of{n_sh}"
+            title = (f"# {fam_name.upper()} confirmation grid, shard "
+                     f"{i:02d}/{n_sh}\n\nFrozen under "
+                     "preregistration_c5_addendum.md; fresh seed range.\n")
+            nb = build_experiment_nb(name, fam_name, f"{i:02d}", shard, title)
+            # override the seed base inside the config cell
+            for cell in nb["cells"]:
+                if cell["cell_type"] == "code":
+                    src = "".join(cell["source"])
+                    if "SEED_BASE" in src and "CELLS =" in src:
+                        src = src.replace(f"SEED_BASE = {SEED_BASE}",
+                                          f"SEED_BASE = {sbase}")
+                        cell["source"] = src.splitlines(keepends=True)
+            write_nb(out_dir / f"{name}.ipynb", nb)
+            manifest["notebooks"].append(dict(
+                family=fam_name, file=f"{name}.ipynb", shard=i,
+                seed_base=sbase,
+                cells=[dict(cell_id=c["cell_id"], experiment=c["experiment"],
+                            reps=c["reps"], methods=c["methods"],
+                            diag=c["diag"]) for c in shard]))
+
     name, fam = "nb_c2iii_calibration", "c2iii"
     cs = build_c2iii_cells()
     nb = new_nb(name)
@@ -580,7 +822,8 @@ def main():
                     reps=c["reps"], methods=c["methods"], diag=c["diag"])
                for c in cs], extra="bootstrap multiplier measured first"))
 
-    for builder, fam in ((build_onset_nb, "onset"), (build_scaling_nb, "c4")):
+    for builder, fam in ((build_onset_nb, "onset"), (build_scaling_nb, "c4"),
+                         (build_c5c_nb, "c5c"), (build_c5d_nb, "c5d")):
         nb = builder()
         fname = nb["metadata"]["colab"]["name"] + ".ipynb"
         write_nb(out_dir / fname, nb)

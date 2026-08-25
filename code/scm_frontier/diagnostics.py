@@ -173,6 +173,10 @@ def z_boot_pvalue(
     Tp_eff columns) and a pseudo-post part (last Tp_eff), Tp_eff =
     min(T_post, T0 // 2). Null: B circular block resamples (length `block`)
     of the pre time index, same split. Returns (p_value, z_obs, k_used).
+
+    KNOWN DEFECT (gate_g3_memo Section 3.2): with-replacement resampling
+    duplicates blocks and inflates the null eigenvalue; superseded by
+    z_shift_pvalue / z_perm_pvalue in the C5 addendum. Kept for the record.
     """
     Y = donors_pre
     n_d, T0 = Y.shape
@@ -189,6 +193,177 @@ def z_boot_pvalue(
         if z_star >= z_obs:
             ge += 1
     return float((ge + 1.0) / (B + 1.0)), float(z_obs), int(k_used)
+
+
+# --------------------- C5 addendum instruments (frozen designs) ------------
+
+
+def robust_row_scales(basis_window: np.ndarray) -> np.ndarray:
+    """C5c het handling: per-row robust scale from first differences of the
+    BASIS window only (leakage-safe): median(|dY|)/(0.6745*sqrt(2))."""
+    d = np.diff(basis_window, axis=1)
+    mad = np.median(np.abs(d), axis=1)
+    return np.maximum(mad / (0.6745 * np.sqrt(2.0)), 1e-12)
+
+
+def _split_windows(Y: np.ndarray, T_post: int):
+    Tp = int(min(T_post, Y.shape[1] // 2))
+    return Y[:, : Y.shape[1] - Tp], Y[:, Y.shape[1] - Tp :]
+
+
+def z_shift_pvalue(
+    donors_pre: np.ndarray,
+    sigma: float,
+    T_post: int,
+    k_max: int = 4,
+    B: int = 200,
+    seed: int = 8_880_001,
+    standardize: bool = True,
+) -> tuple[float, float, int]:
+    """Circular-shift null (C5 addendum C5c primary instrument).
+
+    Rotates the time index by a uniform random offset; under H0 every split
+    position is exchangeable and within-series dependence is preserved
+    exactly. Row-standardizes by basis-window robust scales when
+    `standardize` (het robustness). Returns (p_value, z_obs, k_used).
+    Validity is claimed ONLY under H0; rejection rates under alternatives
+    are detection rates.
+    """
+    Y = donors_pre
+    if standardize:
+        sc = robust_row_scales(Y[:, : Y.shape[1] - int(min(T_post, Y.shape[1] // 2))])
+        Y = Y / sc[:, None]
+        sigma = float(np.median(sc))
+    n_d = Y.shape[0]
+    Tb_w, Tp_w = _split_windows(Y, T_post)
+    c_basis = n_d / Tb_w.shape[1]
+    z_obs, k_used = resid_statistic(Tb_w, Tp_w, sigma, c_basis, k_max)
+    rng = np.random.default_rng(seed)
+    ge = 0
+    for _ in range(B):
+        o = int(rng.integers(Y.shape[1]))
+        Ys = np.roll(Y, o, axis=1)
+        Bs, Ps = _split_windows(Ys, T_post)
+        z_star, _ = resid_statistic(Bs, Ps, sigma, c_basis, k_max)
+        if z_star >= z_obs:
+            ge += 1
+    return float((ge + 1.0) / (B + 1.0)), float(z_obs), int(k_used)
+
+
+def z_perm_pvalue(
+    donors_pre: np.ndarray,
+    sigma: float,
+    T_post: int,
+    k_max: int = 4,
+    B: int = 200,
+    block: int = 20,
+    seed: int = 8_880_001,
+    standardize: bool = True,
+) -> tuple[float, float, int]:
+    """Disjoint-block PERMUTATION null (C5 secondary; no duplication)."""
+    Y = donors_pre
+    if standardize:
+        sc = robust_row_scales(Y[:, : Y.shape[1] - int(min(T_post, Y.shape[1] // 2))])
+        Y = Y / sc[:, None]
+        sigma = float(np.median(sc))
+    n_d, T0 = Y.shape
+    Tb_w, Tp_w = _split_windows(Y, T_post)
+    c_basis = n_d / Tb_w.shape[1]
+    z_obs, k_used = resid_statistic(Tb_w, Tp_w, sigma, c_basis, k_max)
+    rng = np.random.default_rng(seed)
+    nb = int(np.ceil(T0 / block))
+    starts = np.arange(nb) * block
+    ge = 0
+    for _ in range(B):
+        order = rng.permutation(nb)
+        idx = np.concatenate(
+            [np.arange(starts[o], starts[o] + block) % T0 for o in order]
+        )[:T0]
+        Ys = Y[:, idx]
+        Bs, Ps = _split_windows(Ys, T_post)
+        z_star, _ = resid_statistic(Bs, Ps, sigma, c_basis, k_max)
+        if z_star >= z_obs:
+            ge += 1
+    return float((ge + 1.0) / (B + 1.0)), float(z_obs), int(k_used)
+
+
+def _lrv_rows(Y: np.ndarray) -> np.ndarray:
+    """Per-row Newey-West long-run variance (Bartlett, lag 4(T0/100)^(2/9))."""
+    n, T0 = Y.shape
+    L = int(4.0 * (T0 / 100.0) ** (2.0 / 9.0))
+    out = np.empty(n)
+    for i, row in enumerate(Y):
+        x = row - row.mean()
+        ac0 = float(x @ x) / T0
+        s = ac0
+        for l in range(1, L + 1):
+            w = 1.0 - l / (L + 1.0)
+            s += 2.0 * w * float(x[l:] @ x[:-l]) / T0
+        out[i] = max(s, 1e-12)
+    return out
+
+
+def gate_lrv(
+    donors_pre: np.ndarray, k_max: int = 4, standardize: bool = True,
+    tol: float = 1.05,
+) -> int:
+    """Silence gate v2 (C5c): robust row-standardization + long-run-variance
+    adjusted MP edge. Targets the mechanism by which serial correlation and
+    cross-sectional heteroskedasticity inflate the iid bulk edge.
+    Returns k = 0 when lambda1 <= tol * (1+sqrt(c))^2 * sigma2_lrv, else the
+    largest-gap rank among the top k_max."""
+    Y = donors_pre
+    if standardize and Y.shape[1] > 8:
+        Y = Y / robust_row_scales(Y)[:, None]
+    evals = scree(Y)
+    c = Y.shape[0] / Y.shape[1]
+    sigma2_lrv = float(np.median(_lrv_rows(Y)))
+    if evals[0] <= tol * (1.0 + np.sqrt(c)) ** 2 * sigma2_lrv:
+        return 0
+    return select_rank_gap_ratio(evals, k_max)
+
+
+def pre_trends_post_test(
+    donors_pre: np.ndarray,
+    donors_post: np.ndarray,
+    sigma: float,
+    G: int = 300,
+    seed: int = 7_770_001,
+    null_z: np.ndarray | None = None,
+) -> dict:
+    """C5d formalized break-detection statistic (preregistration_c5_addendum).
+
+    resid_statistic on the FULL donor-pre basis vs the REAL donor-post
+    window, calibrated by the simulated iid finite-n null. Gaussian-noise
+    scope; leakage-safe (treated post never touched).
+    """
+    n_d, T0 = donors_pre.shape
+    Tp = donors_post.shape[1]
+    z, k = resid_statistic(donors_pre, donors_post, sigma, n_d / T0)
+    if null_z is None:
+        null_z = simulated_null_z(n_d, T0, Tp, sigma, n_d / T0, G=G, seed=seed)
+    return {"z": float(z), "p": z_tw_pvalue(z, null_z), "k": int(k)}
+
+
+def kink_breakpoint(ms: np.ndarray, rmse_mean: np.ndarray) -> float:
+    """Amended primary kink estimator (C5a): plateau+linear two-segment fit.
+
+    Returns argmin_b over arange(0.6, 1.6, 0.05) of SSE(constant | m<=b)
+    + SSE(OLS line | m>b).
+    """
+    best_sse, best_b = np.inf, float("nan")
+    for b in np.arange(0.60, 1.6001, 0.05):
+        L = ms <= b
+        R = ms > b
+        if L.sum() < 2 or R.sum() < 3:
+            continue
+        sse = float(((rmse_mean[L] - rmse_mean[L].mean()) ** 2).sum())
+        X = np.column_stack([np.ones(int(R.sum())), ms[R]])
+        beta, *_ = np.linalg.lstsq(X, rmse_mean[R], rcond=None)
+        sse += float(((rmse_mean[R] - X @ beta) ** 2).sum())
+        if sse < best_sse:
+            best_sse, best_b = sse, float(b)
+    return best_b
 
 
 def invert_bbp(lam: np.ndarray, c: float):

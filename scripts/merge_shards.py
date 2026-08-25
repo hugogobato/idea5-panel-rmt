@@ -31,6 +31,8 @@ FAMILY_OUT = {
     "c2ii": ROOT / "results_c2" / "c2ii.parquet",
     "c2iii": ROOT / "results_c2" / "c2iii.parquet",
     "c2iv": ROOT / "results_c2" / "c2iv.parquet",
+    "c5a": ROOT / "results_c1" / "c5a_kink_confirm.parquet",
+    "c5b": ROOT / "results_c1" / "c5b_bite_extension.parquet",
 }
 
 
@@ -51,7 +53,7 @@ def main() -> int:
     for entry in manifest["notebooks"]:
         name = entry["file"].replace(".ipynb", "")
         fam = entry["family"]
-        if fam in ("onset", "c4"):
+        if fam in ("onset", "c4", "c5c", "c5d"):
             continue  # special outputs validated separately below
         gz = raw / fam / f"{name}.csv.gz"
         meta_path = raw / fam / f"{name}_meta.json"
