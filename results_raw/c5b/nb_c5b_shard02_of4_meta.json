@@ -1,0 +1,72 @@
+{
+ "notebook": "nb_c5b_shard02_of4",
+ "family": "c5b",
+ "shard": "02",
+ "cells": [
+  {
+   "cell_id": "c1.0_m0.20_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c1.0_m0.90_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c1.0_m1.40_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c1.0_m2.20_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c1.0_m3.00_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c0.5_m1.10_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c0.5_m1.80_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c0.5_m2.60_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c2.0_m0.40_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c2.0_m0.80_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c2.0_m1.20_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c2.0_m2.00_full_r1",
+   "experiment": "c5b"
+  },
+  {
+   "cell_id": "c2.0_m2.80_full_r1",
+   "experiment": "c5b"
+  }
+ ],
+ "reps_per_cell": 500,
+ "seed_base": 16000,
+ "versions": {
+  "python": "3.13.15",
+  "numpy": "2.1.3"
+ },
+ "started_utc": "2026-08-25T14:11:47Z",
+ "cell_errors": {},
+ "rows_expected": 36400,
+ "rows_written": 36400,
+ "finished_utc": "2026-08-25T16:40:30Z",
+ "wall_s": 8923.7,
+ "csv_sha256": "9758edb5ce5472bf33024cf3ab0277b829ef7ef268cd97baffa2ce5e9abe1ff4"
+}

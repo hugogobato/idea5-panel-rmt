@@ -1,0 +1,36 @@
+{
+ "notebook": "nb_c2ii_dense_weak",
+ "family": "c2ii",
+ "shard": "single",
+ "cells": [
+  {
+   "cell_id": "dense_r8_m0.6",
+   "experiment": "c2ii"
+  },
+  {
+   "cell_id": "dense_r8_m0.8",
+   "experiment": "c2ii"
+  },
+  {
+   "cell_id": "dense_r16_m0.6",
+   "experiment": "c2ii"
+  },
+  {
+   "cell_id": "dense_r16_m0.8",
+   "experiment": "c2ii"
+  }
+ ],
+ "reps_per_cell": 500,
+ "seed_base": 10000,
+ "versions": {
+  "python": "3.13.15",
+  "numpy": "2.1.3"
+ },
+ "started_utc": "2026-08-24T19:33:38Z",
+ "cell_errors": {},
+ "rows_expected": 14000,
+ "rows_written": 14000,
+ "finished_utc": "2026-08-24T21:00:36Z",
+ "wall_s": 5218.4,
+ "csv_sha256": "aadbf2c02cb3fc65d3adc9a06c805b4c0add28fa34db52eea9fb1a5a9c7648ab"
+}

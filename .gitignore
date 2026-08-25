@@ -1,6 +1,5 @@
 __pycache__/
 .pytest_cache/
-results_raw/
 figures/*.png
 *.pyc
 .ipynb_checkpoints/

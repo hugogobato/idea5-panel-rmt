@@ -1,0 +1,440 @@
+{
+ "notebook": "nb_c5a_shard01_of1",
+ "family": "c5a",
+ "shard": "01",
+ "cells": [
+  {
+   "cell_id": "c0.25_m0.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.65_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.70_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.75_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.80_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.85_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.90_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m0.95_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.00_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.05_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.10_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.15_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.20_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.25_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.30_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.35_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.40_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.45_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.50_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.55_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.25_m1.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.65_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.70_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.75_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.80_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.85_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.90_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m0.95_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.00_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.05_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.10_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.15_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.20_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.25_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.30_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.35_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.40_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.45_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.50_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.55_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c1.0_m1.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.65_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.70_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.75_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.80_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.85_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.90_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m0.95_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.00_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.05_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.10_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.15_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.20_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.25_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.30_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.35_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.40_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.45_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.50_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.55_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c4.0_m1.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.65_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.70_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.75_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.80_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.85_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.90_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m0.95_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.00_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.05_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.10_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.15_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.20_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.25_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.30_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.35_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.40_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.45_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.50_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.55_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c0.5_m1.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.60_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.65_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.70_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.75_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.80_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.85_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.90_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m0.95_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.00_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.05_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.10_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.15_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.20_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.25_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.30_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.35_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.40_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.45_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.50_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.55_full_r1",
+   "experiment": "c5a"
+  },
+  {
+   "cell_id": "c2.0_m1.60_full_r1",
+   "experiment": "c5a"
+  }
+ ],
+ "reps_per_cell": 500,
+ "seed_base": 15000,
+ "versions": {
+  "python": "3.13.15",
+  "numpy": "2.1.3"
+ },
+ "started_utc": "2026-08-25T14:11:47Z",
+ "cell_errors": {},
+ "rows_expected": 157500,
+ "rows_written": 157500,
+ "finished_utc": "2026-08-25T14:37:20Z",
+ "wall_s": 1532.7,
+ "csv_sha256": "5a4ffbbecbbba4895c7f6417a5938cbc339256a419b84100e245c32567559cc4"
+}

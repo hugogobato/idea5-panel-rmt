@@ -1,0 +1,68 @@
+{
+ "notebook": "nb_c1_shard36_of42",
+ "family": "c1",
+ "shard": "36",
+ "cells": [
+  {
+   "cell_id": "c0.5_m3.00_full_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c0.25_m1.20_partial_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c0.25_m2.60_orthogonal_r3",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c1.0_m0.90_orthogonal_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c1.0_m1.80_full_r3",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c4.0_m0.20_full_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c4.0_m1.20_partial_r3",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c4.0_m2.60_partial_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c0.5_m1.00_orthogonal_r1",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c0.5_m2.40_orthogonal_r3",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c2.0_m0.90_partial_r3",
+   "experiment": "c1"
+  },
+  {
+   "cell_id": "c2.0_m2.40_orthogonal_r1",
+   "experiment": "c1"
+  }
+ ],
+ "reps_per_cell": 500,
+ "seed_base": 10000,
+ "versions": {
+  "python": "3.13.15",
+  "numpy": "2.1.3"
+ },
+ "started_utc": "2026-08-24T19:34:46Z",
+ "cell_errors": {},
+ "rows_expected": 42500,
+ "rows_written": 42500,
+ "finished_utc": "2026-08-25T00:59:04Z",
+ "wall_s": 19457.3,
+ "csv_sha256": "5275bc5e6b8b896cf1ecfc77f4e08e8e9034b9bf115db1564c2248adaee8c771"
+}
