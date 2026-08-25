@@ -59,12 +59,18 @@ def main() -> int:
             failures.append(f"{name}: missing outputs")
             continue
         meta = json.loads(meta_path.read_text())
-        sha = hashlib.sha256(gz.read_bytes()).hexdigest()
+        # meta records the sha256 of the UNCOMPRESSED csv (notebook finalize)
+        try:
+            payload = gzip.decompress(gz.read_bytes())
+        except Exception as exc:
+            failures.append(f"{name}: gzip corrupt ({exc})")
+            continue
+        sha = hashlib.sha256(payload).hexdigest()
         if sha != meta.get("csv_sha256"):
             failures.append(f"{name}: sha256 mismatch")
             continue
         try:
-            df = load_csv_gz(gz)
+            df = pd.read_csv(io.BytesIO(payload))
         except Exception as exc:
             failures.append(f"{name}: unreadable ({exc})")
             continue

@@ -1,0 +1,18 @@
+{
+ "control_d0_aligned": {
+  "rej_5": 0.116,
+  "rej_10": 0.178
+ },
+ "break_d1_aligned": {
+  "rej_5": 0.576,
+  "rej_10": 0.646
+ },
+ "break_d2_aligned": {
+  "rej_5": 0.998,
+  "rej_10": 1.0
+ },
+ "break_d2_orthogonal": {
+  "rej_5": 0.998,
+  "rej_10": 1.0
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "kink": {
+  "table": [
+   {
+    "c": 0.25,
+    "m_kink": 0.9,
+    "within_15pct": true,
+    "n_reps": 500
+   },
+   {
+    "c": 0.5,
+    "m_kink": 0.9,
+    "within_15pct": true,
+    "n_reps": 500
+   },
+   {
+    "c": 1.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   },
+   {
+    "c": 2.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   },
+   {
+    "c": 4.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   }
+  ],
+  "share_within_15pct": 0.4,
+  "criterion_pass": false
+ },
+ "onset": {
+  "onset_by_size": {
+   "81x81": 0.8500000000000001,
+   "121x121": 0.75,
+   "161x161": 0.8500000000000001,
+   "241x241": 0.9,
+   "361x361": 0.9,
+   "541x541": 0.9
+  },
+  "onset_pass": true,
+  "rule": "onset(largest size) in [0.90, 1.10]"
+ },
+ "bite": {
+  "worst_incumbent_rmse": 1.4089469161568626,
+  "diagnostic_power_subfrontier": 0.6572444444444444,
+  "false_alarm_rate_recoverable": 0.089575,
+  "bite_pass": false
+ },
+ "rank_head_to_head": {
+  "accuracy_by_c": [
+   {
+    "c": 0.25,
+    "gated": 0.4496,
+    "cv_rank": 0.41035,
+    "ungated": 0.4496
+   },
+   {
+    "c": 0.5,
+    "gated": 0.4745,
+    "cv_rank": 0.4278,
+    "ungated": 0.4745
+   },
+   {
+    "c": 1.0,
+    "gated": 0.4857,
+    "cv_rank": 0.42605,
+    "ungated": 0.4857
+   },
+   {
+    "c": 2.0,
+    "gated": 0.4715,
+    "cv_rank": 0.4478,
+    "ungated": 0.4715
+   },
+   {
+    "c": 4.0,
+    "gated": 0.4478,
+    "cv_rank": 0.4178,
+    "ungated": 0.4478
+   }
+  ],
+  "c3_pass": false
+ },
+ "size_calibration": [
+  {
+   "cell_id": "null_ar1_r03",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.148
+  },
+  {
+   "cell_id": "null_ar1_r07",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.398
+  },
+  {
+   "cell_id": "null_gaussian",
+   "rej_zb": 0.0,
+   "rej_ztw": 0.046,
+   "rej_t": 0.058
+  },
+  {
+   "cell_id": "null_het",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.058
+  },
+  {
+   "cell_id": "spiked_ar1_r03",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.1
+  },
+  {
+   "cell_id": "spiked_ar1_r07",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.242
+  },
+  {
+   "cell_id": "spiked_gaussian",
+   "rej_zb": 0.0,
+   "rej_ztw": 0.236,
+   "rej_t": 0.044
+  },
+  {
+   "cell_id": "spiked_het",
+   "rej_zb": 0.0,
+   "rej_ztw": 1.0,
+   "rej_t": 0.044
+  }
+ ]
+}

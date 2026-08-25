@@ -1,0 +1,99 @@
+{
+ "kink_frozen_estimator": {
+  "table": [
+   {
+    "c": 0.25,
+    "m_kink": 0.9,
+    "within_15pct": true,
+    "n_reps": 500
+   },
+   {
+    "c": 0.5,
+    "m_kink": 0.9,
+    "within_15pct": true,
+    "n_reps": 500
+   },
+   {
+    "c": 1.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   },
+   {
+    "c": 2.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   },
+   {
+    "c": 4.0,
+    "m_kink": 0.8,
+    "within_15pct": false,
+    "n_reps": 500
+   }
+  ],
+  "share_within_15pct": 0.4,
+  "criterion_pass": false
+ },
+ "kink_breakpoint_sensitivity": {
+  "0.25": 1.0000000000000004,
+  "0.5": 1.0000000000000004,
+  "1.0": 1.0000000000000004,
+  "2.0": 1.0000000000000004,
+  "4.0": 1.0000000000000004
+ },
+ "onset": {
+  "onset_by_size": {
+   "81x81": 0.8500000000000001,
+   "121x121": 0.75,
+   "161x161": 0.8500000000000001,
+   "241x241": 0.9,
+   "361x361": 0.9,
+   "541x541": 0.9
+  },
+  "onset_pass": true,
+  "rule": "onset(largest size) in [0.90, 1.10]"
+ },
+ "plateau_check": {
+  "full": {
+   "measured": 1.4196,
+   "predicted": 1.4142
+  },
+  "partial": {
+   "measured": 1.1204,
+   "predicted": 1.118
+  }
+ },
+ "bite": {
+  "worst_incumbent_rmse": 1.4089469161568626,
+  "diagnostic_power_subfrontier": 0.6572444444444444,
+  "false_alarm_rate_recoverable": 0.089575,
+  "bite_pass": false
+ },
+ "c2iv_repair": {
+  "control_d0_aligned": {
+   "rej_5": 0.116,
+   "rej_10": 0.178
+  },
+  "break_d1_aligned": {
+   "rej_5": 0.576,
+   "rej_10": 0.646
+  },
+  "break_d2_aligned": {
+   "rej_5": 0.998,
+   "rej_10": 1.0
+  },
+  "break_d2_orthogonal": {
+   "rej_5": 0.998,
+   "rej_10": 1.0
+  }
+ },
+ "runtime": {
+  "fleet_predicted_h": 180.7,
+  "fleet_actual_h": 207.7,
+  "median_actual_over_predicted": 1.27,
+  "bootstrap_multiplier_measured": 125,
+  "scaling_exponent_spectral": 1.093,
+  "max_rss_gib": 2.44
+ }
+}
