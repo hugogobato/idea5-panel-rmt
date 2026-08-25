@@ -93,11 +93,12 @@ def main() -> int:
             if not isinstance(cspec, dict):
                 continue
             sub = df[df["cell_id"] == cspec["cell_id"]]
+            sbase = int(entry.get("seed_base", manifest["seed_base"]))
             seeds = set(sub["rep_seed"].astype(int))
-            want = set(range(manifest["seed_base"],
-                             manifest["seed_base"] + cspec["reps"]))
+            want = set(range(sbase, sbase + cspec["reps"]))
             if seeds != want:
-                failures.append(f"{name}/{cspec['cell_id']}: seed set incomplete")
+                failures.append(
+                    f"{name}/{cspec['cell_id']}: seed set incomplete")
                 break
         else:
             frames.setdefault(fam, []).append(df)

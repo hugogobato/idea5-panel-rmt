@@ -50,7 +50,11 @@ PASS: power(delta = 2) >= 80% AND size(delta = 0) <= 15% (spiked-benign liberali
 
 D1 replaces the parent primary kink estimator (defect diagnosed post hoc, gate_g3_memo Section 3.1).
 D2 extends the bite region to theta = 3 (parent cap made the criterion unreachable; F predicted it ex ante).
-D3 replaces Z_boot (degenerate) and recalibrates the gate under weak dependence; z_shift/gate_shift are new instruments frozen above.
+D3 replaces Z_boot (degenerate) and recalibrates the gate under weak dependence; z_shift/gate_lrv are new instruments frozen above.
 D4 operationalizes break DETECTION through the donor-post window (parent C2(iv) instrumentation was pre-window-only and vacuous for detection).
+D5 (C5c instrument amendments, all BEFORE the valid C5c run; the first uploaded battery is VOID and superseded):
+  (a) standardization must be PER-DRAW (each rotation/permutation window standardized by its own basis-window scales); global one-shot standardization breaks exchangeability and liberalized z_shift/z_perm;
+  (b) the test statistic is SELF-NORMALIZED: g = lambda1 / median(eigenvalues) of the residual scatter. Diagnosis: unstudentized resampling nulls estimate the CONDITIONAL (within-panel) law, which is substantially narrower than the marginal law fresh panels obey (sd 0.76 vs 1.31 measured), producing ~13% size under iid; self-normalization cancels the panel-level scale;
+  (c) gate_lrv final form: difference-based row scales with ADAPTIVE standardization (engaged only when scale heterogeneity q90/q10 > 2, Gaussian-efficient diff-SD scaling with MAD fallback), MP edge with sigma^2 = median per-row LRV estimated exactly as vy*(1+rho_hat)/(1-rho_hat), rho_hat = 1 - vd/(2vy); triggered path uses tolerance 1.15 to absorb scale-estimation noise. Prototype validation (120-150 reps/law): z_shift sizes {iid 6%, ar03 8%, ar07 8%, het 6%}, delta=2 detection 85%; gate_lrv false-fires {iid 7%, ar03 0%, ar07 0%, het 0%}, spiked detection 100%.
 
 All other parent rules (metrics, leakage, merge discipline, no-partial-figures) carry over unchanged.

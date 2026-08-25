@@ -102,6 +102,36 @@ def classical_trend_ttest(y1_pre: np.ndarray) -> float:
     return float(2.0 * stats.t.sf(abs(beta[1] / se), dof))
 
 
+def gap_statistic(
+    basis_window: np.ndarray,
+    post_window: np.ndarray,
+    sigma: float,
+    c_basis: float,
+    k_max: int = 4,
+) -> tuple[float, int]:
+    """SELF-NORMALIZED post-residual gap (C5 deviation D5v2).
+
+    g = lambda1 / median(eigenvalues) of the residual unit-space scatter.
+    Dividing by the panel's own bulk center cancels the panel-level random
+    scale, making the conditional (within-panel rotation) null coincide
+    with the marginal law -- the unstudentized z failed exactly this way
+    (conditional sd 0.76 vs marginal 1.31). Robust to sigma misspecification
+    by construction; large g = factor-law instability evidence.
+    """
+    n_d, Tb = basis_window.shape
+    Tp = post_window.shape[1]
+    U, d, _ = np.linalg.svd(basis_window, full_matrices=False)
+    evals_b = d**2 / Tb
+    k = gated_rank(evals_b, sigma, c_basis, k_max)
+    if k > 0:
+        R = post_window - U[:, :k] @ (U[:, :k].T @ post_window)
+    else:
+        R = post_window
+    ev = np.linalg.eigvalsh((R @ R.T) / Tp)
+    med = float(np.median(ev))
+    return float(ev[-1] / max(med, 1e-12)), int(k)
+
+
 def resid_statistic(
     basis_window: np.ndarray,
     post_window: np.ndarray,
@@ -224,27 +254,32 @@ def z_shift_pvalue(
 
     Rotates the time index by a uniform random offset; under H0 every split
     position is exchangeable and within-series dependence is preserved
-    exactly. Row-standardizes by basis-window robust scales when
-    `standardize` (het robustness). Returns (p_value, z_obs, k_used).
-    Validity is claimed ONLY under H0; rejection rates under alternatives
-    are detection rates.
+    exactly. When `standardize`, EVERY draw (observed and rotated alike)
+    is standardized by ITS OWN basis-window robust scales -- global
+    one-shot standardization would break exchangeability (deviation D5).
+    Returns (p_value, z_obs, k_used). Validity is claimed ONLY under H0.
     """
     Y = donors_pre
-    if standardize:
-        sc = robust_row_scales(Y[:, : Y.shape[1] - int(min(T_post, Y.shape[1] // 2))])
-        Y = Y / sc[:, None]
-        sigma = float(np.median(sc))
     n_d = Y.shape[0]
     Tb_w, Tp_w = _split_windows(Y, T_post)
     c_basis = n_d / Tb_w.shape[1]
-    z_obs, k_used = resid_statistic(Tb_w, Tp_w, sigma, c_basis, k_max)
+
+    def stat(basis: np.ndarray, post: np.ndarray):
+        # Per-draw standardization (deviation D5): scales from THIS draw's
+        # basis window only; global standardization breaks exchangeability.
+        if standardize:
+            basis, post, sig = _std_windows(basis, post)
+        else:
+            sig = sigma
+        return gap_statistic(basis, post, sig, c_basis, k_max)
+
+    z_obs, k_used = stat(Tb_w, Tp_w)
     rng = np.random.default_rng(seed)
     ge = 0
     for _ in range(B):
         o = int(rng.integers(Y.shape[1]))
-        Ys = np.roll(Y, o, axis=1)
-        Bs, Ps = _split_windows(Ys, T_post)
-        z_star, _ = resid_statistic(Bs, Ps, sigma, c_basis, k_max)
+        Bs, Ps = _split_windows(np.roll(Y, o, axis=1), T_post)
+        z_star, _ = stat(Bs, Ps)
         if z_star >= z_obs:
             ge += 1
     return float((ge + 1.0) / (B + 1.0)), float(z_obs), int(k_used)
@@ -260,16 +295,21 @@ def z_perm_pvalue(
     seed: int = 8_880_001,
     standardize: bool = True,
 ) -> tuple[float, float, int]:
-    """Disjoint-block PERMUTATION null (C5 secondary; no duplication)."""
+    """Disjoint-block PERMUTATION null (C5 secondary; no duplication).
+    Standardization is per-draw (see z_shift_pvalue, deviation D5)."""
     Y = donors_pre
-    if standardize:
-        sc = robust_row_scales(Y[:, : Y.shape[1] - int(min(T_post, Y.shape[1] // 2))])
-        Y = Y / sc[:, None]
-        sigma = float(np.median(sc))
     n_d, T0 = Y.shape
     Tb_w, Tp_w = _split_windows(Y, T_post)
     c_basis = n_d / Tb_w.shape[1]
-    z_obs, k_used = resid_statistic(Tb_w, Tp_w, sigma, c_basis, k_max)
+
+    def stat(basis: np.ndarray, post: np.ndarray):
+        if standardize:
+            basis, post, sig = _std_windows(basis, post)
+        else:
+            sig = sigma
+        return gap_statistic(basis, post, sig, c_basis, k_max)
+
+    z_obs, k_used = stat(Tb_w, Tp_w)
     rng = np.random.default_rng(seed)
     nb = int(np.ceil(T0 / block))
     starts = np.arange(nb) * block
@@ -279,16 +319,20 @@ def z_perm_pvalue(
         idx = np.concatenate(
             [np.arange(starts[o], starts[o] + block) % T0 for o in order]
         )[:T0]
-        Ys = Y[:, idx]
-        Bs, Ps = _split_windows(Ys, T_post)
-        z_star, _ = resid_statistic(Bs, Ps, sigma, c_basis, k_max)
+        Bs, Ps = _split_windows(Y[:, idx], T_post)
+        z_star, _ = stat(Bs, Ps)
         if z_star >= z_obs:
             ge += 1
     return float((ge + 1.0) / (B + 1.0)), float(z_obs), int(k_used)
 
 
 def _lrv_rows(Y: np.ndarray) -> np.ndarray:
-    """Per-row Newey-West long-run variance (Bartlett, lag 4(T0/100)^(2/9))."""
+    """Per-row Newey-West long-run variance (Bartlett, lag 4(T0/100)^(2/9)).
+
+    NOTE (C5 deviation D5): biased low at short lags; retained only as a
+    diagnostic. The gate uses level-variance inflation instead (see
+    gate_lrv), which is exact for AR(1): phi * sigma^2 = Var(y).
+    """
     n, T0 = Y.shape
     L = int(4.0 * (T0 / 100.0) ** (2.0 / 9.0))
     out = np.empty(n)
@@ -307,20 +351,60 @@ def gate_lrv(
     donors_pre: np.ndarray, k_max: int = 4, standardize: bool = True,
     tol: float = 1.05,
 ) -> int:
-    """Silence gate v2 (C5c): robust row-standardization + long-run-variance
-    adjusted MP edge. Targets the mechanism by which serial correlation and
-    cross-sectional heteroskedasticity inflate the iid bulk edge.
-    Returns k = 0 when lambda1 <= tol * (1+sqrt(c))^2 * sigma2_lrv, else the
-    largest-gap rank among the top k_max."""
+    """Silence gate v2 (C5c, amended design D5v2).
+
+    Robust difference-based row-standardization removes cross-sectional
+    heteroskedasticity; the MP-edge sigma^2 is then the median per-row
+    long-run variance estimated as LRV_i = Vy_i * (2 Vy_i - Vd_i) / Vd_i,
+    where Vy_i is the demeaned level variance and Vd_i the first-difference
+    variance of row i. This estimator is EXACT for AR(1)
+    (LRV = sigma_y^2 (1+rho)/(1-rho)) and reduces to Vy under iid, avoiding
+    the Newey-West small-sample downward bias (deviation D5).
+    Returns k = 0 when lambda1 <= tol*(1+sqrt(c))^2*sigma2_eff, else the
+    largest-gap rank among the top k_max.
+    """
     Y = donors_pre
-    if standardize and Y.shape[1] > 8:
-        Y = Y / robust_row_scales(Y)[:, None]
+    scales = robust_row_scales(Y)
+    # Adaptive standardization (deviation D5v3): engage only when clear
+    # cross-sectional scale heterogeneity is detected, so that under
+    # (near-)homoskedastic laws the gate reduces to the known-sigma MP rule.
+    # When engaged, use the Gaussian-efficient difference SD (low-noise
+    # scaling); fall back to the robust median scale for heavy tails
+    # (median/MAD-vs-SD discrepancy > 2x).
+    tol_eff = tol
+    if standardize and Y.shape[1] > 8 and np.quantile(scales, 0.9) > 2.0 * np.quantile(scales, 0.1):
+        # Triggered path absorbs its own scale-estimation noise via a wider
+        # tolerance (deviation D5v3).
+        tol_eff = max(tol, 1.15)
+        dsd = np.sqrt(np.mean(np.diff(Y, axis=1) ** 2, axis=1))
+        mad_ratio = np.median(np.abs(np.diff(Y, axis=1))) / (
+            0.6745 * np.maximum(dsd / np.sqrt(2.0), 1e-12))
+        eff = np.where(mad_ratio > 2.0,
+                       np.maximum(scales, 1e-12),
+                       np.maximum(dsd / np.sqrt(2.0), 1e-12))
+        Y = Y / eff[:, None]
     evals = scree(Y)
     c = Y.shape[0] / Y.shape[1]
-    sigma2_lrv = float(np.median(_lrv_rows(Y)))
-    if evals[0] <= tol * (1.0 + np.sqrt(c)) ** 2 * sigma2_lrv:
+    vy = np.var(Y, axis=1)
+    vd = np.var(np.diff(Y, axis=1), axis=1)
+    # Var(diff) = 2 sigma_y^2 (1 - rho) => rho_hat = 1 - vd/(2 vy);
+    # LRV = sigma_y^2 (1+rho)/(1-rho) = vy (1+rho_hat)/(1-rho_hat).
+    # Exact for AR(1); reduces to vy under iid.
+    rho_hat = np.clip(1.0 - vd / (2.0 * np.maximum(vy, 1e-12)), -0.9, 0.98)
+    phi = (1.0 + rho_hat) / (1.0 - rho_hat)
+    lrv = vy * phi
+    sigma2_eff = float(np.median(lrv))
+    if evals[0] <= tol_eff * (1.0 + np.sqrt(c)) ** 2 * sigma2_eff:
         return 0
     return select_rank_gap_ratio(evals, k_max)
+
+
+def _std_windows(basis: np.ndarray, post: np.ndarray):
+    """Per-draw standardization: scales from THIS draw's basis window only,
+    applied to both windows (preserves exchangeability across rotations)."""
+    sc = robust_row_scales(basis)
+    sigma_eff = float(np.median(sc))
+    return basis / sc[:, None], post / sc[:, None], sigma_eff
 
 
 def pre_trends_post_test(

@@ -103,6 +103,7 @@ def main() -> None:
     pc = ROOT / "results_raw" / "c5c" / "c5c_diagv2.csv"
     if pc.exists():
         dc = pd.read_csv(pc)
+        dc["state"] = dc["state"].fillna("null")  # None -> empty field
         dc["rej_shift"] = dc.z_shift_p < 0.05
         dc["rej_perm"] = dc.z_perm_p < 0.05
         dc["rej_ztw"] = dc.z_tw_p < 0.05
