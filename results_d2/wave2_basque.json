@@ -1,0 +1,125 @@
+{
+  "treated_label": "RECOVERABLE",
+  "treated_d": 5.8328797487267225,
+  "treated_boot_donor": {
+    "q05": 4.461530732901328,
+    "q50": 5.70178706829822,
+    "q95": 7.533903864750211,
+    "share_k0": 0.0
+  },
+  "treated_p_align": 0.0004997501249375312,
+  "treated_pre_rmse": 1.4634165995920854,
+  "placebo_rmse_q75": 1.0062152445758372,
+  "nf": {
+    "N1_fragile_treated": false,
+    "N2_certified_safe": false,
+    "N3_certification_asymmetry": false,
+    "NF": false,
+    "P2_treated_separation": true,
+    "P2_q90_placebo_d": 5.765851707702042,
+    "n_comparable_placebos": 1,
+    "P1_fit_ordering": {
+      "rho": -0.23823529411764705,
+      "perm_p": 0.187,
+      "threshold": -0.45,
+      "pass": false
+    },
+    "P3_date_alarms_pass": true,
+    "stability_pass": false,
+    "W1_PASS": false
+  },
+  "treated": {
+    "c": 1.1428571428571428,
+    "sigma2_0": 1.2948427942100945e-05,
+    "sigma2_1": 0.0033817549207395994,
+    "k": 1,
+    "s_hat": [
+      6.235610742282136
+    ],
+    "m_hat": [
+      5.8328797487267225
+    ],
+    "edge": 0.014477113846981684,
+    "d": 5.8328797487267225,
+    "e_obs": 0.983321458872773,
+    "p_align": 0.0004997501249375312,
+    "r_align": 26.35423547543875,
+    "evals_top12": [
+      8.561746988035761,
+      0.03581680774688967,
+      0.009593669785037678,
+      0.003129192028739892,
+      0.0011842739681934026,
+      0.0006659439088076421,
+      0.0003094454665206653,
+      1.417925320460374e-05,
+      6.486451642591799e-06,
+      5.058776034703303e-06,
+      8.616516831732243e-07,
+      2.881072987016557e-07
+    ],
+    "boot_donor": {
+      "q05": 4.461530732901328,
+      "q50": 5.70178706829822,
+      "q95": 7.533903864750211,
+      "share_k0": 0.0
+    },
+    "boot_time": {
+      "q05": 0.0,
+      "q50": 5.737573318676937,
+      "q95": 11.816753875582355
+    },
+    "label": "RECOVERABLE",
+    "diff_space": {
+      "k": 1,
+      "d": 0.0,
+      "p_align": 0.02848575712143928,
+      "sigma2_1": 0.0016388533245977794
+    },
+    "sensitivity": {
+      "primary_full": {
+        "k": 1,
+        "d": 5.8328797487267225,
+        "label": "RECOVERABLE"
+      },
+      "gate_lrv_full": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      },
+      "primary_trimmed": {
+        "k": 1,
+        "d": 0.0,
+        "label": "INCONCLUSIVE-SUBEDGE"
+      },
+      "gate_lrv_trimmed": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      }
+    },
+    "stability_agree": 1,
+    "stability_pass": false,
+    "cv_rank_k": 4,
+    "ungated_k": 1,
+    "date_alarms": [
+      {
+        "cutoff_index": 8,
+        "p": 0.3383084577114428,
+        "alarm": false
+      },
+      {
+        "cutoff_index": 10,
+        "p": 0.373134328358209,
+        "alarm": false
+      }
+    ],
+    "alarm_rate": 0.0,
+    "P3_pass": true,
+    "posttest_control": {
+      "z": 1151.3044889948176,
+      "p": 0.0033222591362126247,
+      "k": 1
+    }
+  }
+}

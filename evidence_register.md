@@ -109,6 +109,18 @@
 
 Pending anchors (E1, harmless until Phase E relies on them): Abadie (2021), JEL survey; Onatski-Moreira-Hallin (2013, Ann. Statist.).
 
+
+## E. Application data sources (WP-D1, verified 2026-08-26)
+
+| ID | Source | Anchor / access | Level |
+|---|---|---|---|
+| D01 | ADH (2015) replication archive, updated erratum (Harvard Dataverse doi:10.7910/DVN/24714): `repgermany_updated.tab` + codebook + `rep_updated.r`; erratum README confirms outcome = PPP current USD and corrects only descriptive OECD columns | Files 13454770/13578067/13578064/13595688 pulled via Dataverse API; sha256 in data/raw/SHA256SUMS; author spec extracted verbatim from script | E3 |
+| D02 | synthdid reference implementation (github.com/synth-inference/synthdid @ master): outcome extract `data/california_prop99.csv`, construction script, estimator semantics (`R/synthdid.R`, `R/solver.R`: fw.step, sc.weight.fw, sparsify_function, collapsed.form; estimate closed form), arXiv:1812.09970v4 Table 1 anchors SC -19.6 / SDID -15.6 / DID -27.3 | Raw files + paper full text inspected 2026-08-26 | E3 |
+| D03 | ADH (2010), JASA 105(2) full text (Wayback copy of web.stanford.edu/~jhain/Paper/JASA2010.pdf): abstract (-26 packs by 2000), Table 1 predictor means, Table 2 weights (.164/.069/.199/.234/.334), pre-MSPE ~3, median donor MSPE ~6, NH worst-fit MSPE 3437, post/pre ratio ~130, avg effect "almost 20 packs" (~25%) | Full text read with pdftotext layout extraction; quoted statements logged in scripts/wp_d1_reproduce.py ANCHORS | E3 |
+| D04 | Smoking covariate mirror (python-causality-handbook `smoking.csv`): validated against D02 extract bit-wise on outcomes and against D03 Table 1 treated-row means to <=0.01 on six of seven rows (age15to24 documented nuance 17.353 vs 17.40) | Cross-validation enforced at load time (loaders.load_smoking) | E2 |
+| D05 | ADH (2015), AJPS 59(2) full text (Wayback copy of AJPS2015a.pdf): Tables 1-2 (weights .42/.22/.16/.11/.09; V .442/.245/.134/.107/.072/.001), Figure 3 gap path, effect statements -1600 USD/yr avg (~8% of 1990 level), synthetic +12% vs actual in 2003 | Full text inspected 2026-08-26 | E3 |
+| D06 | Abadie-Gardeazabal (2003) Basque panel: R `Synth` package dataset (CRAN mirror github.com/cran/Synth data/basque.rda -> basque_synth_ag2003.csv, sha256 c785208f..., pinned); 18 regions x 43 years (1955-1997), national aggregate excluded from donor pool as in published analyses; structural validation at load time (loaders.load_basque) | Community mirror of authors' released extract; provenance flagged E2 - if a primary AG2003 replication archive surfaces, it supersedes and triggers re-validation | E2 |
+
 ## D. Watch items
 
 1. W-1: S08 (Mehrotra et al.) full-text guarantee deep-read due at Phase B entry. [CLOSED 2026-08-24, Phase B kickoff: full text read, E3; no impossibility/lower-bound statement implying a per-row spikiness threshold; G1 not reopened. See S08 entry.]

@@ -51,6 +51,27 @@ c5_addendum:
   c5c_diagv2: "17000+j per state-law cell, j = 0..299"
   c5d_break_formal: "18000+j per delta cell, j = 0..399"
 
+phase_d:
+  wp_d1:
+    v_multistart_seed: 60001      # classic-SCM V multistart (uniform + one-hots
+                                  # + Dirichlet draws), preprocessing_frozen.md S4.1
+  wp_d2:
+    alignment_null_seed: 60101    # G=2000 pure-noise treated rows; per panel/placebo
+                                  # offset base + index*10^6 (preregistration_d2_addendum S11)
+    donor_bootstrap_seed: 60102   # B=500 donor resamples, same offset rule
+    time_bootstrap_seed: 60103    # B=200 circular moving-block (block 4), same offset rule
+    spearman_permutation_seed: 60104  # 999-rep permutation p for P1
+    z_shift_placebo_seed: 8880001     # shipped C5c instrument default seed
+    posttest_null_pool_seed: 7770001  # simulated iid finite-n null (C5d convention)
+    placebo_v_seed: 60001             # identical V-search seed for every placebo fit
+  wp_d2_wave2:
+    baseline: "Wave-1 instrument offsets 60101/60102/60103 + idx*10^6;
+               Basque treated idx=0, its placebos idx=1..17
+               (preregistration_d2b_addendum.md)"
+    degradation_subsets: "61301 + 100*size_rank + j, j = 0..19 per size"
+    degradation_align_pools: "60101 + (300 + rank*20 + j)*10^6"
+    z_shift_posttest_seeds: "8880001 / 7770001 (unchanged C5 conventions)"
+
 phase_b:
   smoke_run:
     script: code/run_smoke.py

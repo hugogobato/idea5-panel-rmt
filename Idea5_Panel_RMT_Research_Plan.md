@@ -4,7 +4,7 @@
 
 **Derived from:** `Random_Matrix_Research_Ideas.md`, Idea 5 (2026-08-23).
 
-**Current classification:** Promising but unproven. Prior-art novelty verified at the abstract/search level (E2-E3); all empirical scores UNTESTED until Gate G3/G4.
+**Current classification:** Promising but unproven at planning date; as of 2026-08-26 the mechanism is simulation-validated (Gate G3 GO under restricted claims) and the applied lens is demoted to certification status (Gate G4: preregistered novel-finding arms failed on both canonical panels; see `gate_g4_memo.md`).
 
 **Date:** 2026-08-23
 
@@ -156,7 +156,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ## 7. Phase-by-phase execution program
 
-### Phase A: Validity and novelty preflight (Gates G0 + G1)  [ACTIVE]
+### Phase A: Validity and novelty preflight (Gates G0 + G1)  [CLOSED 2026-08-24: G0 CONDITIONAL PASS, witnesses produced; G1 GO after deep-reads]
 
 **Purpose.** Prove the idea is worth two weeks before touching grids: produce the two mathematical witnesses, verify no direct hit hides in adjacent vocabulary, and pin the exact model assumptions.
 
@@ -221,7 +221,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase B: Minimum enabling formalization + prototype correctness ladder (Gate G2)  [ACTIVE after Phase A]
+### Phase B: Minimum enabling formalization + prototype correctness ladder (Gate G2)  [CLOSED 2026-08-24: G2 PASS]
 
 **Purpose.** Build the smallest honest end-to-end pipeline and the *heuristic* threshold formula (tagged conjecture). No proofs in this phase beyond what makes the code meaningful.
 
@@ -278,7 +278,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase C: Simulation-first falsification (Gate G3)  [DORMANT UNTIL GATE B]
+### Phase C: Simulation-first falsification (Gate G3)  [CLOSED 2026-08-25: G3 GO under restricted claim set, after PIVOT executed and C.5 repair-and-confirm package; see gate_g3_memo.md Sections 5-7]
 
 **Purpose.** Decide whether the phase-transition mechanism is real, sharp, and exploitable, and whether the diagnostics calibrate. This is the decisive gate of the whole project.
 
@@ -337,7 +337,13 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase D: Applied study (Gate G4)  [DORMANT UNTIL GATE C]
+### Phase D: Applied study (Gate G4)  [CLOSED 2026-08-26: WP-D1 PASS (21/21 gates, preprocessing_frozen.md); WP-D2 executed under preregistration_d2_addendum.md — preregistered novel-finding arms FAILED, C5 demoted to certification case study, no KILL trigger; see gate_g4_memo.md]
+
+#### WP-D1 outcome
+- Status: COMPLETE - PASS. Trusted benchmarks reproduced to reporting precision on both panels; freeze doc Section 6 records 21/21 gates.
+
+#### WP-D2 outcome
+- Status: COMPLETE - preregistered NF arms failed (N1/N2/N3 all false); P1 passed only on smoking (rho = -0.53); P2/P3/stability failed; identification controls PASSED. Disposition per gate_g4_memo.md Section 5.
 
 **Purpose.** Show the frontier lens reveals something incumbents cannot see on real panels.
 
@@ -367,7 +373,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase E: Evidence-earned theory + paper consolidation (Gates G5 + G6)  [DORMANT UNTIL GATE D]
+### Phase E: Evidence-earned theory + paper consolidation (Gates G5 + G6)  [GATE OPEN 2026-08-26 under restricted claim set: T1-T3 proceed; C5 ships as certification case study only]
 
 **Purpose.** Formalize only what surviving evidence makes load-bearing, then assemble the paper.
 

@@ -1,0 +1,82 @@
+{
+  "identification_control_pass": true,
+  "applied_value_pass_any_panel": false,
+  "verdict_full_pass": false,
+  "panels": {
+    "smoking_prop99": {
+      "treated_label": "RECOVERABLE",
+      "treated_d": 2856.457614133133,
+      "treated_boot_donor": {
+        "q05": 1864.5785660083877,
+        "q50": 2918.5225939438515,
+        "q95": 4490.2792679619415,
+        "share_k0": 0.0
+      },
+      "nf": {
+        "N1_fragile_treated": false,
+        "N2_certified_safe": false,
+        "N3_certification_asymmetry": false,
+        "NF": false,
+        "P2_treated_separation": false,
+        "P2_q90_placebo_d": 2893.112961293162,
+        "n_comparable_placebos": 8,
+        "P1_fit_ordering": {
+          "rho": -0.531458584090163,
+          "perm_p": 0.001,
+          "threshold": -0.3,
+          "pass": true
+        },
+        "P3_date_alarms_pass": true,
+        "stability_pass": false,
+        "placebo_label_counts": {
+          "FRAGILE-MISALIGNED": 1,
+          "RECOVERABLE": 37
+        }
+      },
+      "incumbents": {
+        "scm_classic_pre_rmse": 1.754043976008878,
+        "mc_nn_att": -18.498431993891447,
+        "spectral_gated_att": -29.60710602367072
+      },
+      "treated_pre_rmse": 1.754043976008878,
+      "placebo_rmse_q75": 3.9991074663976773
+    },
+    "german_reunification": {
+      "treated_label": "RECOVERABLE",
+      "treated_d": 475524923.9195271,
+      "treated_boot_donor": {
+        "q05": 406194098.2811982,
+        "q50": 480434446.0450796,
+        "q95": 554213623.4399734,
+        "share_k0": 0.0
+      },
+      "nf": {
+        "N1_fragile_treated": false,
+        "N2_certified_safe": false,
+        "N3_certification_asymmetry": false,
+        "NF": false,
+        "P2_treated_separation": false,
+        "P2_q90_placebo_d": 475638816.2910849,
+        "n_comparable_placebos": 0,
+        "P1_fit_ordering": {
+          "rho": 0.26176470588235295,
+          "perm_p": 0.815,
+          "threshold": -0.42,
+          "pass": false
+        },
+        "P3_date_alarms_pass": false,
+        "stability_pass": false,
+        "placebo_label_counts": {
+          "RECOVERABLE": 16
+        }
+      },
+      "incumbents": {
+        "scm_classic_pre_rmse_pct_lvl": 1.4805364970775057,
+        "mc_nn_att": 2292.9111051448676,
+        "spectral_gated_att": -1580.2934819926973
+      },
+      "treated_pre_rmse": 1.4805364970775057,
+      "placebo_rmse_q75": 11.111610069123865
+    }
+  }
+}
