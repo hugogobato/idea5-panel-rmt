@@ -64,8 +64,8 @@
   "size": [
    {
     "law": "ar1_r03",
-    "rej_shift": 0.06,
-    "rej_perm": 0.07,
+    "rej_shift": 0.07,
+    "rej_perm": 0.073,
     "rej_ztw": 0.997,
     "rej_t": 0.137,
     "gate_lrv_k": 0.0,
@@ -73,8 +73,8 @@
    },
    {
     "law": "ar1_r07",
-    "rej_shift": 0.077,
-    "rej_perm": 0.107,
+    "rej_shift": 0.06,
+    "rej_perm": 0.083,
     "rej_ztw": 1.0,
     "rej_t": 0.417,
     "gate_lrv_k": 0.0,
@@ -82,20 +82,20 @@
    },
    {
     "law": "gaussian",
-    "rej_shift": 0.133,
-    "rej_perm": 0.153,
+    "rej_shift": 0.05,
+    "rej_perm": 0.06,
     "rej_ztw": 0.053,
     "rej_t": 0.053,
-    "gate_lrv_k": 0.943,
+    "gate_lrv_k": 0.06,
     "gate_mp_k": 0.003
    },
    {
     "law": "het",
-    "rej_shift": 0.137,
-    "rej_perm": 0.14,
+    "rej_shift": 0.05,
+    "rej_perm": 0.06,
     "rej_ztw": 1.0,
     "rej_t": 0.053,
-    "gate_lrv_k": 0.943,
+    "gate_lrv_k": 0.0,
     "gate_mp_k": 1.993
    }
   ],
@@ -103,73 +103,73 @@
    {
     "state": "break_d1",
     "law": "ar1_r03",
-    "rej_shift": 0.063,
-    "rej_perm": 0.08
+    "rej_shift": 0.033,
+    "rej_perm": 0.053
    },
    {
     "state": "break_d1",
     "law": "ar1_r07",
-    "rej_shift": 0.07,
-    "rej_perm": 0.097
+    "rej_shift": 0.06,
+    "rej_perm": 0.073
    },
    {
     "state": "break_d1",
     "law": "gaussian",
-    "rej_shift": 0.097,
-    "rej_perm": 0.13
+    "rej_shift": 0.03,
+    "rej_perm": 0.027
    },
    {
     "state": "break_d1",
     "law": "het",
-    "rej_shift": 0.073,
-    "rej_perm": 0.083
+    "rej_shift": 0.037,
+    "rej_perm": 0.027
    },
    {
     "state": "break_d2",
     "law": "ar1_r03",
-    "rej_shift": 0.063,
-    "rej_perm": 0.08
+    "rej_shift": 0.033,
+    "rej_perm": 0.053
    },
    {
     "state": "break_d2",
     "law": "ar1_r07",
-    "rej_shift": 0.07,
-    "rej_perm": 0.097
+    "rej_shift": 0.06,
+    "rej_perm": 0.073
    },
    {
     "state": "break_d2",
     "law": "gaussian",
-    "rej_shift": 0.097,
-    "rej_perm": 0.13
+    "rej_shift": 0.03,
+    "rej_perm": 0.027
    },
    {
     "state": "break_d2",
     "law": "het",
-    "rej_shift": 0.073,
-    "rej_perm": 0.083
+    "rej_shift": 0.037,
+    "rej_perm": 0.027
    }
   ],
   "spiked_no_break": [
    {
     "law": "ar1_r03",
-    "rej_shift": 0.063
+    "rej_shift": 0.033
    },
    {
     "law": "ar1_r07",
-    "rej_shift": 0.07
+    "rej_shift": 0.06
    },
    {
     "law": "gaussian",
-    "rej_shift": 0.097
+    "rej_shift": 0.03
    },
    {
     "law": "het",
-    "rej_shift": 0.073
+    "rej_shift": 0.037
    }
   ],
   "criterion": {
-   "size_window": false,
-   "gate_lrv": false,
+   "size_window": true,
+   "gate_lrv": true,
    "detection_delta2": false
   },
   "pass_": false
