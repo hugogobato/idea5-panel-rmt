@@ -1,0 +1,76 @@
+{
+  "panel": "bonander_florida_syg",
+  "treat_time": 82,
+  "T0": 81,
+  "n_d": 15,
+  "treated": {
+    "label": "RECOVERABLE",
+    "d": 23.55958732345833,
+    "boot_donor": {
+      "q05": 15.877353744794208,
+      "q50": 43.12933394633012,
+      "q95": 126.53609937224957,
+      "share_k0": 0.0
+    },
+    "p_align": 0.00399800099950025,
+    "rmse": 0.04836732042372569,
+    "q75_placebo_rmse": 0.22544613785440365
+  },
+  "nf": {
+    "N1_fragile_treated": false,
+    "N2_certified_safe": false,
+    "N3_certification_asymmetry": true,
+    "NF": true,
+    "P2_treated_separation": false,
+    "P2_q90_placebo_d": 30.3265676291567,
+    "n_comparable_placebos": 1,
+    "P1_fit_ordering": {
+      "rho": 0.5285714285714286,
+      "perm_p": 0.978,
+      "threshold": -0.3,
+      "pass": false
+    },
+    "P3_date_alarms_pass": true,
+    "stability_pass": false,
+    "placebo_label_counts": {
+      "FRAGILE-MISALIGNED": 15
+    }
+  },
+  "identification_control_pass": true,
+  "applied_value_pass": false,
+  "verdict_full_pass": false,
+  "secondaries": {
+    "p100khomicide_firearm": {
+      "k": 3,
+      "d": 35.36268549308122,
+      "p_align": 0.2888555722138931,
+      "r_align": 1.5612350633165286,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 0.021744252346244688
+    },
+    "p100khomicide_exclfirearm": {
+      "k": 1,
+      "d": 30.562830186027842,
+      "p_align": 0.48875562218890556,
+      "r_align": 1.0745809473923351,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 0.1380253653365366
+    },
+    "Firearm.Suicide.Rates": {
+      "k": 1,
+      "d": 21.115697682959322,
+      "p_align": 0.888055972013993,
+      "r_align": 0.04689134030583549,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 0.047670008172312206
+    },
+    "Homicide_count": {
+      "k": 2,
+      "d": 17.78972190699407,
+      "p_align": 0.0004997501249375312,
+      "r_align": 9.916928720232436,
+      "label": "RECOVERABLE",
+      "sigma2_1": 16.643501900571696
+    }
+  }
+}

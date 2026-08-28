@@ -72,6 +72,16 @@ phase_d:
     degradation_align_pools: "60101 + (300 + rank*20 + j)*10^6"
     z_shift_posttest_seeds: "8880001 / 7770001 (unchanged C5 conventions)"
 
+phase_e:
+  wp_bonander:
+    alignment_null_seed: 70001  # G=2000 pure-noise rows; per placebo offset base+idx*1e6 (prereg_bonander S8)
+    donor_bootstrap_seed: 70002  # B=500 donor resamples, same offset
+    time_bootstrap_seed: 70003   # B=200 circular block4, same offset
+    spearman_permutation_seed: 70004
+    z_shift_placebo_seed: 8880001
+    posttest_null_pool_seed: 7770001
+    placebo_v_seed: 60001
+
 phase_b:
   smoke_run:
     script: code/run_smoke.py

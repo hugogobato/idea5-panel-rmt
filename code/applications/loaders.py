@@ -270,9 +270,66 @@ def germany_raw() -> pd.DataFrame:
     return df
 
 
+BONANDER_TREATED = "Florida"
+BONANDER_TREAT_TIME = 82          # Oct 2005, 1-indexed months since 1999-01
+BONANDER_T0 = 81
+BONANDER_DONORS = (
+    "Arkansas", "Connecticut", "Delaware", "Hawaii", "Iowa", "Maine",
+    "Maryland", "Massachusetts", "Nebraska", "New Jersey", "New York",
+    "North Dakota", "Ohio", "Rhode Island", "Wyoming",
+)
+BONANDER_OUTCOMES = (
+    "HomicideRates", "p100khomicide_firearm", "p100khomicide_exclfirearm",
+    "Firearm.Suicide.Rates", "Homicide_count",
+)
+
 BASQUE_TREATED = "Basque Country (Pais Vasco)"
 BASQUE_TREAT_YEAR = 1975
 BASQUE_NATIONAL_AGGREGATE = "Spain (Espana)"
+
+
+def load_bonander(csv_path: str | None = None, outcome: str = "HomicideRates") -> Panel:
+    """Load the Bonander et al. (2021 AJE) Florida SYG panel (Phase E).
+
+    Source: OSF `rvayc-osfstorage-archive.zip` → `syg_data.csv`
+    `sha256 7f8bd93b6add9e5e1b29d3ae738d30e90c17a2e1c867ebdee3c411f0341095b9`
+    pinned in `data/raw/bonander/syg_data.csv` (E2, CC-BY). The file is
+    16 states × 192 months (1999-01:2014-12, `time 1:192`). The panel
+    returned is the *primary* outcome `HomicideRates` unless another
+    registered outcome is requested; all registered outcomes share the
+    same unit/time grid.
+    """
+    import os
+
+    if outcome not in BONANDER_OUTCOMES:
+        raise ValueError(f"unknown bonander outcome {outcome!r}")
+    raw = _raw_dir()
+    csv_path = csv_path or os.path.join(raw, "bonander", "syg_data.csv")
+    df = pd.read_csv(csv_path)
+    if df.shape[0] != 3072:
+        raise ValueError(f"bonander row mismatch: {df.shape}")
+    for col in ("State", "time", outcome):
+        if col not in df.columns:
+            raise ValueError(f"bonander missing column {col}")
+    # 16-state analytic sample (paper) — order alphabetically, Florida treated
+    states = sorted(df["State"].unique().tolist())
+    if len(states) != 16 or BONANDER_TREATED not in states:
+        raise ValueError(f"bonander state set mismatch: {states}")
+    # time 1..192, pre 1:81 (1999-01:2005-09), post 82:192
+    piv = df.pivot(index="State", columns="time", values=outcome).reindex(states)
+    if piv.shape != (16, 192):
+        raise ValueError(f"bonander pivot mismatch: {piv.shape}")
+    if piv.isna().any().any():
+        raise ValueError("bonander NA in pivot")
+    Y = piv.to_numpy(float)
+    years = piv.columns.to_numpy(int)  # time, not calendar year
+    return Panel(
+        name=f"bonander_{outcome}", units=states, years=years, Y=Y,
+        treated_idx=states.index(BONANDER_TREATED),
+        treat_year=int(BONANDER_TREAT_TIME),  # time index, not year
+        meta={"outcome": outcome, "T0": BONANDER_T0, "treat_time": BONANDER_TREAT_TIME,
+              "donors": list(BONANDER_DONORS), "provenance": "OSF rvayc E2 CC-BY"},
+    )
 
 
 def load_basque(csv_path: str | None = None) -> Panel:

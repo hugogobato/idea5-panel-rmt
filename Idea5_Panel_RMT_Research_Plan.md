@@ -4,7 +4,7 @@
 
 **Derived from:** `Random_Matrix_Research_Ideas.md`, Idea 5 (2026-08-23).
 
-**Current classification:** Promising but unproven at planning date; as of 2026-08-26 the mechanism is simulation-validated (Gate G3 GO under restricted claims) and the applied lens is demoted to certification status (Gate G4: preregistered novel-finding arms failed on both canonical panels; see `gate_g4_memo.md`).
+**Current classification:** Promising but unproven at planning date; as of 2026-08-26 the mechanism is simulation-validated (Gate G3 GO under restricted claims) and the applied lens is demoted to certification status (Gate G4: preregistered NF failed on both canonical panels; see `gate_g4_memo.md`). As of 2026-08-28 Bonander Florida SYG (Phase E first applied run) is primary RECOVERABLE with N3 asymmetry but P2/P1/stability fail (`gate_gBon_memo.md`); still certification-only, no `FRAGILE` treated found.
 
 **Date:** 2026-08-23
 
@@ -374,6 +374,9 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 ---
 
 ### Phase E: Evidence-earned theory + paper consolidation (Gates G5 + G6)  [GATE OPEN 2026-08-26 under restricted claim set: T1-T3 proceed; C5 ships as certification case study only]
+
+#### WP-E0: Bonander Florida SYG (2026-08-28, `preregistration_bonander_addendum.md` frozen)
+- Status: COMPLETE — primary `HomicideRates` RECOVERABLE `k2 d23.6 q05 15.9 p0.004`, all 15 placebos FRAGILE-MISALIGNED (first `p`-separation), but `N1` false, `P2`/`P1`/stability fail → certification-with-asymmetry, still `INCREMENTAL-ONLY` (`gate_gBon_memo.md` §5).
 
 **Purpose.** Formalize only what surviving evidence makes load-bearing, then assemble the paper.
 
