@@ -78,7 +78,9 @@ def spectrum_pipeline(evals: np.ndarray, n_d: int, T0: int) -> dict:
     else:
         sigma2_1 = sigma2_0
     k = int(gated_rank(evals, math.sqrt(sigma2_1), c, K_MAX))
-    s_hat = invert_bbp(evals[: max(k, 1)], c)[:k] if k > 0 else np.array([])
+    # BBP law is on sigma^2=1 scale: invert lam/sigma^2
+    lam_scaled = evals[: max(k, 1)] / max(sigma2_1, floor)
+    s_hat = invert_bbp(lam_scaled, c)[:k] if k > 0 else np.array([])
     m_hat = s_hat / math.sqrt(c) if k > 0 else np.array([])
     valid = m_hat[np.isfinite(m_hat)] if k > 0 else np.array([])
     d = float(valid.max()) if valid.size else 0.0
@@ -155,7 +157,10 @@ def analyze_space(
         if selector != "primary":
             k_alt = _select_rank(selector, ev, mat)
             sp["k"] = k_alt
-            sh = invert_bbp(ev[:max(k_alt, 1)], sp["c"])[:k_alt] \
+            # scale by bulk variance for BBP inversion
+            floor_alt = 1e-8 * max(float(ev[0]), 1e-12) if len(ev) else 1e-12
+            lam_s = ev[:max(k_alt, 1)] / max(sp["sigma2_1"], floor_alt)
+            sh = invert_bbp(lam_s, sp["c"])[:k_alt] \
                 if k_alt > 0 else np.array([])
             mh = sh / math.sqrt(sp["c"]) if k_alt > 0 else np.array([])
             vh = mh[np.isfinite(mh)] if k_alt > 0 else np.array([])
