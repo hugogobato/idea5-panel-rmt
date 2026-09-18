@@ -1,4 +1,4 @@
-"""Data ingestion for WP-D1 (preprocessing_frozen.md Section 3).
+"""Data ingestion for WP-D1 (docs/applied/preprocessing_frozen.md Section 3).
 
 Raw extracts live under data/raw/ and are immutable; every file carries a
 sha256 in data/raw/SHA256SUMS. These loaders implement the frozen cleaning

@@ -1,4 +1,4 @@
-"""WP-D1: trusted-benchmark reproduction driver (preprocessing_frozen.md).
+"""WP-D1: trusted-benchmark reproduction driver (docs/applied/preprocessing_frozen.md).
 
 Runs the canonical published pipelines on the two Phase D panels and
 compares every output against its published anchor:
@@ -37,7 +37,7 @@ sys.path.insert(0, str(ROOT / "code"))
 from applications import loaders as L  # noqa: E402
 from applications import synth_adh as S  # noqa: E402
 
-V_SEED = 60_001  # seeds.yaml phase_d.wp_d1.v_multistart_seed
+V_SEED = 60_001  # config/seeds.yaml phase_d.wp_d1.v_multistart_seed
 
 OUT = ROOT / "results_d1"
 FIG = ROOT / "figures"
@@ -45,7 +45,7 @@ FIG = ROOT / "figures"
 # ---- published anchors and frozen reporting tolerances --------------------
 # Weights are published at 2 decimals -> tolerance +/-0.01 (solver swap:
 # Kernberg ipop vs SLSQP). Effects quoted by the papers to ~0.1-1 unit get
-# proportionate windows; every choice is justified in preprocessing_frozen.md
+# proportionate windows; every choice is justified in docs/applied/preprocessing_frozen.md
 # Section 5. NO tolerance may be widened after seeing a failing number
 # without a documented deviation entry.
 ANCHORS = {

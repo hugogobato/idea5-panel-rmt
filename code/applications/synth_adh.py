@@ -12,7 +12,7 @@ enough to reproduce their reported point estimates to reporting precision:
     a softmax parameterization plus structured starts (uniform, one-hot),
     mirroring Synth's multi-method search without its ipop dependency.
 
-All stochasticity flows through seeds registered in seeds.yaml
+All stochasticity flows through seeds registered in config/seeds.yaml
 (phase_d.wp_d1.v_multistart_seed). Also provides the Arkhangelsky et al.
 (2021) SC and SDID point estimators exactly as defined in arXiv:1812.09970v4
 (Eqs. 2.1-2.4, Algorithm 1), which serve as the second reproduction
@@ -46,7 +46,7 @@ def _simplex_qp(V: np.ndarray, X0s: np.ndarray, X1s: np.ndarray,
     exactly by Lawson-Hanson NNLS on the augmented system that encodes the
     equality constraint with a large penalty row (SLSQP proved unreliable
     on this problem class: it terminates at the initial point reporting
-    success; documented in preprocessing_frozen.md Section 5).
+    success; documented in docs/applied/preprocessing_frozen.md Section 5).
     """
     v = np.asarray(V, float)
     if v.ndim == 2:

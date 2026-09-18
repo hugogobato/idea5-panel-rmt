@@ -1,0 +1,44 @@
+Based on my searches, I can now compile a ranked list of candidate panels for your spectral recoverability frontier analysis. The key insight from your failed attempts is correct: macro-level outcomes with shared stochastic trends (GDP, smoking rates) are supercritical by construction. You need panels where idiosyncratic noise dominates or donor pools are genuinely constrained.
+
+## Ranked Candidate Panels
+
+| Rank | Paper (year, journal) | Treated unit / Treatment | Outcome | n_d × T0 (c) | Archive DOI/URL + license | Why plausibly sub-frontier/misaligned (1-sentence + quoted fit sentence) | Access notes |
+|------|------------------------|--------------------------|---------|--------------|---------------------------|--------------------------------------------------------------------------|--------------|
+| 1 | Bifulco, Rubenstein & Sohn (2017), *Evaluation Review* | Syracuse City School District / Say Yes to Education (2008) | District enrollment rates; graduation rates | ~20–30 × ~15–20 (c ~0.7–1.5) | Data from NCES CCD + NY State Report Cards; replication code not archived but data sources are public (CCD: restricted; NY State: public) | Paper explicitly states: "Graduation rate analyses demonstrate that estimates of treatment effects can be sensitive to choices that the researcher has to make in applying synthetic control methods, particularly when pretreatment outcome measures appear to have considerable amounts of noise." | CCD data requires restricted-use license; NY State report cards are public but require manual scraping; may need to reconstruct panel |
+| 2 | Robbins, Saunders & Kilmer (2017), *JASA* | Roanoke, VA neighborhoods (Hurt Park, Melrose-Rugby) / Drug Market Intervention (2010) | Crime incidents (total, property, violent, drug) at neighborhood level | ~9,600 × ~16 (c ~600) — but microsynth uses aggregated microdata | GitHub: github.com/ssdavenport/microsynth (R package); data not fully archived, but paper uses restricted microdata from Roanoke PD | High-dimensional micro-level data with many untreated units but treated unit is small neighborhood; crime data is noisy and intervention effects are modest; paper emphasizes design effect adjustment | Data requires restricted access; microsynth package has example data but not the Roanoke dataset itself |
+| 3 | Bouttell et al. (2018), *J Epidemiol Community Health* | Glasgow / Smoke-free legislation (2006) | Hospital admissions (CVD, respiratory) | ~10–15 × ~12–24 (c ~0.5–1) | No public archive; data from Scottish Morbidity Record (SMR) — requires NHS Scotland approval | Tutorial paper but notes: "It is essential for the credibility of the method that the donor pool only contains units that are similar to the treated unit" — health outcomes are noisy and donor pools are small | Data not publicly available; would need to contact authors or use alternative UK health data |
+| 4 | Kobierecki & Pierzgalski (2022), *J Sports Econ* | Host countries of sports mega-events (e.g., Poland 2012 Euro) / Event hosting | GDP growth, employment | ~20–30 × ~15–20 (c ~1–2) | Harvard Dataverse: doi:10.7910/DVN/HPDN3I (CC0) | Macro outcome but donor pool is constrained to comparable countries; paper notes sensitivity to donor selection | Fully public; rectangular panel in .dta format; may still be supercritical due to GDP trend |
+| 5 | Bogatyrev & Stoetzer (2026), *Political Analysis* | Various (proportions outcome) | Proportions (e.g., vote shares, policy adoption rates) | ~10–50 × ~10–30 (c ~0.3–3) | Harvard Dataverse: doi:10.7910/DVN/MPUEIC (CC0) | New method paper for proportions; outcome is bounded [0,1] which may reduce spectral signal; no explicit fit caveats but proportions are inherently noisier than levels | Fully public; R code and data available; proportions may be near-frontier |
+| 6 | Bonander & Degli Esposti (2021), *Am J Epidemiol* | Florida / "Stand Your Ground" law (2005) | Homicide rates, firearm injuries | ~30–40 × ~15–20 (c ~1.5–2) | OSF: doi:10.17605/OSF.IO/6UDSQ (CC-BY) | Tutorial paper; uses public health data; homicide rates are noisy and donor pool is US states | Fully public; R code and data on OSF; may be supercritical but health outcomes are noisier than GDP |
+| 7 | Saunders, Robbins & Ober (2017), *Criminology & Public Policy* | Roanoke neighborhoods / Drug Market Intervention | Crime incidents (same as #2 but different paper) | Same as #2 | Same as #2 | Same as #2 | Same as #2 |
+| 8 | Arkhangelsky et al. (2021), *AER* (SDID paper) | Multiple applications (e.g., California Prop 99, Michigan auto bailout) | Various (smoking, employment) | Varies | OpenICPSR: doi:10.3886/E146381V1 (public) | Method paper; includes California smoking (supercritical) but also state-level policy evals with smaller donor pools | Fully public; includes Prop 99 data which you already tested; may have other applications |
+| 9 | Ferman, Pinto & Possebom (2020), *JPAM* ("Cherry Picking") | Multiple (e.g., Connecticut, various states) | Various outcomes | Varies | OpenICPSR: doi:10.3886/E117261V2 (public) | Paper explicitly studies donor selection bias; includes cases with poor pre-fit by construction | Fully public; designed to show sensitivity; may be useful as negative control |
+| 10 | Gunsilius (2023), *JASA* (DiSCo paper) | Firms / Various interventions | Distributional outcomes (quantiles) | ~100–1000 × ~20–50 (c ~2–20) | GitHub: github.com/FlorianGunsilius/disco (MIT) | Distributional SC; outcome is entire quantile function which may have different spectral properties | Code public; data may be simulated or from restricted sources |
+
+## Top-3 Candidates: Fit-for-Pipeline Assessment
+
+**1. Syracuse Say Yes (Bifulco et al. 2017)**: This is your strongest candidate. The paper explicitly documents sensitivity to pretreatment noise, and education outcomes (enrollment, graduation rates) are inherently noisier than macro trends. The donor pool is other NY state school districts (~20–30), and T0 is ~15–20 years of CCD data. You would need to: (a) obtain restricted-use CCD data (or use public aggregate files), (b) scrape NY State report cards for graduation rates, (c) reshape to long format with district-year observations. Treatment timing is clear (2008). The c = n_d/T0 ratio should be ~1–1.5, which is in your informative regime.
+
+**2. Roanoke Crime (Robbins et al. 2017)**: This is micro-level data with ~9,600 untreated micro-units (individual crime incidents or small areas) and T0 ~16 months. However, the data is restricted (Roanoke PD), and the microsynth package uses aggregated data. If you can obtain the data, the panel would be very wide (n_d >> T0), giving c >> 1, which may be supercritical. The key advantage is that crime incidents are highly idiosyncratic and not dominated by a common trend.
+
+**3. Glasgow Health (Bouttell et al. 2018)**: This is a tutorial but uses real Scottish health data. Donor pool is other Scottish cities/regions (~10–15), T0 is ~12–24 months. Health outcomes (hospital admissions) are noisy and the donor pool is small. However, data is not publicly archived and requires NHS Scotland approval. If you can access similar UK health data (e.g., from NHS Digital), this could be a good candidate.
+
+## Negative Controls (Clearly Supercritical)
+
+1. **California Prop 99 (Abadie et al. 2010)**: You already tested this — d ~ 2856, maximally aligned. Use as a sanity check that your pipeline correctly identifies supercritical panels.
+
+2. **German Reunification (ADH 2015)**: Also already tested — d ~ 4.8e8, saturated. Another sanity check.
+
+3. **Kobierecki & Pierzgalski (2022) GDP outcomes**: While not as extreme as Prop 99, GDP growth rates across countries are still dominated by global business cycles. Expect d >> 1 and p_align at floor.
+
+## Staggered-Adoption Candidates
+
+The SDID literature (Arkhangelsky et al. 2021, Clarke & Pailañir 2022) includes staggered applications, but most are state-level policy evals with large donor pools. One candidate:
+
+- **Michigan Auto Bailout (2009)** in Arkhangelsky et al. (2021): State-level employment outcomes, donor pool is other US states (~40), T0 ~10–15 years. May be supercritical but worth checking if the auto industry shock created idiosyncratic dynamics.
+
+## Additional Notes
+
+- **Data availability**: The Syracuse and Roanoke cases require restricted data access. The health outcomes (Bouttell, Bonander) are more accessible but may require data use agreements.
+- **Spectral properties**: Proportions (Bogatyrev & Stoetzer 2026) and distributional outcomes (Gunsilius 2023) may have different spectral signatures than levels — bounded support could reduce spike strength.
+- **Donor-pool thinning**: Your smoking thinning control (n_d 38→3) showed that even drastic reduction doesn't move d much. The Syracuse case has a naturally small donor pool (NY state districts only), which may help.

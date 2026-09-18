@@ -4,7 +4,7 @@
 
 **Derived from:** `Random_Matrix_Research_Ideas.md`, Idea 5 (2026-08-23).
 
-**Current classification:** Restricted methods-paper candidate with simulation-validated mechanism (Gate G3 GO) and `INCREMENTAL-ONLY` applied value. Gate G4 failed on the canonical panels. Bonander added N3 alignment asymmetry but failed P1/P2/stability. On 2026-08-29 CDC bi63 closed as a saturated certification proxy, and preregistered FBI Nebraska RTC produced the first treated `FRAGILE-MISALIGNED` label but failed P2/stability and was panel-wide, scale-dependent, and transport-unstable. See `applied_study_closure_memo.md`. C5 is a diagnostic casebook, not a headline applied discovery.
+**Current classification:** Restricted methods-paper candidate with simulation-validated mechanism (Gate G3 GO) and `INCREMENTAL-ONLY` applied value. Gate G4 failed on the canonical panels. Bonander added N3 alignment asymmetry but failed P1/P2/stability. On 2026-08-29 CDC bi63 closed as a saturated certification proxy, and preregistered FBI Nebraska RTC produced the first treated `FRAGILE-MISALIGNED` label but failed P2/stability and was panel-wide, scale-dependent, and transport-unstable. See `docs/applied/applied_study_closure_memo.md`. C5 is a diagnostic casebook, not a headline applied discovery.
 
 **Date:** 2026-08-23
 
@@ -169,10 +169,10 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 - Why this changes a decision: a nonidentifiable target or vacuous threshold kills the project for the cost of one notebook.
 - Inputs: Section 2 of this plan; dossier Idea 5.
 - Actions:
-  1. Write `model_card.md`: data regime (n0, T0 -> infinity, c = n0/T0 fixed), model Y = L + tau Z + E, L = UVᵀ with r fixed spikes of strengths l_1 >= ... >= l_r > sqrt(c)-scale MP edge, E with variance sigma^2; estimand = treated-row counterfactual in post-periods; assumption ledger including the no-structural-break-in-V assumption and its diagnostic.
+  1. Write `docs/model/model_card.md`: data regime (n0, T0 -> infinity, c = n0/T0 fixed), model Y = L + tau Z + E, L = UVᵀ with r fixed spikes of strengths l_1 >= ... >= l_r > sqrt(c)-scale MP edge, E with variance sigma^2; estimand = treated-row counterfactual in post-periods; assumption ledger including the no-structural-break-in-V assumption and its diagnostic.
   2. Witness 1 (sub-threshold invisibility): generate a panel where the treated unit's loading component along one factor falls below the BBP edge; verify empirically that its estimated coefficient distribution is asymptotically indistinguishable from pure-noise regression.
   3. Witness 2 (visible-but-useless spike): construct a strong spike orthogonal to the treated unit's loading; verify large outlier eigenvalue coexists with zero reduction in counterfactual error.
-- Outputs: `research/idea5/model_card.md`; `research/idea5/code/witness_subthreshold.ipynb`; `witness_misalignment.ipynb`.
+- Outputs: `docs/model/model_card.md`; `notebooks/witness_subthreshold.ipynb`; `notebooks/witness_misalignment.ipynb`.
 - Verification (mechanical): both notebooks run clean top-to-bottom in a fresh kernel.
 - Verification (scientific): Witness 1 shows overlapping coefficient/noise distributions within Monte Carlo bands; Witness 2 shows outlier eigenvalue present while RMSE unchanged vs. spike-free panel within 1 MC sd.
 - Pass rule: both witnesses behave as described.
@@ -191,7 +191,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
   1. Extract from each: exact estimand, assumptions (noise model, missingness, factor scaling), guarantee form (norm/rate/constant), inference offered, limitations admitted.
   2. Fill the evidence-register rows with page/theorem anchors and verification level E3.
   3. Write a half-page memo: does any of them contain (a) a per-unit recoverability threshold, (b) TW-calibrated diagnostics, (c) exact high-dimensional limits? Expected answer: no; record otherwise if found.
-- Outputs: `research/idea5/evidence_register.md` (updated), `priorart_deepread_memo.md`.
+- Outputs: `docs/evidence/evidence_register.md` (updated), `docs/evidence/priorart_deepread_memo.md`.
 - Verification: every row carries an anchor (section/theorem/page).
 - Pass rule: no direct hit on (a)-(c).
 - Fail rule: direct hit found.
@@ -207,7 +207,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
   1. Query families (Google Scholar, RePEc, arXiv full-text): "factor augmented" + "prediction" + "many units"; "principal components" + "panel" + "consistency" (Moon-Weidner line); "spiked covariance" + "missing data"; "denoising" + "spiked"; "synthetic control" + "high dimensional asymptotics"; "pre-treatment fit" + "test".
   2. Verify the dossier's uncited/2026-ID citations (2603.24833, 2605.30319) and the Agarwal-Dahleh-Sarkar 2019 reference; replace or annotate anything unresolved as UNVERIFIED.
   3. Record Moon-Weidner conclusions in the register.
-- Outputs: updated `evidence_register.md`; `novelty_search_log.md` with queries, dates, hit counts.
+- Outputs: updated `docs/evidence/evidence_register.md`; `docs/evidence/novelty_search_log.md` with queries, dates, hit counts.
 - Verification: log contains query strings and counts; no UNVERIFIED entry supports any go decision.
 - Pass/fail: same as A2.
 - Gate consequence: completes G1 decision.
@@ -233,8 +233,8 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 - Actions:
   1. Derive the regression-of-treated-row-on-top-r-right-singular-vectors risk decomposition: bias from truncating spikes below the BBP edge + variance sigma^2 * c-trace terms.
   2. Special cases to satisfy algebraically: r=0; l_j -> infinity (risk -> interpolation floor); u* exactly orthogonal to factor space (risk equals noise floor regardless of spikes).
-  3. Tag the output CONJECTURE. Map each ingredient to its source result (BBP outlier locations; Benaych-Georges-Nadakuditi overlaps; Dobriban-Wager ridge risk) in `theory_targets.md` stub.
-- Outputs: `frontier_ansatz.md` with formula F and the three special-case derivations.
+  3. Tag the output CONJECTURE. Map each ingredient to its source result (BBP outlier locations; Benaych-Georges-Nadakuditi overlaps; Dobriban-Wager ridge risk) in `docs/model/theory_targets.md` stub.
+- Outputs: `docs/model/frontier_ansatz.md` with formula F and the three special-case derivations.
 - Verification: special-case reductions hold symbolically.
 - Pass rule: consistent special cases; formula predicts monotone risk decreasing in spike strength with a kink near the BBP edge.
 - Fail rule: internal contradiction in special cases.
@@ -249,7 +249,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
   2. Estimators: oracle (uses true L), donor-mean (trivial baseline), simplex-constrained SCM (Abadie), ridge-SC, hard-threshold spectral SC, nuclear-norm MC with CV rank, SDID (simple implementation or vetted package port), plus the diagnostic suite (scree, eigenvalue-ratio rank selector, TW statistic).
   3. Unit tests: shapes; r=0 case returns noise-floor predictions; infinite-spike case returns near-oracle; leakage guard asserting rank selection touches pre-period data only; determinism under fixed seeds.
   4. Smoke run: 20 reps, one cell, all methods, < 1 minute.
-- Outputs: `research/idea5/code/scm_frontier/` package; `tests/test_estimators.py`; CI-style pytest run log.
+- Outputs: `code/scm_frontier/` package; `code/tests/test_estimators.py`; CI-style pytest run log.
 - Verification (mechanical): `pytest` green.
 - Verification (scientific): oracle beats everything everywhere by construction; trivial baseline never beats tuned methods by more than MC noise in favorable cells.
 - Pass rule: all above.
@@ -264,7 +264,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
   1. Run the decisive-cell pilot (see Section 8) with 10 seeds on the local machine; record wall time, peak RSS per rep.
   2. Fit linear cost model; classify each planned experiment in Section 8 as LOCAL (predicted < 2 h total AND < 4 GB peak) or COLAB (otherwise).
   3. Check current machine load before choosing worker counts; cap workers at 8 physical cores, set thread limits (OMP_NUM_THREADS=1 inside workers) to avoid nested parallelism, leave headroom for other jobs.
-- Outputs: `pilot_cost_report.md` with the LOCAL/COLAB classification table.
+- Outputs: `docs/evidence/pilot_cost_report.md` with the LOCAL/COLAB classification table.
 - Verification: numbers logged, not guessed.
 - Pass rule: cost model explains pilot within 30%.
 - Gate consequence: feeds Phase C sharding decisions; no scientific decision.
@@ -278,13 +278,13 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase C: Simulation-first falsification (Gate G3)  [CLOSED 2026-08-25: G3 GO under restricted claim set, after PIVOT executed and C.5 repair-and-confirm package; see gate_g3_memo.md Sections 5-7]
+### Phase C: Simulation-first falsification (Gate G3)  [CLOSED 2026-08-25: G3 GO under restricted claim set, after PIVOT executed and C.5 repair-and-confirm package; see docs/gates/gate_g3_memo.md Sections 5-7]
 
 **Purpose.** Decide whether the phase-transition mechanism is real, sharp, and exploitable, and whether the diagnostics calibrate. This is the decisive gate of the whole project.
 
 **Prerequisites.** Phase B passed; preregistration below frozen BEFORE running decisive cells.
 
-#### Preregistration (freeze in `preregistration.md` before any decisive run)
+#### Preregistration (freeze in `docs/preregistrations/preregistration.md` before any decisive run)
 - Primary metric: post-period counterfactual RMSE normalized by sigma, averaged over treated rows, per (c, spike-profile, alignment) cell.
 - Secondary: ATT bias; rank-selector accuracy; empirical size of TW pre-trends test at nominal 5%; coverage of spectral CI.
 - Practical-effect threshold: the frontier "has bite" if some incumbent suffers RMSE >= 2x oracle-normalized floor in at least one substantive region while the spectral diagnostic flags it with power >= 80% at 5% size.
@@ -296,7 +296,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 - Grid: c in {0.25, 0.5, 1, 2, 4}; spike strength multiplier s in linspace(0.2, 3, 15) around the BBP edge; alignment in {full, partial, orthogonal}; r in {1, 3}.
 - Methods: all seven from WP-B2. Baselines present from day one: plain SCM and CV-rank nuclear-norm MC.
 - Outputs: `results_c1/` parquet shards + merged `risk_curves.parquet`, figure `fig_threshold_kink.png`.
-- Verification: all seeds present, schema matches `results_schema.yaml`.
+- Verification: all seeds present, schema matches `config/results_schema.yaml`.
 - Scientific pass: preregistered kink criterion met; incumbents degrade sub-edge as predicted.
 - Fail: smooth curves or kink far from prediction.
 - Gate consequence: fail triggers the ansatz-revision loop (max two documented revisions, each naming the corrected ingredient); third failure => KILL C1.
@@ -320,7 +320,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 - Outputs: `scaling_report.md`.
 
 #### WP-C5: Gate memo and decision
-- Standalone memo `gate_g3_memo.md` containing preregistered expectations, result tables/plots, deviations, strongest baseline's best case, proposed method's failure regions, ablation evidence, practical effect sizes, and ONE decision.
+- Standalone memo `docs/gates/gate_g3_memo.md` containing preregistered expectations, result tables/plots, deviations, strongest baseline's best case, proposed method's failure regions, ablation evidence, practical effect sizes, and ONE decision.
 - Decision rules:
   - GO to Phase D: threshold has bite (preregistered criterion), diagnostics calibrate or have a working fallback, and at least one incumbent-beating region exists with practical size.
   - PIVOT: transition real but bite restricted (e.g., only high-c or only ridge variants); restrict claims and rerun affected C-packages.
@@ -337,13 +337,13 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ---
 
-### Phase D: Applied study (Gate G4)  [CLOSED 2026-08-26: WP-D1 PASS (21/21 gates, preprocessing_frozen.md); WP-D2 executed under preregistration_d2_addendum.md — preregistered novel-finding arms FAILED, C5 demoted to certification case study, no KILL trigger; see gate_g4_memo.md]
+### Phase D: Applied study (Gate G4)  [CLOSED 2026-08-26: WP-D1 PASS (21/21 gates, docs/applied/preprocessing_frozen.md); WP-D2 executed under docs/preregistrations/preregistration_d2_addendum.md — preregistered novel-finding arms FAILED, C5 demoted to certification case study, no KILL trigger; see docs/gates/gate_g4_memo.md]
 
 #### WP-D1 outcome
 - Status: COMPLETE - PASS. Trusted benchmarks reproduced to reporting precision on both panels; freeze doc Section 6 records 21/21 gates.
 
 #### WP-D2 outcome
-- Status: COMPLETE - preregistered NF arms failed (N1/N2/N3 all false); P1 passed only on smoking (rho = -0.53); P2/P3/stability failed; identification controls PASSED. Disposition per gate_g4_memo.md Section 5.
+- Status: COMPLETE - preregistered NF arms failed (N1/N2/N3 all false); P1 passed only on smoking (rho = -0.53); P2/P3/stability failed; identification controls PASSED. Disposition per docs/gates/gate_g4_memo.md Section 5.
 
 **Purpose.** Show the frontier lens reveals something incumbents cannot see on real panels.
 
@@ -351,7 +351,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 #### WP-D1: Data acquisition and trusted-result reproduction
 - Panels: California smoking (Prop 99), German reunification; optionally Basque conflict; one staggered-adoption dataset aligned with the DiD-BCF project if C4 survived.
-- Actions: ingest, clean, reproduce the canonical published point estimates with a standard pipeline within tolerance; freeze preprocessing (`preprocessing_frozen.md`) before comparative runs.
+- Actions: ingest, clean, reproduce the canonical published point estimates with a standard pipeline within tolerance; freeze preprocessing (`docs/applied/preprocessing_frozen.md`) before comparative runs.
 - Pass: reproduction matches published estimates to reporting precision.
 - Fail: cannot reproduce trusted benchmark => fix pipeline before any novel analysis; unresolved mismatch => treat as bug, not discovery.
 
@@ -375,14 +375,14 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 
 ### Phase E: Evidence-earned theory + paper consolidation (Gates G5 + G6)  [GATE OPEN 2026-08-26 under restricted claim set: T1-T3 proceed; C5 ships as certification case study only]
 
-#### WP-E0: Bonander Florida SYG (2026-08-28, `preregistration_bonander_addendum.md` frozen)
-- Status: COMPLETE — primary `HomicideRates` RECOVERABLE `k2 d23.6 q05 15.9 p0.004`, all 15 placebos FRAGILE-MISALIGNED (first `p`-separation), but `N1` false, `P2`/`P1`/stability fail → certification-with-asymmetry, still `INCREMENTAL-ONLY` (`gate_gBon_memo.md` §5).
+#### WP-E0: Bonander Florida SYG (2026-08-28, `docs/preregistrations/preregistration_bonander_addendum.md` frozen)
+- Status: COMPLETE — primary `HomicideRates` RECOVERABLE `k2 d23.6 q05 15.9 p0.004`, all 15 placebos FRAGILE-MISALIGNED (first `p`-separation), but `N1` false, `P2`/`P1`/stability fail → certification-with-asymmetry, still `INCREMENTAL-ONLY` (`docs/gates/gate_gBon_memo.md` §5).
 
 #### WP-E0b: CDC bi63 Wisconsin yearly suicide proxy (2026-08-29)
-- Status: COMPLETE — primary age-adjusted rate `RECOVERABLE`, `k1 d23.07 CI[22.56,192.95] p0.0005`; all eight placebos `RECOVERABLE`; count scale `d514.54`; stability `2/4` fails. Wrong outcome/time resolution for the June 2015 policy. Certification-only branch closed (`gate_gBi63_memo.md`).
+- Status: COMPLETE — primary age-adjusted rate `RECOVERABLE`, `k1 d23.07 CI[22.56,192.95] p0.0005`; all eight placebos `RECOVERABLE`; count scale `d514.54`; stability `2/4` fails. Wrong outcome/time resolution for the June 2015 policy. Certification-only branch closed (`docs/gates/gate_gBi63_memo.md`).
 
 #### WP-E0c: FBI Nebraska RTC monthly violent-crime screen (2026-08-29)
-- Status: COMPLETE — first preregistered treated `FRAGILE-MISALIGNED`, `k1 d154.89 p0.814`, N1 and P3 pass, but seven of eight placebos share the label, P2 and stability fail, count scale flips to `RECOVERABLE`, and donor-post transport rejects. `FRAGILE-BUT-SCREEN-FAILED`; no trusted-result reproduction authorized (`gate_gFBI_RTC_memo.md`).
+- Status: COMPLETE — first preregistered treated `FRAGILE-MISALIGNED`, `k1 d154.89 p0.814`, N1 and P3 pass, but seven of eight placebos share the label, P2 and stability fail, count scale flips to `RECOVERABLE`, and donor-post transport rejects. `FRAGILE-BUT-SCREEN-FAILED`; no trusted-result reproduction authorized (`docs/gates/gate_gFBI_RTC_memo.md`).
 
 **Purpose.** Formalize only what surviving evidence makes load-bearing, then assemble the paper.
 
@@ -395,7 +395,7 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 | T3 TW/Jacobi calibration of diagnostics | Validates C3's type-I claims | Largest-eigenvalue null after whitening; universality under weak dependence | Direct (iid) / Conjecture (AR) | Johnstone (2001, 2008); Onatski (2010) ratio statistics; Bao-Pan-Zhou universality | Serial correlation breaks exact nulls | WP-C2(iii) size plots | Bootstrap fallback stands as the shipped method; theory limited to iid case |
 | T4 SDID deterministic equivalents | Apples-to-apples zoo comparison | Resolvent calculus for SDID's two-weight system | Conjecture | Arkhangelsky et al. (2021) definition; Dobriban-Wager machinery | Coupled weight systems lack closed forms | DE vs simulation overlay | Cut T4 entirely if it resists; it is decoration unless reviewers demand it |
 
-Each target maps to a verified source entry in `evidence_register.md`; no target proceeds from an E0/E1 source.
+Each target maps to a verified source entry in `docs/evidence/evidence_register.md`; no target proceeds from an E0/E1 source.
 
 #### WP-E1: Proof packages for T1-T3 in priority order (one package per target, each with special-case reductions and a counterexample search before the long proof).
 #### WP-E2: Software release (`spectral-frontier` R/Python package): diagnostic suite + vignettes reproducing every paper figure.
@@ -437,7 +437,7 @@ See Phase D. Identification considerations specific to panels: treatment timing 
 
 Application gate memo requirements: trusted-benchmark reproduction, acceptable identification diagnostics, survival of predeclared sensitivity checks, demonstrated change in understanding versus incumbent analysis, honest uncertainty, anomalies investigated before being framed as discoveries.
 
-**Applied closure (2026-08-29):** no panel met the composite above. The surviving application is a diagnostic casebook, documented in `applied_study_closure_memo.md`. Gate G4 may be reopened only for an independently motivated, policy-matched micro panel acquired before outcome inspection. Convenience sweeps across treatment dates are prohibited.
+**Applied closure (2026-08-29):** no panel met the composite above. The surviving application is a diagnostic casebook, documented in `docs/applied/applied_study_closure_memo.md`. Gate G4 may be reopened only for an independently motivated, policy-matched micro panel acquired before outcome inspection. Convenience sweeps across treatment dates are prohibited.
 
 ---
 
@@ -495,30 +495,39 @@ except Exception as e:
 ## 13. Reproducibility and artifact map
 
 ```text
-research/idea5/
-  model_card.md                  # WP-A1: formal model, assumptions, estimands
-  evidence_register.md           # WP-A2/A3: source ledger with anchors + E-levels
-  priorart_deepread_memo.md      # WP-A2
-  novelty_search_log.md          # WP-A3
-  frontier_ansatz.md             # WP-B1: conjecture + special cases
-  preregistration.md             # frozen before decisive Phase C runs
-  pilot_cost_report.md           # WP-B3: LOCAL/COLAB classification
-  shard_manifest.yaml            # Colab shard map (when triggered)
-  code/scm_frontier/             # WP-B2 package (dgps, estimators, diagnostics)
-  code/tests/test_estimators.py
-  notebooks/                     # witnesses + Colab shards nb_*_shardNN_ofNN.ipynb
-  results_c1/, results_c2/       # parquet shards + merged tables (schema: results_schema.yaml)
-  figures/                       # every figure regenerated by scripts/make_figures.py
-  gate_g3_memo.md                # WP-C5
-  preprocessing_frozen.md        # WP-D1
-  gate_g4_memo.md                # Phase D decision
-  gate_gBi63_memo.md             # disclosed yearly proxy closure
-  gate_gFBI_RTC_memo.md          # Nebraska preregistered screen
-  applied_study_closure_memo.md  # final C5 scope and paper consequence
-  theory_targets.md              # WP-E1 proof packages
+docs/plan/Idea5_Panel_RMT_Research_Plan.md   # this plan
+docs/model/model_card.md                     # WP-A1: formal model, assumptions, estimands
+docs/model/frontier_ansatz.md                # WP-B1: conjectured DE risk formula + special cases
+docs/model/theory_targets.md                 # WP-E1 proof packages
+docs/evidence/evidence_register.md           # WP-A2/A3: source ledger with anchors + E-levels
+docs/evidence/priorart_deepread_memo.md      # WP-A2
+docs/evidence/novelty_search_log.md          # WP-A3
+docs/evidence/pilot_cost_report.md           # WP-B3: LOCAL/COLAB classification
+docs/preregistrations/preregistration.md     # frozen before decisive Phase C runs (+ addenda)
+docs/gates/gate_g0_g1_decision.md            # Phase A decision
+docs/gates/gate_g2_decision.md               # Phase B decision
+docs/gates/gate_g3_memo.md                   # WP-C5
+docs/gates/gate_g4_memo.md                   # Phase D decision
+docs/gates/gate_g4_wave2_memo.md             # WP-D2 wave 2
+docs/gates/gate_gBon_memo.md                 # Phase E WP-E0
+docs/gates/gate_gBi63_memo.md                # disclosed yearly proxy closure
+docs/gates/gate_gFBI_RTC_memo.md             # Nebraska preregistered screen
+docs/applied/preprocessing_frozen.md         # WP-D1
+docs/applied/applied_study_closure_memo.md   # final C5 scope and paper consequence
+code/scm_frontier/                           # WP-B2 package (dgps, estimators, diagnostics)
+code/applications/                           # WP-D1/D2 real-panel machinery
+code/tests/                                  # pytest regression suite
+notebooks/                                   # witnesses (run artifacts)
+colab/                                       # generated Colab shards + shard_manifest.yaml
+scripts/                                     # drivers, shard merge, figures, Colab builders
+config/seeds.yaml                            # global seed registry
+config/results_schema.yaml                   # results row schema
+results_c1/ results_c2/ results_d1/ results_d2/ results_e/ results_raw/
+figures/                                     # every figure regenerated by scripts/make_figures.py
+paper/powell_summary/                        # outreach summary (.tex/.pdf) for the applied collaboration
 ```
 
-Seed policy: global seed registry `seeds.yaml`; every table/figure states its seed range and commit hash. Environment lock: `environment.yml` + pip freeze snapshot. Raw vs processed boundary: raw panel extracts immutable under `data/raw/`; all cleaning scripted into `data/processed/`. Checkpointing: every Colab shard writes incrementally (partial CSV append every 25 replications) so a crashed session loses at most one chunk.
+Seed policy: global seed registry `config/seeds.yaml`; every table/figure states its seed range and commit hash. Environment lock: `environment.yml` + pip freeze snapshot. Raw vs processed boundary: raw panel extracts immutable under `data/raw/`; all cleaning scripted into `data/processed/`. Checkpointing: every Colab shard writes incrementally (partial CSV append every 25 replications) so a crashed session loses at most one chunk.
 
 ---
 
@@ -526,7 +535,7 @@ Seed policy: global seed registry `seeds.yaml`; every table/figure states its se
 
 Phase D and the opportunistic Phase E application search are closed. Immediate work now serves G5/G6:
 
-1. Freeze the one-sentence paper contribution around C1/C3 and explicitly demote C5 to the diagnostic casebook in `applied_study_closure_memo.md`.
+1. Freeze the one-sentence paper contribution around C1/C3 and explicitly demote C5 to the diagnostic casebook in `docs/applied/applied_study_closure_memo.md`.
 2. Start WP-E1 with T1, including its source-assumption map and numerical overlay falsifier. Apply the two-revision stop rule before attempting T2.
 3. Draft the paper's simulation and applied-diagnostics sections from the already frozen gate memos. State that no real panel produced a stable, treated-specific `d<1` event.
 4. Run WP-E3's skeptical-referee pass against the restricted story before committing to T2/T3 scale. Reopen G4 only if independently motivated, policy-matched micro data become available before spectral inspection.

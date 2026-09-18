@@ -6,7 +6,7 @@
 
 Evidence:
 
-1. Mathematical typing, non-vacuity, existence: closed by `model_card.md` (frozen before execution) and by the witnesses themselves. The r = 0 bracket behaves exactly as required: in Witness 2's NULL arm every estimator sits at the noise floor (mean RMSE 1.002 to 1.030 sigma against the oracle floor sigma), and the degenerate saturated case is approached from above in the ALIGNED comparator.
+1. Mathematical typing, non-vacuity, existence: closed by `docs/model/model_card.md` (frozen before execution) and by the witnesses themselves. The r = 0 bracket behaves exactly as required: in Witness 2's NULL arm every estimator sits at the noise floor (mean RMSE 1.002 to 1.030 sigma against the oracle floor sigma), and the degenerate saturated case is approached from above in the ALIGNED comparator.
 2. Witness 1 (sub-threshold invisibility): ALL FIVE pass rules met. Deep sub-edge coefficient distributions are statistically indistinguishable from pure-noise regression (min median KS p = 0.134 over m <= 0.70); power everywhere at m >= 1.30 (max median p = 1.1e-8); monotone transition (Spearman rho = -0.94) with onset at m = 0.75; top eigenvalue pinned to the BBP/BGN outlier prediction to 0.3 percent and silent below edge (max top/edge = 1.0003 over m <= 0.95).
 3. Witness 2 (visible-but-useless spike): ALL THREE pass rules met. The MISALIGNED arm shows a textbook outlier (mean top donor eigenvalue 7.607 vs BGN prediction 7.583) while paired RMSE differences versus the NULL arm are of order 1e-3 sigma for all four estimators; the ALIGNED comparator proves the battery is sensitive (spectral RMSE 1.0395 vs donor-mean 1.2102, gain t = 60). Channel-2 logic confirmed: spike visibility without treated leverage buys nothing.
 4. Identification: the nonidentifiability region is now explicit and instrumented in the model card (structural break in V, zero leverage, sub-threshold spikes).
@@ -35,11 +35,11 @@ Witness attempt count: W1 one definitive run (after amendments); W2 one definiti
 
 1. WP-B kickoff must open with the S08 (2605.30319) guarantee deep-read; any per-row spikiness impossibility found there reopens G1 immediately.
 2. Any draft must contain the frontier-vs-double-descent positioning paragraph against Spiess et al.
-3. Manual Scholar/RePEc string pass remains assigned to the user (10 minutes; checklist in novelty_search_log.md Section 4).
+3. Manual Scholar/RePEc string pass remains assigned to the user (10 minutes; checklist in docs/evidence/novelty_search_log.md Section 4).
 4. New Phase C preregistration item inherited from Witness 1: verify that the detectability-onset location converges to the predicted edge as n grows (finite-size smear closes).
 
 Nothing in Phases C-E starts before Gates G2/G3 per the dependency map. Estimated effort to date matches the plan's ~1 week allowance; compute used: under 15 minutes serial on a loaded laptop.
 
 ## 5. Artifacts
 
-model_card.md; notebooks/witness_subthreshold.ipynb; notebooks/witness_misalignment.ipynb; figures/fig_w1_traces.png; figures/fig_w1_coeff_histograms.png; figures/fig_w2_eigenvalue_outlier.png; figures/fig_w2_rmse_distributions.png; figures/witness_w1_summary.json; figures/witness_w2_summary.json; evidence_register.md; priorart_deepread_memo.md; novelty_search_log.md; seeds.yaml.
+docs/model/model_card.md; notebooks/witness_subthreshold.ipynb; notebooks/witness_misalignment.ipynb; figures/fig_w1_traces.png; figures/fig_w1_coeff_histograms.png; figures/fig_w2_eigenvalue_outlier.png; figures/fig_w2_rmse_distributions.png; figures/witness_w1_summary.json; figures/witness_w2_summary.json; docs/evidence/evidence_register.md; docs/evidence/priorart_deepread_memo.md; docs/evidence/novelty_search_log.md; config/seeds.yaml.

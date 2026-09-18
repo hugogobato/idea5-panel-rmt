@@ -1,7 +1,7 @@
 # Frontier Ansatz (WP-B1): Conjectured Recoverability Frontier for Spectral SC
 
 **Status:** CONJECTURE. Nothing in this document is proved. It states the deterministic-equivalent (DE) ansatz for the counterfactual risk of hard-threshold spectral SC, verifies its special-case algebra symbolically (`code/check_frontier_ansatz.py`), and maps every ingredient to its source result. Rigorous derivation is Phase E target T1 (ridge variant) and T2 (lower bound). Per the plan, a numerical overlay of this formula on simulations is the WP-C1 falsifier, not a Phase B task; the symbolic checks here are internal consistency only.
-**Date:** 2026-08-24. **Conventions:** inherit `model_card.md` (spiked covariance calibration, sigma^2 units, c = n/T0).
+**Date:** 2026-08-24. **Conventions:** inherit `docs/model/model_card.md` (spiked covariance calibration, sigma^2 units, c = n/T0).
 
 ---
 
@@ -15,7 +15,7 @@ Estimator (the WP-B2 implementation matches this form exactly):
 4. For each post period `t`, form post scores from the donor cross-section: `sh_jt = u_j^T y_{.,t}^{post}` (pre-period basis transported to post windows; factor persistence, Assumptions A3-A4).
 5. Predict `yhat*_t = sum_{j<=k} beta_j sh_jt`.
 
-All risk statements below are for the *realized-outcome* estimand of `model_card.md` Section 4: target `y*_t = L_1t + E_1t`, so every method carries the irreducible floor `rho >= 1` in normalized MSE^2 units (`MSE/sigma^2`). This refines the plan's phrase "risk -> interpolation floor": in our estimand the limiting floor is the noise floor `sigma`, reached because the signal-component risk vanishes.
+All risk statements below are for the *realized-outcome* estimand of `docs/model/model_card.md` Section 4: target `y*_t = L_1t + E_1t`, so every method carries the irreducible floor `rho >= 1` in normalized MSE^2 units (`MSE/sigma^2`). This refines the plan's phrase "risk -> interpolation floor": in our estimand the limiting floor is the noise floor `sigma`, reached because the signal-component risk vanishes.
 
 ## 2. Single-spike risk decomposition (r = 1, k = 1)
 
@@ -55,7 +55,7 @@ F({s_j}, {alpha_j}, K; c, T0) :=
 
 Subcritical spikes (`s_j <= sqrt(c)`) never appear inside `K` terms (no outlier to retain; if forced into the basis they act as noise directions, contributing only channel-3/4-size terms). Cross-spike leakage terms (`O(alpha_j alpha_l * <f_j, v_l>` overlaps) are neglected for well-separated spikes; near-degenerate spike pairs are a tagged limitation (Section 7).
 
-Scaling caveat that matters for Phase C design: with `c` fixed and treated loading held at a *typical-donor* size (`alpha_j^2 ~ kappa * s_j * sigma^2 / n`), the signal-channel terms vanish as `n -> infinity` and every unit becomes recoverable. A non-vanishing frontier requires the treated unit to hold a non-vanishing *share* of the spike: parameterize `theta_j := alpha_j^2/sigma^2` directly (recommended for the WP-C1 grid; e.g. `theta in {0.1, 0.5, 1}`), or work at finite `n` where the `1/T0` channels still bite. Flag for `preregistration.md`.
+Scaling caveat that matters for Phase C design: with `c` fixed and treated loading held at a *typical-donor* size (`alpha_j^2 ~ kappa * s_j * sigma^2 / n`), the signal-channel terms vanish as `n -> infinity` and every unit becomes recoverable. A non-vanishing frontier requires the treated unit to hold a non-vanishing *share* of the spike: parameterize `theta_j := alpha_j^2/sigma^2` directly (recommended for the WP-C1 grid; e.g. `theta in {0.1, 0.5, 1}`), or work at finite `n` where the `1/T0` channels still bite. Flag for `docs/preregistrations/preregistration.md`.
 
 ## 4. Special-case reductions (verified symbolically)
 
@@ -68,7 +68,7 @@ Script: `code/check_frontier_ansatz.py` (sympy; run log in Section 8). All four 
 
 Monotonicity (checked numerically in the script over `s in (sqrt(c), 20]`, five `c` values, four treated shares `theta`): the TOTAL excess risk is strictly decreasing in `s` at every tested configuration, and its global maximum over the supercritical side sits exactly AT the edge `s = sqrt(c)` where it connects continuously to the truncation value `(alpha^2/sigma^2)` of an excluded spike. The preregistered kink signature therefore holds exactly in the ansatz: flat below the edge (up to negligible subcritical loading terms), continuous peak at `m = 1`, steepest descent just above it (script-measured |slope| ratio `~ 2200x` versus the far-above-edge slope at `c = 0.5`). Secondary structure worth recording: the two variance channels individually are non-monotone just above the edge (`zeta/lambda` rises from 0 before decaying; sup between `0.05` and `0.26` as `c` goes from 4 down to 0.25), but their contribution is `O(1/T0)`-suppressed and never overturns the bias-channel decline in the total.
 
-## 5. Ingredient-to-source map (also mirrored in theory_targets.md)
+## 5. Ingredient-to-source map (also mirrored in docs/model/theory_targets.md)
 
 | Ansatz ingredient | Source result | Register ID | Adaptation gap |
 |---|---|---|---|
@@ -79,7 +79,7 @@ Monotonicity (checked numerically in the script over `s in (sqrt(c), 20]`, five 
 | Ridge-family companion risks (WP-C2 engine, not used in F) | Dobriban-Wager (2018); Hastie et al. (2022) | T6, T7 | Row-targeted (single unit) risk instead of Frobenius; deferred to T1 |
 | Lower-bound side ("no estimator below floor when all spikes subcritical or alpha = 0") | NOT COVERED BY THIS ANSATZ | T2 target | Le Cam two-point template; Phase E |
 
-Positioning obligation (watch item W-2, canonical text frozen in `evidence_register.md` S07): the frontier varies signal strength/alignment at fixed estimator class; Spiess et al.'s double/single-descent varies complexity (donor count) at fixed signal via model averaging. Orthogonal axes; joint test = descent curves flattening at the `sigma` floor exactly when the diagnostic reports sub-frontier distance.
+Positioning obligation (watch item W-2, canonical text frozen in `docs/evidence/evidence_register.md` S07): the frontier varies signal strength/alignment at fixed estimator class; Spiess et al.'s double/single-descent varies complexity (donor count) at fixed signal via model averaging. Orthogonal axes; joint test = descent curves flattening at the `sigma` floor exactly when the diagnostic reports sub-frontier distance.
 
 ## 6. Derivation sketch (what Phase E T1 must make rigorous)
 

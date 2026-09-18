@@ -125,7 +125,7 @@ def main() -> int:
 
     summary = {
         "study": "fbi_cde_nebraska_rtc_monthly_violent_crime",
-        "preregistration": "preregistration_fbi_rtc_nebraska_addendum.md",
+        "preregistration": "docs/preregistrations/preregistration_fbi_rtc_nebraska_addendum.md",
         "panel": {
             "units": panel.units, "T": int(panel.Y.shape[1]), "T0": T0,
             "n_d": panel.n_donors, "c": panel.n_donors / T0,

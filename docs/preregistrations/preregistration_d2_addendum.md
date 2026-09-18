@@ -1,6 +1,6 @@
 # Preregistration D2 Addendum — distance-to-frontier analysis (WP-D2)
 
-**Date frozen:** 2026-08-26, BEFORE any WP-D2 decisive computation on either application panel. **Parent documents:** `preregistration.md` (2026-08-24), `preregistration_c5_addendum.md` (2026-08-25), `gate_g3_memo.md` Section 7 (restricted claim set + GO to Phase D), `preprocessing_frozen.md` (WP-D1 freeze; its Section 8 leakage rules bind here). **Authority:** plan Section 7 Phase D (WP-D2 actions, pass/fail, give-up rules). Every threshold below is inherited from already-frozen Phase C instruments or fixed from theory alone; none is tuned toward any real-panel number, and no real-panel spectral quantity had been computed at freeze time. Failures are reported as failures.
+**Date frozen:** 2026-08-26, BEFORE any WP-D2 decisive computation on either application panel. **Parent documents:** `docs/preregistrations/preregistration.md` (2026-08-24), `docs/preregistrations/preregistration_c5_addendum.md` (2026-08-25), `docs/gates/gate_g3_memo.md` Section 7 (restricted claim set + GO to Phase D), `docs/applied/preprocessing_frozen.md` (WP-D1 freeze; its Section 8 leakage rules bind here). **Authority:** plan Section 7 Phase D (WP-D2 actions, pass/fail, give-up rules). Every threshold below is inherited from already-frozen Phase C instruments or fixed from theory alone; none is tuned toward any real-panel number, and no real-panel spectral quantity had been computed at freeze time. Failures are reported as failures.
 
 ---
 
@@ -81,7 +81,7 @@ WP-D2 verdict rules (frozen):
 
 ## 11. Seeds, environment, compute
 
-Seeds registered in `seeds.yaml` (phase_d.wp_d2): alignment_null 60101 (shared stream offset per panel/placebo: base + index*10^6), donor_bootstrap 60102 (+index*10^6), time_bootstrap 60103 (+index*10^6), spearman_permutation 60104, z_shift 8880001 (C5 convention), post-test null pools 7770001 (C5 convention), placebo V-search 60001 for every fit. Environment unchanged from preprocessing_frozen.md Section 9. Compute: local only, minutes (no Colab trigger: everything << 2 h, << 4 GB).
+Seeds registered in `config/seeds.yaml` (phase_d.wp_d2): alignment_null 60101 (shared stream offset per panel/placebo: base + index*10^6), donor_bootstrap 60102 (+index*10^6), time_bootstrap 60103 (+index*10^6), spearman_permutation 60104, z_shift 8880001 (C5 convention), post-test null pools 7770001 (C5 convention), placebo V-search 60001 for every fit. Environment unchanged from docs/applied/preprocessing_frozen.md Section 9. Compute: local only, minutes (no Colab trigger: everything << 2 h, << 4 GB).
 
 ## 12. Deviation log
 

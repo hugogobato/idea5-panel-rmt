@@ -3,7 +3,7 @@
 Outputs (repo root):
   colab/nb_*.ipynb                 45 notebooks (40 main-grid shards + 5 specials)
   colab/shard_manifest.yaml        shard-to-cell map with expected row counts
-  results_schema.yaml              row schema description
+  config/results_schema.yaml              row schema description
 
 Run from repo root:  python3 scripts/build_colab_notebooks.py
 """
@@ -738,7 +738,7 @@ def main():
     for i, shard in enumerate(shards, start=1):
         name = f"nb_c1_shard{i:02d}_of{N_MAIN_SHARDS}"
         title = (f"# WP-C1 decisive grid, shard {i:02d}/{N_MAIN_SHARDS}\n\n"
-                 "Frozen under preregistration.md (2026-08-24). Contains\n"
+                 "Frozen under docs/preregistrations/preregistration.md (2026-08-24). Contains\n"
                  "c1 grid cells plus folded C2(i) null cells; checkpoints\n"
                  "every 25 reps; do not edit parameters.\n\n"
                  f"Cells ({len(shard)}):\n" +
@@ -783,7 +783,7 @@ def main():
             name = f"nb_{fam_name}_shard{i:02d}_of{n_sh}"
             title = (f"# {fam_name.upper()} confirmation grid, shard "
                      f"{i:02d}/{n_sh}\n\nFrozen under "
-                     "preregistration_c5_addendum.md; fresh seed range.\n")
+                     "docs/preregistrations/preregistration_c5_addendum.md; fresh seed range.\n")
             nb = build_experiment_nb(name, fam_name, f"{i:02d}", shard, title)
             # override the seed base inside the config cell
             for cell in nb["cells"]:
@@ -848,7 +848,7 @@ def main():
                   "c2iii": "results_c2/c2iii.parquet",
                   "c2iv": "results_c2/c2iv.parquet"},
     }
-    (ROOT / "results_schema.yaml").write_text(json.dumps(schema, indent=1))
+    (ROOT / "config/results_schema.yaml").write_text(json.dumps(schema, indent=1))
 
     total_h = sum(cell_seconds(c) for c in cells) / 3600
     print(f"wrote {len(manifest['notebooks'])} notebooks to colab/, "

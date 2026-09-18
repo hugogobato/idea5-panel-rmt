@@ -52,8 +52,8 @@ Notes: (i) the bootstrap multiplier is an assumption (50x spectral+ridge diagnos
 
 ## 5. Inputs carried to Phase C preregistration (decisions NOT taken here)
 
-The measured costs make the originally drafted C1 grid (full method set at n=T0=250) a multi-week Colab-fleet job. Preregistration will need to choose among: reducing default cell size (e.g., n=T0=160 keeps every method under ~1.5 s/rep and turns single slices LOCAL), restricting the full sweep to the claim-bearing methods (spectral, ridge, SCM, CV-MC, baselines) with SDID added only on a subset, or lowering rep counts after a variance run. These choices trade against the preregistered falsifier precision and must be frozen in `preregistration.md` before any decisive run; none is decided in Phase B.
+The measured costs make the originally drafted C1 grid (full method set at n=T0=250) a multi-week Colab-fleet job. Preregistration will need to choose among: reducing default cell size (e.g., n=T0=160 keeps every method under ~1.5 s/rep and turns single slices LOCAL), restricting the full sweep to the claim-bearing methods (spectral, ridge, SCM, CV-MC, baselines) with SDID added only on a subset, or lowering rep counts after a variance run. These choices trade against the preregistered falsifier precision and must be frozen in `docs/preregistrations/preregistration.md` before any decisive run; none is decided in Phase B.
 
 ## 6. Seed registry additions
 
-Smoke run: seeds 7000-7019 (`code/run_smoke.py`). Pilot: 20000-20009 (decisive cell), 31000-31001 (scaling probe). See `seeds.yaml`.
+Smoke run: seeds 7000-7019 (`code/run_smoke.py`). Pilot: 20000-20009 (decisive cell), 31000-31001 (scaling probe). See `config/seeds.yaml`.

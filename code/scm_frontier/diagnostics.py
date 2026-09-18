@@ -1,7 +1,7 @@
 """Diagnostic suite for the Idea 5 project (WP-B2).
 
 Spectral diagnostics use pre-period data only (leakage rule). Calibration
-conventions follow model_card.md: unit-space scatter, sigma^2 units,
+conventions follow docs/model/model_card.md: unit-space scatter, sigma^2 units,
 c = n / T0.
 """
 

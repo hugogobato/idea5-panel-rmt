@@ -1,6 +1,8 @@
 __pycache__/
 .pytest_cache/
-figures/*.png
 *.pyc
 .ipynb_checkpoints/
+
+# Large third-party replication archives kept local (downloadable from their DOIs).
 Applied_Study/
+paper/

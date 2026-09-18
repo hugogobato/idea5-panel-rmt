@@ -1,10 +1,10 @@
 """WP-D2 decisive driver: distance-to-frontier on the two canonical panels.
 
-Implements preregistration_d2_addendum.md exactly (frozen 2026-08-26
+Implements docs/preregistrations/preregistration_d2_addendum.md exactly (frozen 2026-08-26
 BEFORE this run). Outputs land in results_d2/ and figures/; this script is
 the ONLY writer of those artifacts. Exit code is 0 iff the script ran to
 completion; gate outcomes are recorded in results_d2/summary.json and
-judged in gate_g4_memo.md, never tuned here.
+judged in docs/gates/gate_g4_memo.md, never tuned here.
 """
 
 from __future__ import annotations

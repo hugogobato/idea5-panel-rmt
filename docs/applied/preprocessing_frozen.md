@@ -1,7 +1,7 @@
 # Preprocessing Freeze (WP-D1): Phase D application panels
 
 **Project:** Idea 5, spectral recoverability frontiers.
-**Work package:** WP-D1 (`Idea5_Panel_RMT_Research_Plan.md`, Section 7, Phase D).
+**Work package:** WP-D1 (`docs/plan/Idea5_Panel_RMT_Research_Plan.md`, Section 7, Phase D).
 **Status:** FROZEN 2026-08-26, after trusted-benchmark reproduction succeeded and BEFORE any comparative or distance-to-frontier analysis (WP-D2). No rule in Sections 2 to 5 may change after this date; any need to touch ingestion, cleaning, estimator specs, anchors or tolerances requires a new dated addendum first. Failures discovered later are reported as failures, never tuned toward.
 
 ---
@@ -86,4 +86,4 @@ Leakage: every spectral quantity (scree, spike estimates m-hat, alignment energy
 
 ## 9. Reproducibility
 
-Seeds: `seeds.yaml` `phase_d.wp_d1.v_multistart_seed = 60001` (numpy PCG64 via `default_rng`; the only stochastic input in WP-D1). Environment: Python 3.12.3, numpy 2.4.3, pandas 3.0.1, scipy 1.17.1, matplotlib 3.10.8 (matches `seeds.yaml` environment block). Tests: `pytest code/tests/test_wp_d1_reproduction.py` (6 tests) re-runs both reproductions end-to-end and asserts the Section 5 gates; full suite `pytest code/tests` (32 tests) green at freeze time.
+Seeds: `config/seeds.yaml` `phase_d.wp_d1.v_multistart_seed = 60001` (numpy PCG64 via `default_rng`; the only stochastic input in WP-D1). Environment: Python 3.12.3, numpy 2.4.3, pandas 3.0.1, scipy 1.17.1, matplotlib 3.10.8 (matches `config/seeds.yaml` environment block). Tests: `pytest code/tests/test_wp_d1_reproduction.py` (6 tests) re-runs both reproductions end-to-end and asserts the Section 5 gates; full suite `pytest code/tests` (32 tests) green at freeze time.

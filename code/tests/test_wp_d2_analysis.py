@@ -1,4 +1,4 @@
-"""WP-D2 regression tests (preregistration_d2_addendum.md machinery)."""
+"""WP-D2 regression tests (docs/preregistrations/preregistration_d2_addendum.md machinery)."""
 
 import math
 

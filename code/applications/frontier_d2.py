@@ -1,4 +1,4 @@
-"""WP-D2 distance-to-frontier machinery (preregistration_d2_addendum.md).
+"""WP-D2 distance-to-frontier machinery (docs/preregistrations/preregistration_d2_addendum.md).
 
 Every function implements a frozen rule from the addendum; thresholds are
 constants here and must not be tuned after seeing real-panel outputs.

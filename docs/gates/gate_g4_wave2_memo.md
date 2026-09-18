@@ -1,6 +1,6 @@
 # Gate G4 Wave-2 Memo (hypothesis-driven panel extension)
 
-**Date:** 2026-08-26. **Authorization:** preregistration_d2b_addendum.md (frozen BEFORE any Wave-2 computation; declared selection bias: panels chosen because the frontier was EXPECTED to bind). **Execution:** `scripts/wp_d2b_wave2.py`, single-threaded BLAS under heavy external load; artifacts `results_d2/wave2_{basque,basque_placebos,degradation}.*`, `figures/fig_d2_wave2.png`. Basque data: R `Synth` package extract (CRAN mirror), sha256-pinned `data/raw/basque_synth_ag2003.csv`, provenance E2 (register D06).
+**Date:** 2026-08-26. **Authorization:** docs/preregistrations/preregistration_d2b_addendum.md (frozen BEFORE any Wave-2 computation; declared selection bias: panels chosen because the frontier was EXPECTED to bind). **Execution:** `scripts/wp_d2b_wave2.py`, single-threaded BLAS under heavy external load; artifacts `results_d2/wave2_{basque,basque_placebos,degradation}.*`, `figures/fig_d2_wave2.png`. Basque data: R `Synth` package extract (CRAN mirror), sha256-pinned `data/raw/basque_synth_ag2003.csv`, provenance E2 (register D06).
 
 ## 1. Frozen gates vs outcomes
 
@@ -29,7 +29,7 @@ F10 (pool thinning does not approach the frontier): removing up to 34 of 38 smok
 
 ## 3. Disposition
 
-W1_PASS = FALSE per frozen rule: no natural fragile SCM panel has been found in the candidate set {smoking, Germany, Basque}; C5 remains demoted exactly as gate_g4_memo.md Section 5 recorded. No KILL trigger fired anywhere; positive controls keep passing.
+W1_PASS = FALSE per frozen rule: no natural fragile SCM panel has been found in the candidate set {smoking, Germany, Basque}; C5 remains demoted exactly as docs/gates/gate_g4_memo.md Section 5 recorded. No KILL trigger fired anywhere; positive controls keep passing.
 
 What Wave-2 adds to the program: (i) proof of attainability (F7) and separability (F8) on natural panels, which upgrades the lens from "saturated certification" to "functional instrument awaiting a binding application"; (ii) two concrete screening criteria for the dataset hunt now underway: prefer panels WITHOUT a dominant shared stochastic trend (else d saturates) and do NOT expect pool size alone to create fragility (F10); target small-n/high-noise/weak-factor settings with documented poor pre-fit.
 

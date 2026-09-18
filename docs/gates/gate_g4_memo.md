@@ -1,6 +1,6 @@
 # Gate G4 Memo (Phase D close-out)
 
-**Date:** 2026-08-26. **Preregistration:** `preregistration_d2_addendum.md`, frozen BEFORE any decisive computation (deviations D0-D1 logged there; D1 was a mid-run numerical safeguard applied after an abort that wrote no artifacts). **Execution:** single local run of `scripts/wp_d2_analysis.py` (~10 min): treated-unit pipelines, 38 + 16 in-space placebos (frozen ADH specifications, V seed 60001 throughout), bootstrap layers B1 = 500 donor / B2 = 200 block(4) time resamples, alignment nulls G = 2000, shipped z_shift/gate_lrv/post-test instruments verbatim. Artifacts: `results_d2/{distance_*,placebos_*,summary}.json|csv`, `figures/fig_d2_distance_to_frontier.png`; tests 40 green (32 prior + 8 new WP-D2 regressions).
+**Date:** 2026-08-26. **Preregistration:** `docs/preregistrations/preregistration_d2_addendum.md`, frozen BEFORE any decisive computation (deviations D0-D1 logged there; D1 was a mid-run numerical safeguard applied after an abort that wrote no artifacts). **Execution:** single local run of `scripts/wp_d2_analysis.py` (~10 min): treated-unit pipelines, 38 + 16 in-space placebos (frozen ADH specifications, V seed 60001 throughout), bootstrap layers B1 = 500 donor / B2 = 200 block(4) time resamples, alignment nulls G = 2000, shipped z_shift/gate_lrv/post-test instruments verbatim. Artifacts: `results_d2/{distance_*,placebos_*,summary}.json|csv`, `figures/fig_d2_distance_to_frontier.png`; tests 40 green (32 prior + 8 new WP-D2 regressions).
 
 ## 1. Preregistered criteria vs outcomes
 
@@ -54,4 +54,4 @@ Rule 4 (INCREMENTAL-ONLY: purely descriptive additions): APPLIES TO THE C5 CLAIM
 3. T3 gains two mandatory scoped limitations from D2: donor-law drift detectability (F4) and the trend-saturation regime boundary of all shipped calibrations (F5/F1).
 4. User decision point preserved by the plan: if the bar excludes incremental applied contributions entirely, the C5 thread is cut at no loss to C1/C3; terminating the applied thread does NOT trigger project termination.
 
-Every criterion above traces to `results_d2/`; figures regenerate via `scripts/wp_d2_analysis.py` (deterministic seeds registered in seeds.yaml, phase_d.wp_d2).
+Every criterion above traces to `results_d2/`; figures regenerate via `scripts/wp_d2_analysis.py` (deterministic seeds registered in config/seeds.yaml, phase_d.wp_d2).

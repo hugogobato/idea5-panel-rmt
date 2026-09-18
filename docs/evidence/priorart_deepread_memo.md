@@ -1,6 +1,6 @@
 # Prior-Art Deep-Read Memo (WP-A2)
 
-**Date:** 2026-08-24. **Inputs:** full-text reads of arXiv 1710.10251 (v5), 2106.02780 (v2), 2109.15154 (v1); structured extraction with theorem-level anchors (see evidence_register.md S01-S03).
+**Date:** 2026-08-24. **Inputs:** full-text reads of arXiv 1710.10251 (v5), 2106.02780 (v2), 2109.15154 (v1); structured extraction with theorem-level anchors (see docs/evidence/evidence_register.md S01-S03).
 
 ## The three kill questions
 

@@ -1,6 +1,6 @@
 """Phase C cell runner (shared by all Colab notebooks and local validation).
 
-Row contract (results_schema.yaml): one row per (rep, method) plus one
+Row contract (config/results_schema.yaml): one row per (rep, method) plus one
 "_diag" row per rep carrying the diagnostic battery. All estimators see the
 same generated panel within a replication; seeds follow preregistration
 Section 3 (seed = 10000 + rep index).

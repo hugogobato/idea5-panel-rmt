@@ -1,4 +1,4 @@
-"""C2(iv) repair analysis (post-hoc deviation, documented in gate_g3_memo.md).
+"""C2(iv) repair analysis (post-hoc deviation, documented in docs/gates/gate_g3_memo.md).
 
 The preregistration froze Z_boot/Z_tw as pseudo-cutoff statistics computed
 ONLY inside the observed pre window (valid for size calibration in C2(iii),

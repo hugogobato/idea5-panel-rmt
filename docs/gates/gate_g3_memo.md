@@ -1,6 +1,6 @@
 # Gate G3 Memo (Phase C close-out)
 
-**Date:** 2026-08-24. **Preregistration:** frozen before any decisive run (`preregistration.md`, deviations in its Section 9). **Execution:** 47 self-contained Colab notebooks, all 42 grid shards + all C2 packages returned, validated by `scripts/merge_shards.py` (sha256, schema, exact row counts, per-cell seed completeness; zero cell errors). Merged data: `results_c1/risk_curves.parquet` (1,823,500 rows), `results_c2/{c2ii,c2iii,c2iv}.parquet`. Consolidated numbers: `figures/memo_inputs.json`; every claim below traces to those files.
+**Date:** 2026-08-24. **Preregistration:** frozen before any decisive run (`docs/preregistrations/preregistration.md`, deviations in its Section 9). **Execution:** 47 self-contained Colab notebooks, all 42 grid shards + all C2 packages returned, validated by `scripts/merge_shards.py` (sha256, schema, exact row counts, per-cell seed completeness; zero cell errors). Merged data: `results_c1/risk_curves.parquet` (1,823,500 rows), `results_c2/{c2ii,c2iii,c2iv}.parquet`. Consolidated numbers: `figures/memo_inputs.json`; every claim below traces to those files.
 
 ## 1. Preregistered expectations vs outcomes
 
@@ -44,7 +44,7 @@ Restricted claim set going into Phase D:
 3. T1 gains a mandatory finite-n correction target (the +0.04–0.06σ near-edge offset is now the falsifier for the refined ansatz).
 No decisive grids require reruns; affected follow-ups are instrumentation-level (Z_boot redesign, alignment flag, LRV-calibrated edges).
 
-Phase D may start only after this memo and the restricted claims are reviewed together with `preregistration.md` Section 9 discipline (any new decisive run gets a fresh freeze first).
+Phase D may start only after this memo and the restricted claims are reviewed together with `docs/preregistrations/preregistration.md` Section 9 discipline (any new decisive run gets a fresh freeze first).
 
 
 ## 6. C5 repair-and-confirm outcomes (addendum preregistered before runs)

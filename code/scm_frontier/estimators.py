@@ -155,7 +155,7 @@ def spectral_sc(
     c: float | None = None,
     info: dict | None = None,
 ) -> np.ndarray:
-    """Hard-threshold spectral SC (frontier_ansatz.md Section 1 form).
+    """Hard-threshold spectral SC (docs/model/frontier_ansatz.md Section 1 form).
 
     beta_j = <y1, v_j>/d_j on top-k PC scores; post predictions transport the
     donor cross-sections through the sample left basis. Rank by gap ratio;

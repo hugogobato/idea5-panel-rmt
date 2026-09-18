@@ -1,7 +1,7 @@
 # Model Card (WP-A1): Spectral Recoverability Frontiers for Panel Causal Inference
 
 **Project:** Idea 5, phase transitions in panel causal inference.
-**Work package:** WP-A1 of the research plan (`Idea5_Panel_RMT_Research_Plan.md`, Section 7, Phase A).
+**Work package:** WP-A1 of the research plan (`docs/plan/Idea5_Panel_RMT_Research_Plan.md`, Section 7, Phase A).
 **Status:** Frozen before witness execution. The pass rules in Section 7 were written down here before either witness notebook was run.
 **Date:** 2026-08-24.
 
@@ -117,7 +117,7 @@ Design: single factor, `n = 120`, `T0 = 240` (`c = 0.5`, bulk edge `(1+sqrt(0.5)
 
 Statistic (amended before the definitive run, see deviation log): `q := (beta_hat)^2` with `beta_hat = < y_1 , v_hat_1 >` the first-PC coefficient. Rationale: the SVD sign is arbitrary per replication, so the signed statistic is symmetric about zero whenever signal is present and carries no information; the squared statistic tests the same hypothesis. For reference the null law of `beta_hat` at c = 0.5 has sd approximately `(1 + sqrt(c))/sqrt(c) sigma = 2.414 sigma` (dominated by the noise-fitting channel), so magnitudes, not signs, are informative.
 
-Pass rules (amended once before the definitive run; original drafting and rationale for every amendment recorded in the deviation log of `gate_g0_g1_decision.md`):
+Pass rules (amended once before the definitive run; original drafting and rationale for every amendment recorded in the deviation log of `docs/gates/gate_g0_g1_decision.md`):
 1. P1 invisibility: median two-sample KS p-value (q statistic vs baseline pool) `>= 0.05` at every grid point with `m <= 0.70`.
 2. P2 power: median KS p-value `<= 0.01` at every grid point with `m >= 1.30`.
 3. P3 transition location: the smallest grid `m` with median KS p `< 0.01` lies in `[0.60, 1.45]`, and Spearman rank correlation between median p and `m` over the full grid is `< -0.7`.
@@ -151,9 +151,9 @@ No lower bound is proved; "no estimator" statements inside witnesses are operati
 
 ## 9. Reproducibility pointers
 
-Seeds: see `seeds.yaml` (registry entries W1_SCAN_SEED = 50101, W1_NULL_SEED = 50102, W2_BASE_SEED = 50201; derivation formulas inside each notebook). Environment: Python 3.12, numpy 2.4.3, scipy 1.17.1, matplotlib 3.10.8. Execution: notebooks run top-to-bottom in a fresh kernel; figures land in `figures/`. Source anchors for all cited results live in `evidence_register.md`.
+Seeds: see `config/seeds.yaml` (registry entries W1_SCAN_SEED = 50101, W1_NULL_SEED = 50102, W2_BASE_SEED = 50201; derivation formulas inside each notebook). Environment: Python 3.12, numpy 2.4.3, scipy 1.17.1, matplotlib 3.10.8. Execution: notebooks run top-to-bottom in a fresh kernel; figures land in `figures/`. Source anchors for all cited results live in `docs/evidence/evidence_register.md`.
 
-## 10. Key references (verification level E2-E3; anchors consolidated in evidence_register.md)
+## 10. Key references (verification level E2-E3; anchors consolidated in docs/evidence/evidence_register.md)
 
 1. Baik, Ben Arous, Peche (2005), Ann. Probab. 33(3), 1643-1697. BBP transition. DOI 10.1214/009117904000000923.
 2. Benaych-Georges, Nadakuditi (2011), Adv. Math. 227(1), 494-521. Outlier locations and overlaps. DOI 10.1016/j.aim.2011.02.011 (DOI re-check scheduled WP-A3).

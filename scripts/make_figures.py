@@ -26,7 +26,7 @@ FIG.mkdir(exist_ok=True)
 
 
 def frontier_rmse(m: float, c: float, T0: int, theta: float) -> float:
-    """Conjectured DE risk F (frontier_ansatz.md Section 3), r=1, K = {s>sqrt(c)}."""
+    """Conjectured DE risk F (docs/model/frontier_ansatz.md Section 3), r=1, K = {s>sqrt(c)}."""
     s = m * np.sqrt(c)
     if s <= np.sqrt(c):
         return float(np.sqrt(1.0 + theta))

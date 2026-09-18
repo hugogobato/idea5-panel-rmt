@@ -1,4 +1,4 @@
-"""WP-D2b Wave-2 driver (preregistration_d2b_addendum.md, frozen pre-run).
+"""WP-D2b Wave-2 driver (docs/preregistrations/preregistration_d2b_addendum.md, frozen pre-run).
 
 W1: Basque panel through the unchanged Wave-1 lens.
 W2: donor-pool degradation battery on smoking (positive-sensitivity

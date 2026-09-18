@@ -1,0 +1,1 @@
+Want to a) prereg the bi63 yearly Wisconsin as certification-only and close, or b) pivot hunt to a micro panel (e.g. Syracuse schools n20 T0≈15 requires CCD scrape, or FBI UCR monthly crime via api.usa.gov/crime-data-explorer which does expose state×month JSON without suppression) — I can scaffold load_fbi_crime_proxy next?

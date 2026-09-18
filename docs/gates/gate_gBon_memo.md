@@ -1,6 +1,6 @@
 # Gate G-Bon (Phase E) — Bonander Florida SYG Applied Panel
 
-**Date:** 2026-08-28. **Authority:** `preregistration_bonander_addendum.md` (frozen 2026-08-28, 70001-70004), `preprocessing_frozen.md` §8 leakage, `seeds.yaml` `phase_e.wp_bonander`. **Deterministic driver:** `scripts/wp_bonander_analysis.py` (`MKL 1`).
+**Date:** 2026-08-28. **Authority:** `docs/preregistrations/preregistration_bonander_addendum.md` (frozen 2026-08-28, 70001-70004), `docs/applied/preprocessing_frozen.md` §8 leakage, `config/seeds.yaml` `phase_e.wp_bonander`. **Deterministic driver:** `scripts/wp_bonander_analysis.py` (`MKL 1`).
 
 ## 1. Panel
 
@@ -52,4 +52,4 @@ The hunt for a `d<1` / `k0` / `p>=0.05`-treated fragile case continues. Bonander
 
 ## 8. Disposition
 
-`PROCEED` to next Phase E candidate with same frozen thresholds; Bonander ships as **certification case study with N3 asymmetry** alongside `CA/Germany/Basque/Freire`. Update `Idea5_Panel_RMT_Research_Plan.md` Phase E: `Bonander primary RECOVERABLE (N3) but P2/P1/stability fail → INCREMENTAL-ONLY`.
+`PROCEED` to next Phase E candidate with same frozen thresholds; Bonander ships as **certification case study with N3 asymmetry** alongside `CA/Germany/Basque/Freire`. Update `docs/plan/Idea5_Panel_RMT_Research_Plan.md` Phase E: `Bonander primary RECOVERABLE (N3) but P2/P1/stability fail → INCREMENTAL-ONLY`.

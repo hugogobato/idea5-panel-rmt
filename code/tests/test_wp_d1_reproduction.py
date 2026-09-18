@@ -1,8 +1,8 @@
-"""WP-D1 trusted-benchmark reproduction tests (preprocessing_frozen.md).
+"""WP-D1 trusted-benchmark reproduction tests (docs/applied/preprocessing_frozen.md).
 
 Each test re-runs the frozen pipeline end-to-end (panels are tiny; total
 runtime < 30 s) and asserts the published anchors within the tolerances
-frozen in preprocessing_frozen.md Section 5. These are REGRESSION guards:
+frozen in docs/applied/preprocessing_frozen.md Section 5. These are REGRESSION guards:
 if any of them moves, the preprocessing or solver changed.
 """
 
@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from applications import loaders as L  # noqa: E402
 from applications import synth_adh as S  # noqa: E402
 
-V_SEED = 60_001  # seeds.yaml phase_d.wp_d1.v_multistart_seed
+V_SEED = 60_001  # config/seeds.yaml phase_d.wp_d1.v_multistart_seed
 
 
 @pytest.fixture(scope="module")

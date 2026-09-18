@@ -1,6 +1,6 @@
 # Phase C on Google Colab — operating manual
 
-**Preregistration:** `preregistration.md` (frozen 2026-08-24). Notebooks are
+**Preregistration:** `docs/preregistrations/preregistration.md` (frozen 2026-08-24). Notebooks are
 generated artifacts; do not edit their parameters. Source of truth:
 `code/scm_frontier/` + `scripts/build_colab_notebooks.py`.
 

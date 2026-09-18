@@ -1,6 +1,6 @@
 # Preregistration C5 Addendum — repair-and-confirm package
 
-**Date frozen:** 2026-08-25, BEFORE any C.5 replication was generated. **Parent:** preregistration.md (2026-08-24) and gate_g3_memo.md Section 5 (PIVOT). **Purpose:** address the four diagnosed failures with amended instruments, frozen here; outcomes may restore the GO criteria on the amended definitions. Nothing in the parent grids is re-run; all confirmation runs use FRESH seeds (15000-18999 ranges, registered in seeds.yaml).
+**Date frozen:** 2026-08-25, BEFORE any C.5 replication was generated. **Parent:** docs/preregistrations/preregistration.md (2026-08-24) and docs/gates/gate_g3_memo.md Section 5 (PIVOT). **Purpose:** address the four diagnosed failures with amended instruments, frozen here; outcomes may restore the GO criteria on the amended definitions. Nothing in the parent grids is re-run; all confirmation runs use FRESH seeds (15000-18999 ranges, registered in config/seeds.yaml).
 
 ---
 

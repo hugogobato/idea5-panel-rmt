@@ -4,12 +4,12 @@
 
 ## 1. Entry conditions carried from G0+G1: both discharged
 
-1. S08 (Mehrotra-Tran-Vu-Zampetakis, arXiv 2605.30319v1) full-text guarantee read completed at kickoff (E3, anchored in `evidence_register.md`). No impossibility or lower-bound statement implying a per-row spikiness threshold; their necessity remarks concern incoherence/SNR as regularity for THEIR upper bound. Answers: (a) NO, (b) NO, (c) NO. G1 not reopened; W-1 CLOSED. Bonus tool registered: their Theorem B.2 row-wise truncated-SVD perturbation bound, candidate input for T1/T2.
+1. S08 (Mehrotra-Tran-Vu-Zampetakis, arXiv 2605.30319v1) full-text guarantee read completed at kickoff (E3, anchored in `docs/evidence/evidence_register.md`). No impossibility or lower-bound statement implying a per-row spikiness threshold; their necessity remarks concern incoherence/SNR as regularity for THEIR upper bound. Answers: (a) NO, (b) NO, (c) NO. G1 not reopened; W-1 CLOSED. Bonus tool registered: their Theorem B.2 row-wise truncated-SVD perturbation bound, candidate input for T1/T2.
 2. Spiess-Imbens-Venugopal full text read (E3). Purely mechanical model-averaging theory; zero spectral content. Canonical positioning paragraph frozen in the register (W-2 CLOSED): frontier varies signal strength/alignment at fixed estimator class; descent curves vary complexity at fixed signal; orthogonal axes with a joint empirical test (descent flattening at the sigma floor).
 
 ## 2. WP-B1: formula standing
 
-`frontier_ansatz.md` states the conjectured DE risk for hard-threshold spectral SC:
+`docs/model/frontier_ansatz.md` states the conjectured DE risk for hard-threshold spectral SC:
 
 ```
 F = 1
@@ -18,7 +18,7 @@ F = 1
   + sum_{j not in K} (alpha_j^2/sigma^2)
 ```
 
-with `lambda` (BBP/BGN outlier location), `zeta` (BGN overlap), `tau = sqrt(s/lambda)`; every ingredient mapped to a verified source (`theory_targets.md` stub created; T4 marked cut-by-default). Special cases verified symbolically (`code/check_frontier_ansatz.py`, ALL PASS): r=0 gives exactly the noise floor; s -> inf collapses to the floor; alpha=0 kills all spike terms exactly; the frontier is continuous at m=1 with a KINK (included-spike value connects to truncation value) and total risk is strictly decreasing on the supercritical side with maximum exactly at the edge. Calibration point: at Witness 2's ALIGNED cell the formula predicts RMSE 1.0369 sigma vs measured 1.0395 (delta 0.25 percent); recorded as one point, not evidence.
+with `lambda` (BBP/BGN outlier location), `zeta` (BGN overlap), `tau = sqrt(s/lambda)`; every ingredient mapped to a verified source (`docs/model/theory_targets.md` stub created; T4 marked cut-by-default). Special cases verified symbolically (`code/check_frontier_ansatz.py`, ALL PASS): r=0 gives exactly the noise floor; s -> inf collapses to the floor; alpha=0 kills all spike terms exactly; the frontier is continuous at m=1 with a KINK (included-spike value connects to truncation value) and total risk is strictly decreasing on the supercritical side with maximum exactly at the edge. Calibration point: at Witness 2's ALIGNED cell the formula predicts RMSE 1.0369 sigma vs measured 1.0395 (delta 0.25 percent); recorded as one point, not evidence.
 
 Deviation log for WP-B1: two intermediate monotonicity statements were corrected before freeze (a harness scaling slip dropped the 1/T0 factor on channel 3 in test code, not in the formula); the final document claims only what the checks verify. No rule changes after results; no revision cycle consumed.
 
@@ -39,7 +39,7 @@ No PIVOT trigger: the simplex solver is stable in its home turf (>99% feasibilit
 
 ## 4. WP-B3: sane pilot, classification recorded
 
-`pilot_cost_report.md` (raw JSON in `figures/pilot_costs.json`). Production decisive cell (n=T0=250, T_post=125): spectral 28 ms/rep, ridge 216 ms, scm 4.35 s, mc 4.79 s, sdid 11.0 s; peak RSS 93 MiB. Scaling exponents vs n*T0: spectral 1.31, mc 1.47, sdid 1.67, scm 1.79. Classification under the plan's rule (LOCAL iff < 2 h @ <= 8 workers AND < 4 GiB): C2(ii)/C2(iv)/C2(iii) LOCAL; C1 grid, C1 slices, and C2(i) COLAB as measured on a heavily loaded machine (conservative). Per-rep stability within the 30% model rule for all expensive methods. Inputs for preregistration (cell size, method subset for the full sweep, rep counts) are listed neutrally in the report; no decision taken in Phase B. Seeds registered in `seeds.yaml`.
+`docs/evidence/pilot_cost_report.md` (raw JSON in `figures/pilot_costs.json`). Production decisive cell (n=T0=250, T_post=125): spectral 28 ms/rep, ridge 216 ms, scm 4.35 s, mc 4.79 s, sdid 11.0 s; peak RSS 93 MiB. Scaling exponents vs n*T0: spectral 1.31, mc 1.47, sdid 1.67, scm 1.79. Classification under the plan's rule (LOCAL iff < 2 h @ <= 8 workers AND < 4 GiB): C2(ii)/C2(iv)/C2(iii) LOCAL; C1 grid, C1 slices, and C2(i) COLAB as measured on a heavily loaded machine (conservative). Per-rep stability within the 30% model rule for all expensive methods. Inputs for preregistration (cell size, method subset for the full sweep, rep counts) are listed neutrally in the report; no decision taken in Phase B. Seeds registered in `config/seeds.yaml`.
 
 ## 5. Decision
 
@@ -48,8 +48,8 @@ No PIVOT trigger: the simplex solver is stable in its home turf (>99% feasibilit
 2. Green tests: 10/10 including the scientific ordering rules and the leakage guard.
 3. Sane pilot: cost model accepted within its pass rule; LOCAL/COLAB table recorded.
 
-Phase C obligations inherited (to be honored in `preregistration.md` BEFORE any decisive run):
-1. Freeze the cell-size / method-subset / rep-count trade-off using Section 5 of the pilot report, then freeze `preregistration.md`.
+Phase C obligations inherited (to be honored in `docs/preregistrations/preregistration.md` BEFORE any decisive run):
+1. Freeze the cell-size / method-subset / rep-count trade-off using Section 5 of the pilot report, then freeze `docs/preregistrations/preregistration.md`.
 2. Include the inherited Witness-1 falsifier: detectability-onset location converges to m=1 as n grows.
 3. Parameterize treated leverage as theta_j = alpha_j^2/sigma^2 directly (ansatz scaling caveat): non-vanishing frontier requires non-vanishing treated share.
 4. Carry the positioning paragraph (register S07) into any draft; W-2 text is frozen.
@@ -59,4 +59,4 @@ Nothing beyond Phase C starts before Gate G3 per the dependency map.
 
 ## 6. Artifacts added this phase
 
-frontier_ansatz.md; theory_targets.md; code/scm_frontier/ (dgps.py, estimators.py, diagnostics.py, __init__.py); code/tests/ (conftest.py, test_estimators.py); code/check_frontier_ansatz.py; code/run_smoke.py; code/run_pilot.py; pilot_cost_report.md; figures/pilot_costs.json; seeds.yaml updated; evidence_register.md updated (S07 E3 + positioning paragraph, S08 E3, W-1/W-2 closed).
+docs/model/frontier_ansatz.md; docs/model/theory_targets.md; code/scm_frontier/ (dgps.py, estimators.py, diagnostics.py, __init__.py); code/tests/ (conftest.py, test_estimators.py); code/check_frontier_ansatz.py; code/run_smoke.py; code/run_pilot.py; docs/evidence/pilot_cost_report.md; figures/pilot_costs.json; config/seeds.yaml updated; docs/evidence/evidence_register.md updated (S07 E3 + positioning paragraph, S08 E3, W-1/W-2 closed).

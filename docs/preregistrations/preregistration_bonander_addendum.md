@@ -1,6 +1,6 @@
 # Preregistration Bonander Addendum — Florida Stand-Your-Ground (Bonander et al. 2021 AJE) as Phase E applied panel
 
-**Date frozen:** 2026-08-28, BEFORE any decisive Bonander computation beyond the single exploratory Florida HomicideRates probe (2026-08-28) that forced the BBP scaling fix (`lam/sigma2`) and revealed `k=2 d~23` saturation. No placebo `P1/P2`, NF, or gate decision had been computed. **Parent documents:** `preregistration.md` (2026-08-24), `preregistration_c5_addendum.md` (2026-08-25), `preregistration_d2_addendum.md` (2026-08-26, thresholds inherited verbatim), `preregistration_d2b_addendum.md` (2026-08-26), `preprocessing_frozen.md` (leakage rules bind), `gate_g3_memo.md` §7 (restricted claims + G3 GO), `gate_g4_memo.md` + `gate_g4_wave2_memo.md` (Phase D closed, Phase E gate open under restricted claim set). **Authority:** plan §7 Phase E: evidence-earned paper consolidation; this addendum is the first Phase E decisive applied run. Every threshold below is *inherited* from the already-frozen Phase C/D instruments or fixed from theory; none was tuned toward Bonander numbers.
+**Date frozen:** 2026-08-28, BEFORE any decisive Bonander computation beyond the single exploratory Florida HomicideRates probe (2026-08-28) that forced the BBP scaling fix (`lam/sigma2`) and revealed `k=2 d~23` saturation. No placebo `P1/P2`, NF, or gate decision had been computed. **Parent documents:** `docs/preregistrations/preregistration.md` (2026-08-24), `docs/preregistrations/preregistration_c5_addendum.md` (2026-08-25), `docs/preregistrations/preregistration_d2_addendum.md` (2026-08-26, thresholds inherited verbatim), `docs/preregistrations/preregistration_d2b_addendum.md` (2026-08-26), `docs/applied/preprocessing_frozen.md` (leakage rules bind), `docs/gates/gate_g3_memo.md` §7 (restricted claims + G3 GO), `docs/gates/gate_g4_memo.md` + `docs/gates/gate_g4_wave2_memo.md` (Phase D closed, Phase E gate open under restricted claim set). **Authority:** plan §7 Phase E: evidence-earned paper consolidation; this addendum is the first Phase E decisive applied run. Every threshold below is *inherited* from the already-frozen Phase C/D instruments or fixed from theory; none was tuned toward Bonander numbers.
 
 ---
 
@@ -48,7 +48,7 @@ Alignment: `e_obs = sum_{j<=k} <y1c, v_j>^2 / ||y1c||^2`, `G=2000` Gaussian rows
 
 ## 6. Placebo battery and separation criteria (frozen, one-sided)
 
-In-space placebos: each donor state `i` as pseudo-treated, donor pool = `all 16 states except {i}` (Florida stays as donor when `i != Florida`; standard contamination guard drops only the placebo's own row). Record per placebo: donor `d_i, p_i, label_i` and a simple pre-fit `rmse_i` (proxy: OLS `w=argmin||y1 - w'Yd||_2` `rmse=sqrt(mean((y1 - w'Yd)^2))` on the centered pre window; the incumbent simplex `SCM rmse` is also reported descriptively). The simplex search, if used, uses the single frozen `V` seed from `seeds.yaml` (structure held constant across placebos).
+In-space placebos: each donor state `i` as pseudo-treated, donor pool = `all 16 states except {i}` (Florida stays as donor when `i != Florida`; standard contamination guard drops only the placebo's own row). Record per placebo: donor `d_i, p_i, label_i` and a simple pre-fit `rmse_i` (proxy: OLS `w=argmin||y1 - w'Yd||_2` `rmse=sqrt(mean((y1 - w'Yd)^2))` on the centered pre window; the incumbent simplex `SCM rmse` is also reported descriptively). The simplex search, if used, uses the single frozen `V` seed from `config/seeds.yaml` (structure held constant across placebos).
 
 Separation (frozen thresholds, inherited):
 * `P1` (fit-ordering): Spearman `rho(d_i, rmse_i)` across `15` placebos `<= -0.30` (smoking-like `n≈15` critical) with permutation `p<=0.05` (`999` reps, seed `perm`); one-sided `H1: rho<0`.
@@ -73,7 +73,7 @@ Verdict (frozen):
 
 ## 8. Seeds, environment, compute
 
-Seeds registered in `seeds.yaml` `phase_e.wp_bonander`: `alignment_null 70001`, `donor_bootstrap 70002`, `time_bootstrap 70003`, `spearman_permutation 70004`, `z_shift 8880001` (C5 convention), `posttest_null 7770001`, `placebo_V 60001` (identical across placebos). Offsets `base + idx*1e6` (Florida `idx 0`, placebos `1..15` ordered alphabetically). Environment inherits `preprocessing_frozen.md` §9; compute local only, minutes.
+Seeds registered in `config/seeds.yaml` `phase_e.wp_bonander`: `alignment_null 70001`, `donor_bootstrap 70002`, `time_bootstrap 70003`, `spearman_permutation 70004`, `z_shift 8880001` (C5 convention), `posttest_null 7770001`, `placebo_V 60001` (identical across placebos). Offsets `base + idx*1e6` (Florida `idx 0`, placebos `1..15` ordered alphabetically). Environment inherits `docs/applied/preprocessing_frozen.md` §9; compute local only, minutes.
 
 ## 9. Deviation log
 

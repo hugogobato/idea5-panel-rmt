@@ -99,7 +99,7 @@ def main() -> int:
     results = {outcome: analyze_outcome(outcome) for outcome in ("aadr", "deaths")}
     summary = {
         "study": "cdc_bi63_wisconsin_yearly_suicide_proxy",
-        "preregistration": "preregistration_bi63_wisconsin_addendum.md",
+        "preregistration": "docs/preregistrations/preregistration_bi63_wisconsin_addendum.md",
         "scope": "certification-only; no causal or Gate G4 claim",
         "outcomes": results,
         "closure": {

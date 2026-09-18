@@ -9,7 +9,7 @@
 
 ## 1. Primary metric
 
-Per replication: `rmse_rep = sqrt(mean_{t in post}(yhat_t - y*_t)^2) / sigma`, where `y*_t = L_1t + E_1t` is the realized untreated trajectory of the treated unit (model_card.md Section 4) and `sigma = 1` by construction. Cell statistic: mean over replications; median and IQR reported alongside; per-method paired differences against oracle recorded for all comparisons.
+Per replication: `rmse_rep = sqrt(mean_{t in post}(yhat_t - y*_t)^2) / sigma`, where `y*_t = L_1t + E_1t` is the realized untreated trajectory of the treated unit (docs/model/model_card.md Section 4) and `sigma = 1` by construction. Cell statistic: mean over replications; median and IQR reported alongside; per-method paired differences against oracle recorded for all comparisons.
 
 ## 2. Secondary metrics (frozen definitions)
 
@@ -47,7 +47,7 @@ Method set, full sweep: donor_mean, scm_simplex, ridge_sc (CV over logspace(-1,4
 
 Cell count: 5 c x 17 m x 3 arms x 2 r = 510 cells x 500 reps (+ SDID on 34 of them, + C2(i) battery folded into the same fleet, Section 4).
 
-Seeds: replication i in a cell uses seed `10000 + i`, i = 0..499, identical across methods (all estimators run on the same generated panel within a rep). Seed reuse across cells is by design (cell config differs); derivation formulas live in each notebook header and `seeds.yaml`.
+Seeds: replication i in a cell uses seed `10000 + i`, i = 0..499, identical across methods (all estimators run on the same generated panel within a rep). Seed reuse across cells is by design (cell config differs); derivation formulas live in each notebook header and `config/seeds.yaml`.
 
 Equal tuning budget convention (frozen): adaptive methods are ridge_sc and mc_nn_cv, each with an 11-point penalty grid and 4-fold/held-out CV respectively as implemented in WP-B2; spectral selectors are rule-based (no tuning); SCM/SDID fixed algorithms. This is declared the equal-budget convention; no method gets extra tuning passes.
 
@@ -68,7 +68,7 @@ Equal tuning budget convention (frozen): adaptive methods are ridge_sc and mc_nn
 ## 6. Practical-bite criterion and falsifiers (frozen)
 
 1. **Kink criterion (primary falsifier of the ansatz).** For each c column, primary curve = mean rmse of GATED spectral_sc, full arm, r = 1, over m in [0.6, 1.6]. Kink estimate = m-grid point maximizing the discrete second difference `RMSE[m+1] - 2 RMSE[m] + RMSE[m-1]`. PASS iff `|m_kink - 1| <= 0.15` in >= 80% of the five c columns (i.e., >= 4 of 5). Sensitivity (non-decisive): two-segment piecewise-linear breakpoint fit reported alongside.
-2. **DE overlay (descriptive, T1 support):** closed-form F (frontier_ansatz.md Section 3, evaluated at each geometry's T0, c, theta) plotted atop simulated gated curves for the full arm; systematic deviation beyond MC bands at multiple c triggers the ansatz-revision loop (max two documented revisions naming the corrected ingredient; third failure kills C1 per plan).
+2. **DE overlay (descriptive, T1 support):** closed-form F (docs/model/frontier_ansatz.md Section 3, evaluated at each geometry's T0, c, theta) plotted atop simulated gated curves for the full arm; systematic deviation beyond MC bands at multiple c triggers the ansatz-revision loop (max two documented revisions naming the corrected ingredient; third failure kills C1 per plan).
 3. **Onset-convergence check (inherited Witness-1 falsifier, dedicated slice):** c = 1, sizes (n,T0) in {(81,81),(121,121),(161,161),(241,241),(361,361),(541,541)}, T_post = T0/2, m grid linspace(0.55, 1.65, 23) (Witness-1 grid for comparability), 300 reps/point, full arm theta = 1. Detectability onset per size = smallest m with median KS p-value < 0.01 using the W1 squared-coefficient statistic q = beta_hat^2 against a 600-draw pure-noise pool per size (seeds 51101 master / 51102 pools). PASS iff onset at the largest size lies in [0.90, 1.10]. Diagnostics-only compute (seconds per rep).
 4. **Practical bite:** frontier has bite iff some incumbent {scm_simplex, ridge_sc, mc_nn_cv} attains mean rmse >= 2.0 sigma in at least one preregistered substantive region (defined as any (c column, arm, r) cell family with c >= 1) while the gated selector flags that region with rate >= 80%, and flags no more than 20% of clearly-recoverable cells (m >= 1.5, theta >= 0.25, aligned). Flag event := gated k = 0.
 5. **WP-C5 decision rules:** unchanged from plan Section 7 (GO / PIVOT / INCREMENTAL-ONLY / KILL), applied to these frozen criteria.

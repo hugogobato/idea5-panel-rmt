@@ -125,4 +125,4 @@ Pending anchors (E1, harmless until Phase E relies on them): Abadie (2021), JEL 
 
 1. W-1: S08 (Mehrotra et al.) full-text guarantee deep-read due at Phase B entry. [CLOSED 2026-08-24, Phase B kickoff: full text read, E3; no impossibility/lower-bound statement implying a per-row spikiness threshold; G1 not reopened. See S08 entry.]
 2. W-2: S07 (Spiess et al.) positioning paragraph mandatory in any draft: frontier vs double-descent axes.
-3. W-3: Google Scholar and RePEc surfaces could not be queried programmatically from this environment (see novelty_search_log.md for the exact attempted URLs and the manual checklist). No go decision rests solely on the automated surface; manual pass remains a bounded human task.
+3. W-3: Google Scholar and RePEc surfaces could not be queried programmatically from this environment (see docs/evidence/novelty_search_log.md for the exact attempted URLs and the manual checklist). No go decision rests solely on the automated surface; manual pass remains a bounded human task.

@@ -1,0 +1,10 @@
+# Python 3.12 tested environment (versions recorded 2026-09-18).
+numpy>=2.4.3
+scipy>=1.17.1
+pandas>=3.0.1
+pyarrow>=24.0.0
+PyYAML>=6.0.1
+matplotlib>=3.10.8
+psutil>=5.9.8
+sympy>=1.14.0
+pytest>=9.0.3

@@ -1,6 +1,6 @@
 # Preregistration D2b Addendum — Wave-2 panels (hypothesis-driven extension)
 
-**Date frozen:** 2026-08-26, BEFORE any Wave-2 computation. **Parents:** `preregistration_d2_addendum.md` (machinery, unchanged), `gate_g4_memo.md` Sections 4-5 (rule-3 PIVOT indication; user-approved exploration of alternative panels). **Declared selection bias:** Wave-2 panels are chosen BECAUSE the frontier is expected to bind there; these are hypothesis-driven confirmations, not neutral replications. Any claim produced here carries that label. All Wave-1 thresholds, instruments, labels, and leakage rules apply verbatim unless explicitly amended below; failures are reported as failures.
+**Date frozen:** 2026-08-26, BEFORE any Wave-2 computation. **Parents:** `docs/preregistrations/preregistration_d2_addendum.md` (machinery, unchanged), `docs/gates/gate_g4_memo.md` Sections 4-5 (rule-3 PIVOT indication; user-approved exploration of alternative panels). **Declared selection bias:** Wave-2 panels are chosen BECAUSE the frontier is expected to bind there; these are hypothesis-driven confirmations, not neutral replications. Any claim produced here carries that label. All Wave-1 thresholds, instruments, labels, and leakage rules apply verbatim unless explicitly amended below; failures are reported as failures.
 
 ---
 
@@ -10,7 +10,7 @@ Data: Abadie-Gardeazabal (2003) Basque-country panel, outcome real GDP per capit
 
 Frozen configuration: treated unit Basque Country; treatment year 1975 (AG2003 terrorism-onset convention); pre window 1961-1974 (T0 = 14), post 1975-1997; donors = all other Spanish regions in the extract. Boundary sensitivity covered by the inherited trimmed-window arm.
 
-Wave-2 specification amendment (deviation D-W1, made HERE, before runs): placebo and treated pre-fit RMSE are computed with OUTCOME-ONLY classic SCM (simplex-constrained least squares on the pre window via the frozen augmented-NNLS solver, `synth_adh._nnls_simplex_ridge`, center=True; SLSQP remains banned per preprocessing_frozen.md Section 4.1), because replicating the AG2003 predictor architecture is out of scope for a lens study. No published-effect anchors are gated in Wave-1 style; data integrity is enforced structurally instead. V-search machinery is therefore not used anywhere in Wave-2.
+Wave-2 specification amendment (deviation D-W1, made HERE, before runs): placebo and treated pre-fit RMSE are computed with OUTCOME-ONLY classic SCM (simplex-constrained least squares on the pre window via the frozen augmented-NNLS solver, `synth_adh._nnls_simplex_ridge`, center=True; SLSQP remains banned per docs/applied/preprocessing_frozen.md Section 4.1), because replicating the AG2003 predictor architecture is out of scope for a lens study. No published-effect anchors are gated in Wave-1 style; data integrity is enforced structurally instead. V-search machinery is therefore not used anywhere in Wave-2.
 
 Gates (all inherited): treated pipeline (k, d, CIs, p_align, classification); placebo battery with P1 threshold rho <= -0.42-class value interpolated at the observed donor count via the same one-sided permutation test (threshold fixed at -0.45 for n=17, the conservative neighbor of the frozen table); P2 (d_treated >= Q90); P3 z_shift date-alarm rate <= 0.20 at pseudo-cutoffs {1969, 1971} (indices 8, 10 of the pre window, T_post = 6); sensitivity stability >= 3/4. NF arms N1/N2/N3 evaluated as in Wave 1 (poor-looking predicate: treated pre-fit worse than Q75 of placebo pre-fits).
 
@@ -26,7 +26,7 @@ Reported per size: median d-hat, share of draws with k = 0, share misaligned. Co
 
 ## Seeds
 
-`seeds.yaml` phase_d.wp_d2_wave2: baseline instruments inherit Wave-1 offsets (align 60101/donor 60102/time 60103 + idx x 10^6, perm 60104); Basque treated uses idx = 0, its placebos idx = 1..n; degradation battery 61301+; z_shift 8880001; post-test null pools 7770001.
+`config/seeds.yaml` phase_d.wp_d2_wave2: baseline instruments inherit Wave-1 offsets (align 60101/donor 60102/time 60103 + idx x 10^6, perm 60104); Basque treated uses idx = 0, its placebos idx = 1..n; degradation battery 61301+; z_shift 8880001; post-test null pools 7770001.
 
 ## Compute
 

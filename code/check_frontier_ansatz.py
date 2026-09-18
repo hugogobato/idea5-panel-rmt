@@ -1,4 +1,4 @@
-"""WP-B1 symbolic verification of frontier_ansatz.md (sympy only, no simulation).
+"""WP-B1 symbolic verification of docs/model/frontier_ansatz.md (sympy only, no simulation).
 
 Checks SC1-SC4 and monotonicity of every risk channel in the spike strength s
 on the supercritical side. Internal consistency check only; not a decisive
@@ -40,7 +40,7 @@ rhs = sqrt(c) / (1 + sqrt(c)) ** 2
 results.append(("edge tau^2 identity", simplify(lhs - rhs) == 0))
 
 # Monotonicity scan (numeric grid; symbolic derivative sign is intractable in closed form)
-# Truth (documented in frontier_ansatz.md Section 4): the bias channel is strictly
+# Truth (documented in docs/model/frontier_ansatz.md Section 4): the bias channel is strictly
 # decreasing; variance channels have a small hump just above the edge; TOTAL risk is
 # monotone for treated share theta ~ 1 and has a <= 0.005 sigma^2 shoulder for small theta.
 import numpy as np
@@ -51,7 +51,7 @@ def channels(sv, cv):
     tv = np.sqrt(sv / lv)
     return (1 - zv * tv) ** 2, zv / lv, (sv * zv + 1) / (240 * lv)
 
-# Documented truth (frontier_ansatz.md Section 4): TOTAL excess risk is strictly
+# Documented truth (docs/model/frontier_ansatz.md Section 4): TOTAL excess risk is strictly
 # decreasing on the supercritical side with its maximum exactly at the edge;
 # individual variance channels are non-monotone but O(1/T0)-suppressed.
 

@@ -1,4 +1,4 @@
-# Global seed registry (seeds.yaml)
+# Global seed registry (config/seeds.yaml)
 # Every table/figure states its seed range; derivation formulas live inside each notebook.
 # Convention: numpy default_rng(seed) with PCG64.
 
@@ -36,7 +36,7 @@ witnesses:
       R_reps: 400
 
 phase_c_reserved:
-  replication_seeds: "10000+i per preregistration.md (frozen 2026-08-24); i = 0..499 within every cell"
+  replication_seeds: "10000+i per docs/preregistrations/preregistration.md (frozen 2026-08-24); i = 0..499 within every cell"
   onset_slice:
     seed_scan_master: 51101       # one stream across sizes: per m point, one loadings draw then R replications
     seed_null_pools: "51102 + n per size (600 pure-noise reps, six pools of 100)"
@@ -46,7 +46,7 @@ phase_c_reserved:
     multiplier_measurement_seed: 12345
   c4_scaling: "32000+j, j = 0..2 per size"
 c5_addendum:
-  c5a_kink_confirm: "15000+i per cell, i = 0..499 (fresh seeds, preregistration_c5_addendum.md)"
+  c5a_kink_confirm: "15000+i per cell, i = 0..499 (fresh seeds, docs/preregistrations/preregistration_c5_addendum.md)"
   c5b_bite_extension: "16000+i per cell, i = 0..399"
   c5c_diagv2: "17000+j per state-law cell, j = 0..299"
   c5d_break_formal: "18000+j per delta cell, j = 0..399"
@@ -54,7 +54,7 @@ c5_addendum:
 phase_d:
   wp_d1:
     v_multistart_seed: 60001      # classic-SCM V multistart (uniform + one-hots
-                                  # + Dirichlet draws), preprocessing_frozen.md S4.1
+                                  # + Dirichlet draws), docs/applied/preprocessing_frozen.md S4.1
   wp_d2:
     alignment_null_seed: 60101    # G=2000 pure-noise treated rows; per panel/placebo
                                   # offset base + index*10^6 (preregistration_d2_addendum S11)
@@ -67,7 +67,7 @@ phase_d:
   wp_d2_wave2:
     baseline: "Wave-1 instrument offsets 60101/60102/60103 + idx*10^6;
                Basque treated idx=0, its placebos idx=1..17
-               (preregistration_d2b_addendum.md)"
+               (docs/preregistrations/preregistration_d2b_addendum.md)"
     degradation_subsets: "61301 + 100*size_rank + j, j = 0..19 per size"
     degradation_align_pools: "60101 + (300 + rank*20 + j)*10^6"
     z_shift_posttest_seeds: "8880001 / 7770001 (unchanged C5 conventions)"

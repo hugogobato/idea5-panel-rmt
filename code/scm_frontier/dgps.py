@@ -1,6 +1,6 @@
 """Factor-panel data-generating processes for the Idea 5 project.
 
-Model (model_card.md): Y_it = L_it + E_it, L_it = sum_k A_ik f_kt with
+Model (docs/model/model_card.md): Y_it = L_it + E_it, L_it = sum_k A_ik f_kt with
 standardized factor scores, spike strengths s_j = ||a^(j)||^2 / sigma^2,
 aspect ratio c = n / T0. Unit 0 is treated; units 1..n-1 are donors.
 All spectral diagnostics must use pre-period columns only.
