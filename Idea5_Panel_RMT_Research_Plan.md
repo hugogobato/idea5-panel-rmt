@@ -4,7 +4,7 @@
 
 **Derived from:** `Random_Matrix_Research_Ideas.md`, Idea 5 (2026-08-23).
 
-**Current classification:** Promising but unproven at planning date; as of 2026-08-26 the mechanism is simulation-validated (Gate G3 GO under restricted claims) and the applied lens is demoted to certification status (Gate G4: preregistered NF failed on both canonical panels; see `gate_g4_memo.md`). As of 2026-08-28 Bonander Florida SYG (Phase E first applied run) is primary RECOVERABLE with N3 asymmetry but P2/P1/stability fail (`gate_gBon_memo.md`); still certification-only, no `FRAGILE` treated found.
+**Current classification:** Restricted methods-paper candidate with simulation-validated mechanism (Gate G3 GO) and `INCREMENTAL-ONLY` applied value. Gate G4 failed on the canonical panels. Bonander added N3 alignment asymmetry but failed P1/P2/stability. On 2026-08-29 CDC bi63 closed as a saturated certification proxy, and preregistered FBI Nebraska RTC produced the first treated `FRAGILE-MISALIGNED` label but failed P2/stability and was panel-wide, scale-dependent, and transport-unstable. See `applied_study_closure_memo.md`. C5 is a diagnostic casebook, not a headline applied discovery.
 
 **Date:** 2026-08-23
 
@@ -14,17 +14,17 @@
 
 | Item | Statement |
 |---|---|
-| Classification | Promising but unproven |
-| Confidence | Medium-high on novelty, low-medium on mechanism (untested numerically) |
+| Classification | Restricted methods-paper candidate; applied contribution `INCREMENTAL-ONLY` |
+| Confidence | Medium-high on novelty and simulation mechanism; high that the current applied search did not clear G4 |
 | Proposed contribution | A BBP-type spikiness threshold below which the treated unit's counterfactual trajectory is unrecoverable by *any* panel method, plus TW-calibrated rank selection and a spectral pre-trends test, turning "pre-treatment fit quality" from folklore into a measured distance-to-frontier |
 | Real contribution | The threshold/diagnostic layer (Claims C1, C3) |
 | Engine | Deterministic-equivalent risk machinery (Claim C2); simulation infrastructure |
-| Application | Distance-to-frontier re-analysis of canonical SCM panels + staggered panels (Claim C5) |
+| Application | Preregistered diagnostic casebook spanning aligned certification, treated-placebo asymmetry, and panel-wide treated misalignment (Claim C5, demoted) |
 | Decoration | Staggered-adoption block-spiked generalization (Claim C4): cut unless it becomes the strongest application |
-| Strongest reason it could become a strong field paper | Zero-hit collision searches verified on arXiv (2026-08-23); the literature has norm-bound guarantees only, and every applied SCM user already worries about pre-fit, so a calibrated frontier diagnostic has immediate uptake |
-| Strongest reason it could fail | Panel noise is serially correlated and heteroskedastic, so iid Marchenko-Pastur/Tracy-Widom calibration may break exactly where it matters; and the threshold may exist but carry no practical bite if incumbents already behave near-oracle everywhere |
-| Next unresolved gate | G0+G1 (validity + novelty deep-read), bundled into Phase A below |
-| Single cheapest decisive next action | Work package A2: deep-read the two closest papers' guarantee sections and run the remaining alternate-vocabulary searches |
+| Strongest reason it could become a strong field paper | Gate G3 demonstrated the restricted frontier mechanism and the casebook reveals distinct strength, alignment, selector, and transport failure modes unavailable from pre-fit RMSE alone |
+| Strongest reason it could fail | No real panel delivered a stable, treated-specific sub-frontier finding; without T1-T3, the surviving story may look like a useful diagnostic package rather than a field-paper contribution |
+| Next unresolved gate | G5 theory investment and G6 submission case under the restricted contribution statement |
+| Single cheapest decisive next action | Freeze the paper outline around C1/C3 plus the diagnostic casebook, then attempt T1 before spending more time on convenience applications |
 
 ---
 
@@ -50,7 +50,7 @@
 | C2 | Exact limiting risk of constrained SC, SC+intercept, nuclear-norm MC, SDID via deterministic equivalents | Engine (partially contribution) | Medium for ridge/unconstrained; hard for simplex constraints | Medium-high | Medium (enables apples-to-apples comparison) | Untested | Keep ridge family first; simplex deferred |
 | C3 | Calibrated rank selector (type-I control) and spectral pre-trends test valid under serial correlation | Contribution | Medium (Onatski 2010 template exists; serial correlation is the gap) | High | High (directly addresses known weakness of classical pre-trend testing) | Untested | Keep; co-load-bearing |
 | C4 | Block-spiked staggered-adoption extension | Application/enabling | Medium | Medium | Medium (leverages DiD-BCF/CUPED infrastructure) | Untested | Cut unless Phase D shows it is the best application |
-| C5 | Distance-to-frontier empirical lens on California smoking, German reunification (+ one staggered panel) | Application | High | Medium-high (new empirical reporting standard) | High for adoption | Untested | Keep |
+| C5 | Distance-to-frontier empirical lens on canonical and policy panels | Application | High | Medium | Medium after G4 | G4 failed; casebook yields certification, alignment, scale, and transport scope evidence | Keep only as scoped casebook; cut headline applied-discovery claim |
 
 **Load-bearing contribution:** C1 + C3. **Load-bearing assumption:** the post-period factor space is spanned by pre-period factor directions (no structural break in V), and the treated unit's loading has nonzero projection onto the spiked space. If both fail, the target is genuinely unidentifiable and the theory must say so explicitly rather than hide it.
 
@@ -125,15 +125,15 @@ Google Scholar and RePEc/SMR remain unchecked (bounded task A3); arXiv zero-hits
 6. **Most damaging referee paragraph.** As in Section 2: iid-noise fragility + "Athey et al. already unified this."
 7. **Evidence needed to answer it.** Size plots of the spectral tests under AR(1)/heteroskedastic errors (Phase C), and an application finding invisible to standard pipelines (Phase D).
 
-### Impact dimension scores (initial triage; empirical scores UNTESTED)
+### Impact dimension scores (updated after Gates G3 and G4, 2026-08-29)
 
 | Dimension | Score | Note |
 |---|---|---|
 | Problem importance | 3 | Core applied-econometrics methodology |
 | Novelty after prior art | 2 | Verified zero-hit at interface; adjacent literatures strong |
-| Mechanism or insight | 1 (UNTESTED) | BBP physics plausible; not yet simulated |
-| Empirical advantage | 0 (UNTESTED) | Pending Gate G3 |
-| Applied value | 0 (UNTESTED) | Pending Gate G4 |
+| Mechanism or insight | 2 | Restricted frontier mechanism supported by preregistered simulations |
+| Empirical advantage | 2 | Gate G3 GO under restricted claims |
+| Applied value | 1 | Credible diagnostic casebook, but no Gate G4 scientific finding |
 | Generality | 2 | Whole SCM/MC/SDID family |
 | Credibility | 2 | Standard assumptions, clearly stated limits |
 | Paper coherence | 2 | One story: how much signal does SCM need? |
@@ -378,6 +378,12 @@ Everything downstream of a pending gate is DORMANT UNTIL that gate. Read-only da
 #### WP-E0: Bonander Florida SYG (2026-08-28, `preregistration_bonander_addendum.md` frozen)
 - Status: COMPLETE — primary `HomicideRates` RECOVERABLE `k2 d23.6 q05 15.9 p0.004`, all 15 placebos FRAGILE-MISALIGNED (first `p`-separation), but `N1` false, `P2`/`P1`/stability fail → certification-with-asymmetry, still `INCREMENTAL-ONLY` (`gate_gBon_memo.md` §5).
 
+#### WP-E0b: CDC bi63 Wisconsin yearly suicide proxy (2026-08-29)
+- Status: COMPLETE — primary age-adjusted rate `RECOVERABLE`, `k1 d23.07 CI[22.56,192.95] p0.0005`; all eight placebos `RECOVERABLE`; count scale `d514.54`; stability `2/4` fails. Wrong outcome/time resolution for the June 2015 policy. Certification-only branch closed (`gate_gBi63_memo.md`).
+
+#### WP-E0c: FBI Nebraska RTC monthly violent-crime screen (2026-08-29)
+- Status: COMPLETE — first preregistered treated `FRAGILE-MISALIGNED`, `k1 d154.89 p0.814`, N1 and P3 pass, but seven of eight placebos share the label, P2 and stability fail, count scale flips to `RECOVERABLE`, and donor-post transport rejects. `FRAGILE-BUT-SCREEN-FAILED`; no trusted-result reproduction authorized (`gate_gFBI_RTC_memo.md`).
+
 **Purpose.** Formalize only what surviving evidence makes load-bearing, then assemble the paper.
 
 #### Theory target table (all conditional on G3/G4 outcomes)
@@ -431,6 +437,8 @@ See Phase D. Identification considerations specific to panels: treatment timing 
 
 Application gate memo requirements: trusted-benchmark reproduction, acceptable identification diagnostics, survival of predeclared sensitivity checks, demonstrated change in understanding versus incumbent analysis, honest uncertainty, anomalies investigated before being framed as discoveries.
 
+**Applied closure (2026-08-29):** no panel met the composite above. The surviving application is a diagnostic casebook, documented in `applied_study_closure_memo.md`. Gate G4 may be reopened only for an independently motivated, policy-matched micro panel acquired before outcome inspection. Convenience sweeps across treatment dates are prohibited.
+
 ---
 
 ## 10. Deferred theory program
@@ -478,6 +486,7 @@ except Exception as e:
 | Tuning leakage (rank chosen using post-period info) | Low | High | WP-B2 leakage guard test | Hard code-path separation | Fix and rerun affected | No | B2 |
 | Real-panel identification failure (diagnostic fires on true effects) | Low-Med | High | WP-D1/D2 controls | Positive-control battery | Investigate before reframing; repair or retreat | Terminal if unrepairable | D2 |
 | Data access friction | Low | Med | Phase B read-only audit | Public datasets chosen (Replogle-style scale not needed here) | Swap canonical panel | No | D1 |
+| Outcome-driven applied-panel search | High after repeated failures | High | Candidate has no external scientific selection rule | Freeze coverage, policy, outcome, and donor rules before spectra | Close branch; reopen only with independently motivated matched data | Yes for C5 headline | E0 |
 | Decorative-theory drift | Med | Med | G5 review against target table | Anti-decoration rule in Phase E | Cut T4-type targets | No | E1 |
 | Compute overrun / crashed local runs | Med | Low | WP-B3 cost model | Colab routing per Section 11 | Re-shard | No | B3/C* |
 
@@ -503,6 +512,9 @@ research/idea5/
   gate_g3_memo.md                # WP-C5
   preprocessing_frozen.md        # WP-D1
   gate_g4_memo.md                # Phase D decision
+  gate_gBi63_memo.md             # disclosed yearly proxy closure
+  gate_gFBI_RTC_memo.md          # Nebraska preregistered screen
+  applied_study_closure_memo.md  # final C5 scope and paper consequence
   theory_targets.md              # WP-E1 proof packages
 ```
 
@@ -512,12 +524,12 @@ Seed policy: global seed registry `seeds.yaml`; every table/figure states its se
 
 ## 14. Immediate actions (stop at next unresolved gate)
 
-Only Phase A work is authorized now:
+Phase D and the opportunistic Phase E application search are closed. Immediate work now serves G5/G6:
 
-1. WP-A1: write `model_card.md`, then build and run the two witness notebooks (`witness_subthreshold.ipynb`, `witness_misalignment.ipynb`).
-2. WP-A2 (parallel): deep-read 1710.10251, 2106.02780, 2109.15154 guarantee sections; update `evidence_register.md` with anchors.
-3. WP-A3 (parallel): run the six residual query families; verify the dossier's 2026-ID citations; log everything in `novelty_search_log.md`.
-4. Convene the G0+G1 decision using the Phase A give-up rules. Nothing in Phases B-E starts before that decision.
+1. Freeze the one-sentence paper contribution around C1/C3 and explicitly demote C5 to the diagnostic casebook in `applied_study_closure_memo.md`.
+2. Start WP-E1 with T1, including its source-assumption map and numerical overlay falsifier. Apply the two-revision stop rule before attempting T2.
+3. Draft the paper's simulation and applied-diagnostics sections from the already frozen gate memos. State that no real panel produced a stable, treated-specific `d<1` event.
+4. Run WP-E3's skeptical-referee pass against the restricted story before committing to T2/T3 scale. Reopen G4 only if independently motivated, policy-matched micro data become available before spectral inspection.
 
 ---
 

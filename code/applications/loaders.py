@@ -369,3 +369,214 @@ def load_basque(csv_path: str | None = None) -> Panel:
         meta={"outcome": "real GDP per capita (Synth AG2003 extract)",
               "provenance": "E2 mirror, CRAN Synth data/basque.rda"},
     )
+
+
+BI63_TREATED = "Wisconsin"
+BI63_TREAT_YEAR = 2015
+BI63_STATES = (
+    "California", "Hawaii", "Indiana", "Iowa", "Maryland", "Mississippi",
+    "New Jersey", "Rhode Island", "Wisconsin",
+)
+BI63_CAUSE = "Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)"
+BI63_OUTCOMES = {"deaths": "deaths", "aadr": "aadr"}
+
+
+def load_bi63_wisconsin(
+    csv_path: str | None = None, outcome: str = "aadr"
+) -> Panel:
+    """Load the CDC bi63 yearly all-suicide proxy for Wisconsin.
+
+    This is a certification-only proxy, not a reproduction of Powell's monthly
+    handgun-suicide outcome.  The nine-state set exactly follows the waiting-
+    period sample in Powell's public replication code.  CDC bi63 contains all
+    suicides and only annual observations, so post-2015 values must not be used
+    to claim an effect of Wisconsin's June 2015 repeal.
+    """
+    import os
+
+    if outcome not in BI63_OUTCOMES:
+        raise ValueError(f"unknown bi63 outcome {outcome!r}")
+    csv_path = csv_path or os.path.join(
+        _raw_dir(), "cdc_bi63_all_1999_2017.csv")
+    df = pd.read_csv(csv_path)
+    required = {
+        "year", "_113_cause_name", "cause_name", "state", "deaths", "aadr",
+    }
+    if not required.issubset(df.columns):
+        raise ValueError(f"bi63 csv missing columns {required - set(df.columns)}")
+    df = df.loc[
+        (df["_113_cause_name"] == BI63_CAUSE)
+        & df["state"].isin(BI63_STATES)
+    ].copy()
+    order = [s for s in BI63_STATES if s != BI63_TREATED] + [BI63_TREATED]
+    piv = df.pivot(index="state", columns="year", values=outcome).reindex(order)
+    years = piv.columns.to_numpy(dtype=int)
+    if piv.shape != (9, 19) or years[0] != 1999 or years[-1] != 2017:
+        raise ValueError(f"bi63 grid mismatch: shape={piv.shape}, years={years}")
+    if piv.isna().any().any():
+        raise ValueError("bi63 panel contains missing values")
+    return Panel(
+        name=f"bi63_wisconsin_suicide_{outcome}",
+        units=order,
+        years=years,
+        Y=piv.to_numpy(float),
+        treated_idx=order.index(BI63_TREATED),
+        treat_year=BI63_TREAT_YEAR,
+        meta={
+            "outcome": outcome,
+            "cause": BI63_CAUSE,
+            "T0": 16,
+            "provenance": "CDC/NCHS bi63, public-domain US government work",
+            "scope": "certification-only annual all-suicide proxy",
+        },
+    )
+
+
+FBI_STATE_ABBR_TO_NAME = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut",
+    "DE": "Delaware", "DC": "District of Columbia", "FL": "Florida",
+    "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky",
+    "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana",
+    "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire",
+    "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio",
+    "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania",
+    "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
+    "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming",
+}
+
+
+def _fbi_state_abbr(value: object) -> str:
+    text = str(value).strip()
+    upper = text.upper()
+    if upper in FBI_STATE_ABBR_TO_NAME:
+        return upper
+    reverse = {name.lower(): abbr for abbr, name in FBI_STATE_ABBR_TO_NAME.items()}
+    if text.lower() in reverse:
+        return reverse[text.lower()]
+    raise ValueError(f"unknown FBI state {value!r}")
+
+
+def _yyyymm(value: int | str) -> int:
+    text = str(value).strip()
+    if "-" in text:
+        year, month = text.split("-", 1)
+        return int(year) * 100 + int(month)
+    out = int(text)
+    if out < 100000 or out % 100 not in range(1, 13):
+        raise ValueError(f"invalid YYYYMM value {value!r}")
+    return out
+
+
+def load_fbi_crime_proxy(
+    csv_path: str | None = None,
+    *,
+    treated_state: str,
+    treat_month: int | str,
+    outcome: str = "rate",
+    states: list[str] | tuple[str, ...] | None = None,
+    min_pre_coverage: float = 90.0,
+    start_month: int | str | None = None,
+    end_month: int | str | None = None,
+) -> Panel:
+    """Pivot a frozen FBI CDE state-month extract into a frontier panel.
+
+    Unit eligibility uses only the coverage field before ``treat_month``.  This
+    makes donor exclusion leakage-safe.  The loader never downloads data and
+    never chooses a policy-specific donor pool; acquisition is handled by
+    ``scripts/fetch_fbi_cde.py`` and legal eligibility belongs in the caller's
+    preregistration.
+    """
+    import os
+
+    if outcome not in {"actual", "rate"}:
+        raise ValueError("FBI outcome must be 'actual' or 'rate'")
+    csv_path = csv_path or os.path.join(
+        _raw_dir(), "fbi_cde", "fbi_cde_monthly_1999_2017.csv")
+    df = pd.read_csv(csv_path)
+    required = {"state", "year", "month", "actual", "rate", "population"}
+    if not required.issubset(df.columns):
+        raise ValueError(f"FBI csv missing columns {required - set(df.columns)}")
+    df = df.copy()
+    df["state"] = df["state"].map(_fbi_state_abbr)
+    df["year"] = pd.to_numeric(df["year"], errors="raise").astype(int)
+    df["month"] = pd.to_numeric(df["month"], errors="raise").astype(int)
+    if not df["month"].between(1, 12).all():
+        raise ValueError("FBI month outside 1..12")
+    df["period"] = df["year"] * 100 + df["month"]
+    treat_period = _yyyymm(treat_month)
+    if start_month is not None:
+        df = df.loc[df["period"] >= _yyyymm(start_month)]
+    if end_month is not None:
+        df = df.loc[df["period"] <= _yyyymm(end_month)]
+    treated = _fbi_state_abbr(treated_state)
+    requested = (
+        sorted(df["state"].unique().tolist())
+        if states is None else [_fbi_state_abbr(s) for s in states]
+    )
+    if treated not in requested:
+        raise ValueError("treated state absent from requested FBI state set")
+    if len(requested) != len(set(requested)):
+        raise ValueError("duplicate state in requested FBI state set")
+    df = df.loc[df["state"].isin(requested)]
+    if df.duplicated(["state", "period"]).any():
+        raise ValueError("duplicate FBI state-month rows")
+
+    excluded: list[str] = []
+    if min_pre_coverage > 0:
+        if "coverage_pct" not in df.columns:
+            raise ValueError("coverage_pct required when min_pre_coverage > 0")
+        pre = df.loc[df["period"] < treat_period]
+        mins = pre.groupby("state")["coverage_pct"].min()
+        excluded = sorted(
+            s for s in requested
+            if s not in mins.index or not np.isfinite(mins[s])
+            or float(mins[s]) < min_pre_coverage
+        )
+        if treated in excluded:
+            raise ValueError(
+                f"treated state {treated} fails pre-coverage floor "
+                f"{min_pre_coverage}")
+        requested = [s for s in requested if s not in excluded]
+        df = df.loc[df["state"].isin(requested)]
+
+    periods = np.sort(df["period"].unique())
+    if not len(periods) or treat_period not in periods:
+        raise ValueError("FBI treatment month outside retained panel")
+    monthly = pd.period_range(
+        f"{periods[0] // 100:04d}-{periods[0] % 100:02d}",
+        f"{periods[-1] // 100:04d}-{periods[-1] % 100:02d}", freq="M")
+    expected = np.array([p.year * 100 + p.month for p in monthly], dtype=int)
+    if not np.array_equal(periods, expected):
+        raise ValueError("FBI time grid is not contiguous monthly")
+    order = sorted(s for s in requested if s != treated) + [treated]
+    piv = df.pivot(index="state", columns="period", values=outcome).reindex(
+        index=order, columns=expected)
+    if piv.isna().any().any():
+        missing = int(piv.isna().sum().sum())
+        raise ValueError(f"FBI panel has {missing} missing state-month cells")
+    Y = piv.to_numpy(float)
+    if not np.isfinite(Y).all():
+        raise ValueError("FBI panel contains non-finite outcomes")
+    return Panel(
+        name=f"fbi_cde_{outcome}_{treated}_{treat_period}",
+        units=order,
+        years=expected,
+        Y=Y,
+        treated_idx=order.index(treated),
+        treat_year=treat_period,
+        meta={
+            "outcome": outcome,
+            "treat_month": treat_period,
+            "T0": int(np.searchsorted(expected, treat_period)),
+            "min_pre_coverage": float(min_pre_coverage),
+            "coverage_excluded_states": excluded,
+            "provenance": "FBI Crime Data Explorer summarized state-month API",
+        },
+    )

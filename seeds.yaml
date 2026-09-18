@@ -81,6 +81,18 @@ phase_e:
     z_shift_placebo_seed: 8880001
     posttest_null_pool_seed: 7770001
     placebo_v_seed: 60001
+  wp_bi63:
+    alignment_null_seed: 71001  # G=2000, offset base+idx*1e6
+    donor_bootstrap_seed: 71002  # B=500, same offset
+    time_bootstrap_seed: 71003   # B=200 circular block4, same offset
+    placebo_order_seed: 71004    # reserved; no P1/NF gate in certification-only run
+  wp_fbi_rtc_nebraska:
+    alignment_null_seed: 72001
+    donor_bootstrap_seed: 72002
+    time_bootstrap_seed: 72003
+    spearman_permutation_seed: 72004
+    z_shift_placebo_seed: 8880001
+    posttest_null_pool_seed: 7770001
 
 phase_b:
   smoke_run:

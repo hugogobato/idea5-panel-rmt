@@ -120,7 +120,13 @@ def unit_scatter(Y_pre: np.ndarray) -> np.ndarray:
 def select_rank_gap_ratio(eigs_desc: np.ndarray, k_max: int) -> int:
     """Rank by largest successive eigenvalue-gap ratio, k in 1..k_max."""
     km = min(k_max, len(eigs_desc) - 1)
-    ratios = eigs_desc[:km] / eigs_desc[1 : km + 1]
+    if km <= 0:
+        return 0
+    numer = np.maximum(np.asarray(eigs_desc[:km], dtype=float), 0.0)
+    denom = np.maximum(np.asarray(eigs_desc[1 : km + 1], dtype=float), 0.0)
+    tol = np.finfo(float).eps * max(float(numer[0]) if km else 0.0, 1.0)
+    ratios = np.divide(
+        numer, denom, out=np.full(km, np.inf), where=denom > tol)
     return int(np.argmax(ratios)) + 1
 
 

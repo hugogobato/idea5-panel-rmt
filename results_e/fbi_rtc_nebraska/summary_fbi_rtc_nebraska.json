@@ -1,0 +1,708 @@
+{
+  "study": "fbi_cde_nebraska_rtc_monthly_violent_crime",
+  "preregistration": "preregistration_fbi_rtc_nebraska_addendum.md",
+  "panel": {
+    "units": [
+      "CA",
+      "CT",
+      "DE",
+      "HI",
+      "MA",
+      "MD",
+      "NJ",
+      "RI",
+      "NE"
+    ],
+    "T": 228,
+    "T0": 96,
+    "n_d": 8,
+    "c": 0.08333333333333333,
+    "treat_month": 200701,
+    "coverage_floor": 90.0,
+    "coverage_excluded_states": [
+      "NY"
+    ]
+  },
+  "primary_rate": {
+    "k": 1,
+    "d": 154.89117807472724,
+    "p_align": 0.8140929535232384,
+    "r_align": 0.1264698186041459,
+    "label": "FRAGILE-MISALIGNED",
+    "sigma2_1": 15.46658781240864,
+    "edge": 25.685108767048472,
+    "boot_donor": {
+      "q05": 73.98993035728098,
+      "q50": 286.97329576406,
+      "q95": 2636.109484031659,
+      "share_k0": 0.0
+    },
+    "boot_time": {
+      "q05": 111.47612588594099,
+      "q50": 159.77264418528029,
+      "q95": 230.36939488028673
+    },
+    "diff_space": {
+      "k": 1,
+      "d": 904.4598975494147,
+      "p_align": 0.6656671664167916,
+      "sigma2_1": 7.94318476455564
+    },
+    "sensitivity": {
+      "primary_full": {
+        "k": 1,
+        "d": 154.89117807472724,
+        "label": "FRAGILE-MISALIGNED"
+      },
+      "gate_lrv_full": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      },
+      "primary_trimmed": {
+        "k": 1,
+        "d": 156.859942125953,
+        "label": "FRAGILE-MISALIGNED"
+      },
+      "gate_lrv_trimmed": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      }
+    },
+    "stability_agree": 2,
+    "stability_pass": false,
+    "cv_rank_k": 4,
+    "ungated_k": 1,
+    "evals_top12": [
+      708.3454197823207,
+      116.4983292535575,
+      58.28947841510314,
+      24.627595645201723,
+      5.444154460244642,
+      3.6072001410387786,
+      2.7245644057820093,
+      1.4570142118556917
+    ],
+    "unit": "NE",
+    "rmse": 2.3655525335464276,
+    "date_alarms": [
+      {
+        "cutoff_index": 36,
+        "p": 0.40298507462686567,
+        "alarm": false
+      },
+      {
+        "cutoff_index": 60,
+        "p": 0.9651741293532339,
+        "alarm": false
+      }
+    ],
+    "alarm_rate": 0.0,
+    "P3_pass": true,
+    "posttest_control": {
+      "z": 120.31305518559583,
+      "p": 0.0033222591362126247,
+      "k": 1
+    },
+    "poor_looking": false
+  },
+  "placebos": [
+    {
+      "k": 1,
+      "d": 168.67969941235205,
+      "p_align": 0.2688655672163918,
+      "r_align": 2.7993429026999777,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 14.224907624087578,
+      "edge": 23.623070838726065,
+      "boot_donor": {
+        "q05": 65.85690080326842,
+        "q50": 312.14452829490415,
+        "q95": 1676.1424105238723,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 125.4006081440483,
+        "q50": 172.33147551821244,
+        "q95": 254.55032964979495
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 812.0861842165673,
+        "p_align": 0.5692153923038481,
+        "sigma2_1": 8.842484411114556
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 168.67969941235205,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 169.90657251721143,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.0971195995332,
+        113.13930482443857,
+        66.13570860144797,
+        22.2627232398369,
+        5.394822983863961,
+        3.854947016870509,
+        2.838662981954928,
+        1.6787541765329965
+      ],
+      "unit": "CA",
+      "rmse": 2.102535135760228
+    },
+    {
+      "k": 1,
+      "d": 162.38771337175461,
+      "p_align": 0.6151924037981009,
+      "r_align": 0.549548393086466,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 14.768221486765656,
+      "edge": 24.52534326149896,
+      "boot_donor": {
+        "q05": 71.08872489926344,
+        "q50": 315.20544977296726,
+        "q95": 2193.2227912135977,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 123.47351118977099,
+        "q50": 168.09612586631826,
+        "q95": 237.90266021116028
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 815.1601309203721,
+        "p_align": 0.487256371814093,
+        "sigma2_1": 8.809352804315001
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 162.38771337175461,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 168.03635605008023,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.3194354104717,
+        114.79602843674867,
+        68.2741277734961,
+        23.604264964992915,
+        5.109648629807853,
+        3.846938648575921,
+        3.034149454555835,
+        1.455484828051934
+      ],
+      "unit": "CT",
+      "rmse": 2.1314495061310863
+    },
+    {
+      "k": 3,
+      "d": 389.79557014257324,
+      "p_align": 0.0004997501249375312,
+      "r_align": 10.11871611087014,
+      "label": "RECOVERABLE",
+      "sigma2_1": 6.2347406500052545,
+      "edge": 10.35393156344706,
+      "boot_donor": {
+        "q05": 71.12836405619382,
+        "q50": 386.7601355567865,
+        "q95": 3110.3796191346646,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 259.18226274746337,
+        "q50": 392.11976324713567,
+        "q95": 559.7292322097123
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 1202.0968936120373,
+        "p_align": 0.28235882058970513,
+        "sigma2_1": 5.981212258550019
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 3,
+          "d": 389.79557014257324,
+          "label": "RECOVERABLE"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 3,
+          "d": 395.4211282447743,
+          "label": "RECOVERABLE"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 3,
+      "evals_top12": [
+        708.318676417618,
+        111.85081781876254,
+        66.36800099639716,
+        7.847335742197643,
+        4.274896069579601,
+        3.8786430963656757,
+        2.9014329701246377,
+        1.5467302873916133
+      ],
+      "unit": "DE",
+      "rmse": 4.102618983520667
+    },
+    {
+      "k": 1,
+      "d": 153.23014301920423,
+      "p_align": 0.8745627186406797,
+      "r_align": 0.0696632660872211,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 15.630493351632094,
+      "edge": 25.957304008399547,
+      "boot_donor": {
+        "q05": 67.93333908666236,
+        "q50": 275.45919740054535,
+        "q95": 1933.132730237508,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 113.3057981430263,
+        "q50": 156.4973196623992,
+        "q95": 228.2332183493509
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 816.1612827301382,
+        "p_align": 0.7051474262868566,
+        "sigma2_1": 8.798690880509167
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 153.23014301920423,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 155.14392753590323,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.357537692833,
+        116.30839644747822,
+        74.26087263352561,
+        24.29026115669539,
+        6.100171160768783,
+        4.056249790685891,
+        3.1152745438152945,
+        1.4832394713328352
+      ],
+      "unit": "HI",
+      "rmse": 1.7439610779766193
+    },
+    {
+      "k": 1,
+      "d": 150.50972307724496,
+      "p_align": 0.24387806096951525,
+      "r_align": 2.8211685957198553,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 15.898543255086691,
+      "edge": 26.402450087724457,
+      "boot_donor": {
+        "q05": 63.566135451215764,
+        "q50": 315.58806186581114,
+        "q95": 3439.691122344889,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 111.84160425618185,
+        "q50": 158.0006643148697,
+        "q95": 217.22112300902288
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 888.7023344294258,
+        "p_align": 0.35082458770614694,
+        "sigma2_1": 8.082867479557201
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 150.50972307724496,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 151.90617383245188,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.0204133608552,
+        111.44726224188497,
+        61.089218495250094,
+        25.51183462872472,
+        5.399768215182829,
+        3.5427278121529215,
+        2.660167416163544,
+        1.8036382334314698
+      ],
+      "unit": "MA",
+      "rmse": 2.13971277192502
+    },
+    {
+      "k": 1,
+      "d": 352.80851693472965,
+      "p_align": 0.7616191904047976,
+      "r_align": 0.21448664300582856,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 6.880535766662908,
+      "edge": 11.426392924269829,
+      "boot_donor": {
+        "q05": 62.725463595843436,
+        "q50": 375.6211289774551,
+        "q95": 2774.1685313693924,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 252.4306847811938,
+        "q50": 368.6000079305021,
+        "q95": 535.1011168672707
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 1220.0937763395596,
+        "p_align": 0.050474762618690654,
+        "sigma2_1": 5.888813624389793
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 352.80851693472965,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 360.3591942624713,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.2217870469648,
+        81.63983201507786,
+        26.29286605869286,
+        8.152382849743955,
+        5.225471055476937,
+        3.773881334150027,
+        2.657746484590389,
+        1.4551696353375565
+      ],
+      "unit": "MD",
+      "rmse": 7.3940857489025555
+    },
+    {
+      "k": 1,
+      "d": 147.97413675889013,
+      "p_align": 0.39480259870064965,
+      "r_align": 1.6415011194202638,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 16.169923398244784,
+      "edge": 26.853126641517434,
+      "boot_donor": {
+        "q05": 58.66155023106714,
+        "q50": 270.0072356838966,
+        "q95": 2062.3593687834605,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 105.93291289315657,
+        "q50": 154.88267912024907,
+        "q95": 227.16142844885533
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 813.755930280274,
+        "p_align": 0.9335332333833083,
+        "sigma2_1": 8.824624279109074
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 1,
+          "d": 147.97413675889013,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 1,
+          "d": 149.76616597875883,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 4,
+      "ungated_k": 1,
+      "evals_top12": [
+        708.2707486120304,
+        114.06694007432785,
+        67.20398558305067,
+        25.339966658681586,
+        6.099281710380716,
+        4.095602301983909,
+        3.3394911938666505,
+        2.5980360141150185
+      ],
+      "unit": "NJ",
+      "rmse": 1.3164694975880737
+    },
+    {
+      "k": 3,
+      "d": 72.47466978621712,
+      "p_align": 0.7581209395302348,
+      "r_align": 0.5067012591875999,
+      "label": "FRAGILE-MISALIGNED",
+      "sigma2_1": 5.296366764713479,
+      "edge": 8.79558943910725,
+      "boot_donor": {
+        "q05": 51.53092385643135,
+        "q50": 88.29334546446435,
+        "q95": 386.9894743427096,
+        "share_k0": 0.0
+      },
+      "boot_time": {
+        "q05": 57.39685834285601,
+        "q50": 78.25322561020147,
+        "q95": 104.49411410354239
+      },
+      "diff_space": {
+        "k": 1,
+        "d": 53.49936028266607,
+        "p_align": 0.29535232383808097,
+        "sigma2_1": 5.978968276127285
+      },
+      "sensitivity": {
+        "primary_full": {
+          "k": 3,
+          "d": 72.47466978621712,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_full": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        },
+        "primary_trimmed": {
+          "k": 3,
+          "d": 68.31963803294106,
+          "label": "FRAGILE-MISALIGNED"
+        },
+        "gate_lrv_trimmed": {
+          "k": 0,
+          "d": 0.0,
+          "label": "FRAGILE-INVISIBLE"
+        }
+      },
+      "stability_agree": 2,
+      "stability_pass": false,
+      "cv_rank_k": 0,
+      "ungated_k": 3,
+      "evals_top12": [
+        116.56747928367722,
+        74.83504315981985,
+        25.777321995495978,
+        6.101215160369478,
+        4.19653245836994,
+        3.5690252286305086,
+        2.6548301199953017,
+        1.4562278866104004
+      ],
+      "unit": "RI",
+      "rmse": 25.505299908614795
+    }
+  ],
+  "placebo_label_counts": {
+    "FRAGILE-MISALIGNED": 7,
+    "RECOVERABLE": 1
+  },
+  "nf": {
+    "N1_fragile_treated": true,
+    "N2_certified_safe": false,
+    "N3_certification_asymmetry": false,
+    "NF": true,
+    "P2_treated_separation": false,
+    "P2_q90_placebo_d": 363.9046328970827,
+    "n_comparable_placebos": 3,
+    "P1_descriptive": {
+      "rho": 0.14285714285714288,
+      "perm_p": 0.669,
+      "gated": false
+    },
+    "P3_date_alarms_pass": true,
+    "stability_pass": false
+  },
+  "registered_count_scale_audit": {
+    "k": 1,
+    "d": 172.9418199400603,
+    "p_align": 0.0004997501249375312,
+    "r_align": 52.79882397454802,
+    "label": "RECOVERABLE",
+    "sigma2_1": 33349.78714371042,
+    "edge": 55383.44465719088,
+    "boot_donor": {
+      "q05": 97.97580325491695,
+      "q50": 623.0832714620699,
+      "q95": 11201.52581205674,
+      "share_k0": 0.0
+    },
+    "boot_time": {
+      "q05": 120.8856695146107,
+      "q50": 181.54618321412156,
+      "q95": 255.0884500653127
+    },
+    "diff_space": {
+      "k": 1,
+      "d": 222.97296169728818,
+      "p_align": 0.0004997501249375312,
+      "sigma2_1": 25768.582378189672
+    },
+    "sensitivity": {
+      "primary_full": {
+        "k": 1,
+        "d": 172.9418199400603,
+        "label": "RECOVERABLE"
+      },
+      "gate_lrv_full": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      },
+      "primary_trimmed": {
+        "k": 1,
+        "d": 170.1436124345586,
+        "label": "RECOVERABLE"
+      },
+      "gate_lrv_trimmed": {
+        "k": 0,
+        "d": 0.0,
+        "label": "FRAGILE-INVISIBLE"
+      }
+    },
+    "stability_agree": 2,
+    "stability_pass": false,
+    "cv_rank_k": 4,
+    "ungated_k": 1,
+    "evals_top12": [
+      1701139.4820188503,
+      287172.4347262975,
+      79017.48361970636,
+      53756.54953824357,
+      11085.578358310633,
+      7149.535578213401,
+      1929.720339339032,
+      388.7617194756331
+    ]
+  },
+  "qualified_for_trusted_replication": false,
+  "disposition": "FRAGILE-BUT-SCREEN-FAILED"
+}

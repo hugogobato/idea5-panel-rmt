@@ -101,3 +101,37 @@ def test_load_basque_structure():
     assert "Spain (Espana)" not in panel.units
     assert panel.treat_year == 1975
     assert bool(np.isfinite(panel.Y).all())
+
+
+def test_load_bi63_wisconsin_structure():
+    from applications import loaders as L
+    panel = L.load_bi63_wisconsin(outcome="aadr")
+    assert panel.Y.shape == (9, 19)
+    assert panel.T0 == 16
+    assert panel.n_donors == 8
+    assert panel.units[-1] == "Wisconsin"
+    assert panel.years[[0, -1]].tolist() == [1999, 2017]
+    assert bool(np.isfinite(panel.Y).all())
+
+
+def test_load_fbi_crime_proxy_filters_on_precoverage(tmp_path):
+    from applications import loaders as L
+    rows = []
+    for state, coverage in (("KS", 99.0), ("CA", 98.0), ("NY", 80.0)):
+        for year, month in ((2006, 10), (2006, 11), (2006, 12),
+                            (2007, 1), (2007, 2), (2007, 3)):
+            rows.append({
+                "state": state, "year": year, "month": month,
+                "actual": year + month, "rate": year / 100 + month,
+                "population": 1_000_000, "coverage_pct": coverage,
+            })
+    path = tmp_path / "fbi.csv"
+    import pandas as pd
+    pd.DataFrame(rows).to_csv(path, index=False)
+    panel = L.load_fbi_crime_proxy(
+        str(path), treated_state="KS", treat_month="2007-01",
+        states=["KS", "California", "NY"], min_pre_coverage=90.0)
+    assert panel.units == ["CA", "KS"]
+    assert panel.Y.shape == (2, 6)
+    assert panel.T0 == 3
+    assert panel.meta["coverage_excluded_states"] == ["NY"]

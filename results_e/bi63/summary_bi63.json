@@ -1,0 +1,993 @@
+{
+  "study": "cdc_bi63_wisconsin_yearly_suicide_proxy",
+  "preregistration": "preregistration_bi63_wisconsin_addendum.md",
+  "scope": "certification-only; no causal or Gate G4 claim",
+  "outcomes": {
+    "aadr": {
+      "panel": "bi63_wisconsin_suicide_aadr",
+      "outcome": "aadr",
+      "T0": 16,
+      "n_d": 8,
+      "c": 0.5,
+      "treated": {
+        "k": 1,
+        "d": 23.073442543538302,
+        "p_align": 0.0004997501249375312,
+        "r_align": 22.17373440699287,
+        "label": "RECOVERABLE",
+        "sigma2_1": 0.4199579045205936,
+        "boot_donor": {
+          "q05": 22.55629170549745,
+          "q50": 45.88886262641995,
+          "q95": 192.9479992966149,
+          "share_k0": 0.0
+        },
+        "boot_time": {
+          "q05": 18.93720822074687,
+          "q50": 28.787967491895742,
+          "q95": 41.78220056373269
+        },
+        "diff_space": {
+          "k": 2,
+          "d": 6.492368032778985,
+          "p_align": 0.0014992503748125937,
+          "sigma2_1": 0.4874674366021726
+        },
+        "sensitivity": {
+          "primary_full": {
+            "k": 1,
+            "d": 23.073442543538302,
+            "label": "RECOVERABLE"
+          },
+          "gate_lrv_full": {
+            "k": 0,
+            "d": 0.0,
+            "label": "FRAGILE-INVISIBLE"
+          },
+          "primary_trimmed": {
+            "k": 1,
+            "d": 23.255717797045182,
+            "label": "RECOVERABLE"
+          },
+          "gate_lrv_trimmed": {
+            "k": 0,
+            "d": 0.0,
+            "label": "FRAGILE-INVISIBLE"
+          }
+        },
+        "stability_agree": 2,
+        "stability_pass": false,
+        "cv_rank_k": 3,
+        "ungated_k": 1,
+        "unit": "Wisconsin",
+        "rmse": 0.21884799602299584
+      },
+      "placebos": [
+        {
+          "k": 1,
+          "d": 24.83612842100365,
+          "p_align": 0.0004997501249375312,
+          "r_align": 19.592819165824235,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.41375033210024803,
+          "boot_donor": {
+            "q05": 24.07140102772206,
+            "q50": 45.17887068237818,
+            "q95": 200.139513636991,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 19.042138803630948,
+            "q50": 30.858654313909884,
+            "q95": 50.180717617018274
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 7.679417509758053,
+            "p_align": 0.8170914542728636,
+            "sigma2_1": 0.4616012496087484
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 24.83612842100365,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 24.626385153170457,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 2,
+          "ungated_k": 1,
+          "unit": "California",
+          "rmse": 0.242934052426872
+        },
+        {
+          "k": 1,
+          "d": 28.460748086306292,
+          "p_align": 0.005497251374312844,
+          "r_align": 14.629916217233474,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.27690598277080103,
+          "boot_donor": {
+            "q05": 23.69233451399722,
+            "q50": 43.9161945961355,
+            "q95": 185.849296071159,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 19.13172711407053,
+            "q50": 29.90449105226238,
+            "q95": 52.97915745470245
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 9.737826871171746,
+            "p_align": 0.5767116441779111,
+            "sigma2_1": 0.3650213376807049
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 28.460748086306292,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 14.124510580148621,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 1,
+          "unit": "Hawaii",
+          "rmse": 0.8026863715034835
+        },
+        {
+          "k": 1,
+          "d": 26.599156617093932,
+          "p_align": 0.0009995002498750624,
+          "r_align": 17.38208295612146,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.3582502569071626,
+          "boot_donor": {
+            "q05": 25.134563422070837,
+            "q50": 53.69654029309617,
+            "q95": 263.2362030560933,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 21.88484706067663,
+            "q50": 32.45487308359002,
+            "q95": 52.51298160586571
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 7.331259518110538,
+            "p_align": 0.9240379810094953,
+            "sigma2_1": 0.4782334968187125
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 26.599156617093932,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 27.56241932440149,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 3,
+          "ungated_k": 1,
+          "unit": "Indiana",
+          "rmse": 0.42913523774748885
+        },
+        {
+          "k": 1,
+          "d": 29.273538045740416,
+          "p_align": 0.0014992503748125937,
+          "r_align": 16.671384913527717,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.322144275332326,
+          "boot_donor": {
+            "q05": 23.832379044857657,
+            "q50": 51.5576326475262,
+            "q95": 209.56983083995203,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 20.29193794998183,
+            "q50": 34.58249105955601,
+            "q95": 56.31916233744039
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 9.522181432725247,
+            "p_align": 0.08595702148925537,
+            "sigma2_1": 0.3899054604752802
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 29.273538045740416,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 32.759969834171144,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 2,
+          "ungated_k": 1,
+          "unit": "Iowa",
+          "rmse": 0.5143927289405177
+        },
+        {
+          "k": 1,
+          "d": 24.2560355122763,
+          "p_align": 0.04297851074462768,
+          "r_align": 8.658480276012575,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.4297802420647582,
+          "boot_donor": {
+            "q05": 23.423089333207894,
+            "q50": 44.18119869261841,
+            "q95": 157.9853900296511,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 18.994416384002715,
+            "q50": 29.646770279226246,
+            "q95": 44.19260405258825
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 7.11409027633563,
+            "p_align": 0.04847576211894053,
+            "sigma2_1": 0.47584733499715226
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 24.2560355122763,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 24.367488349329406,
+              "label": "FRAGILE-MISALIGNED"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 1,
+          "stability_pass": false,
+          "cv_rank_k": 3,
+          "ungated_k": 1,
+          "unit": "Maryland",
+          "rmse": 0.2508049601647039
+        },
+        {
+          "k": 1,
+          "d": 40.00948600170147,
+          "p_align": 0.04047976011994003,
+          "r_align": 8.652276150238135,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.2613500815542372,
+          "boot_donor": {
+            "q05": 31.22403198186386,
+            "q50": 61.5637576452619,
+            "q95": 238.9705214038192,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 30.71405910631751,
+            "q50": 45.48312656666584,
+            "q95": 70.24342234766596
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 9.887107258677286,
+            "p_align": 0.8365817091454273,
+            "sigma2_1": 0.3766626668126557
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 40.00948600170147,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 30.013915053463858,
+              "label": "FRAGILE-MISALIGNED"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 1,
+          "stability_pass": false,
+          "cv_rank_k": 2,
+          "ungated_k": 1,
+          "unit": "Mississippi",
+          "rmse": 0.5428144224770752
+        },
+        {
+          "k": 1,
+          "d": 24.52544161695989,
+          "p_align": 0.0004997501249375312,
+          "r_align": 20.27910054292953,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.4140285827798926,
+          "boot_donor": {
+            "q05": 22.336508859159423,
+            "q50": 43.735664066802215,
+            "q95": 231.78430235919163,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 20.30018617541822,
+            "q50": 31.86231436180872,
+            "q95": 52.804881677845096
+          },
+          "diff_space": {
+            "k": 2,
+            "d": 7.274374695194117,
+            "p_align": 0.11244377811094453,
+            "sigma2_1": 0.4696002579648511
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 24.52544161695989,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 23.740973582717753,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 4,
+          "ungated_k": 1,
+          "unit": "New Jersey",
+          "rmse": 0.256322727910186
+        },
+        {
+          "k": 2,
+          "d": 25.667225351975645,
+          "p_align": 0.0009995002498750624,
+          "r_align": 6.876054293479204,
+          "label": "RECOVERABLE",
+          "sigma2_1": 0.3066227477087682,
+          "boot_donor": {
+            "q05": 22.661497744805118,
+            "q50": 41.893227224015774,
+            "q95": 153.3494547390877,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 20.986774110307344,
+            "q50": 28.53807567297003,
+            "q95": 51.81471853882077
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 6.179352396976807,
+            "p_align": 0.6611694152923538,
+            "sigma2_1": 0.39860205734512466
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 2,
+              "d": 25.667225351975645,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 21.647483361859187,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 2,
+          "unit": "Rhode Island",
+          "rmse": 0.5059420814617637
+        }
+      ],
+      "placebo_label_counts": {
+        "RECOVERABLE": 8
+      },
+      "all_placebos_recoverable": true
+    },
+    "deaths": {
+      "panel": "bi63_wisconsin_suicide_deaths",
+      "outcome": "deaths",
+      "T0": 16,
+      "n_d": 8,
+      "c": 0.5,
+      "treated": {
+        "k": 1,
+        "d": 514.5401747021501,
+        "p_align": 0.0004997501249375312,
+        "r_align": 24.87303188138015,
+        "label": "RECOVERABLE",
+        "sigma2_1": 496.6643426004653,
+        "boot_donor": {
+          "q05": 53.513885794932584,
+          "q50": 582.7234965442814,
+          "q95": 4040.859607257123,
+          "share_k0": 0.0
+        },
+        "boot_time": {
+          "q05": 270.8988347760018,
+          "q50": 518.6583317780508,
+          "q95": 982.3953588472928
+        },
+        "diff_space": {
+          "k": 1,
+          "d": 32.64719311101677,
+          "p_align": 0.735632183908046,
+          "sigma2_1": 949.5779564369734
+        },
+        "sensitivity": {
+          "primary_full": {
+            "k": 1,
+            "d": 514.5401747021501,
+            "label": "RECOVERABLE"
+          },
+          "gate_lrv_full": {
+            "k": 0,
+            "d": 0.0,
+            "label": "FRAGILE-INVISIBLE"
+          },
+          "primary_trimmed": {
+            "k": 1,
+            "d": 359.2795826664592,
+            "label": "RECOVERABLE"
+          },
+          "gate_lrv_trimmed": {
+            "k": 0,
+            "d": 0.0,
+            "label": "FRAGILE-INVISIBLE"
+          }
+        },
+        "stability_agree": 2,
+        "stability_pass": false,
+        "cv_rank_k": 1,
+        "ungated_k": 1,
+        "unit": "Wisconsin",
+        "rmse": 14.888206799800024
+      },
+      "placebos": [
+        {
+          "k": 1,
+          "d": 67.72006695722696,
+          "p_align": 0.0004997501249375312,
+          "r_align": 27.10768813596052,
+          "label": "RECOVERABLE",
+          "sigma2_1": 462.06504360749693,
+          "boot_donor": {
+            "q05": 41.97752433630657,
+            "q50": 83.5897342871382,
+            "q95": 463.6695775284004,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 24.701353313676087,
+            "q50": 69.80610220810789,
+            "q95": 202.80828710026228
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 6.320932830296137,
+            "p_align": 0.6291854072963519,
+            "sigma2_1": 797.8947826049377
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 67.72006695722696,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 26.77913507896721,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 1,
+          "unit": "California",
+          "rmse": 94.06974094362924
+        },
+        {
+          "k": 1,
+          "d": 336.2087689915869,
+          "p_align": 0.0004997501249375312,
+          "r_align": 20.671564262560683,
+          "label": "RECOVERABLE",
+          "sigma2_1": 773.5339960189575,
+          "boot_donor": {
+            "q05": 71.02000469196517,
+            "q50": 488.93012817427314,
+            "q95": 4405.857670803106,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 230.62141652039006,
+            "q50": 382.4672577171459,
+            "q95": 708.0361210826853
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 32.128321651045745,
+            "p_align": 0.8200899550224887,
+            "sigma2_1": 964.7456904810862
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 336.2087689915869,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 264.5835095901489,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 1,
+          "unit": "Hawaii",
+          "rmse": 11.745538625625358
+        },
+        {
+          "k": 1,
+          "d": 520.6280811545209,
+          "p_align": 0.0004997501249375312,
+          "r_align": 26.370616688234154,
+          "label": "RECOVERABLE",
+          "sigma2_1": 482.31323124698264,
+          "boot_donor": {
+            "q05": 47.76599455835129,
+            "q50": 548.6487734991526,
+            "q95": 7702.463828274281,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 318.3232752211732,
+            "q50": 575.0502532781927,
+            "q95": 1257.5509543478802
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 36.47401296491265,
+            "p_align": 0.18140929535232383,
+            "sigma2_1": 851.8623744046283
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 520.6280811545209,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 343.0607034000391,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 2,
+          "ungated_k": 1,
+          "unit": "Indiana",
+          "rmse": 27.868469395403416
+        },
+        {
+          "k": 1,
+          "d": 325.5128663779532,
+          "p_align": 0.0004997501249375312,
+          "r_align": 26.418747511158223,
+          "label": "RECOVERABLE",
+          "sigma2_1": 794.675595905078,
+          "boot_donor": {
+            "q05": 69.40261172200967,
+            "q50": 569.7038271346673,
+            "q95": 4077.615667562965,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 230.26516453912444,
+            "q50": 385.3625178292498,
+            "q95": 721.8491965694219
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 38.51265754974712,
+            "p_align": 0.2798600699650175,
+            "sigma2_1": 810.5145973137236
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 325.5128663779532,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 290.8359836646999,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 2,
+          "ungated_k": 1,
+          "unit": "Iowa",
+          "rmse": 15.591826421870369
+        },
+        {
+          "k": 1,
+          "d": 334.14018088831966,
+          "p_align": 0.0004997501249375312,
+          "r_align": 26.602298609913056,
+          "label": "RECOVERABLE",
+          "sigma2_1": 773.3045355234536,
+          "boot_donor": {
+            "q05": 66.22031293216487,
+            "q50": 518.7986537476421,
+            "q95": 2877.6166528769586,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 225.25894618409876,
+            "q50": 348.1524131953248,
+            "q95": 619.7344485204809
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 30.920108875516995,
+            "p_align": 0.5102448775612194,
+            "sigma2_1": 998.9166271205687
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 334.14018088831966,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 260.292534545718,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 4,
+          "ungated_k": 1,
+          "unit": "Maryland",
+          "rmse": 14.55518439317357
+        },
+        {
+          "k": 1,
+          "d": 324.44816300902096,
+          "p_align": 0.0004997501249375312,
+          "r_align": 19.58200624629729,
+          "label": "RECOVERABLE",
+          "sigma2_1": 800.3436206808834,
+          "boot_donor": {
+            "q05": 61.8516557363076,
+            "q50": 538.0593396134286,
+            "q95": 4454.151464876876,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 234.84632850541814,
+            "q50": 374.3079518962967,
+            "q95": 651.670846810399
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 36.56084654055018,
+            "p_align": 0.9020489755122438,
+            "sigma2_1": 854.3264606035013
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 324.44816300902096,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 281.06897158364626,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 1,
+          "unit": "Mississippi",
+          "rmse": 14.683180348520748
+        },
+        {
+          "k": 1,
+          "d": 472.09145267204246,
+          "p_align": 0.0004997501249375312,
+          "r_align": 21.118662737221612,
+          "label": "RECOVERABLE",
+          "sigma2_1": 542.300202720406,
+          "boot_donor": {
+            "q05": 51.61323101890704,
+            "q50": 526.6863811462639,
+            "q95": 3636.241528381046,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 286.17575532138363,
+            "q50": 536.4594819604962,
+            "q95": 1070.7192956699778
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 37.90742873948956,
+            "p_align": 0.5727136431784108,
+            "sigma2_1": 822.9112916581834
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 472.09145267204246,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 377.1343076991184,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 4,
+          "ungated_k": 1,
+          "unit": "New Jersey",
+          "rmse": 26.492912374620634
+        },
+        {
+          "k": 1,
+          "d": 310.9991199306162,
+          "p_align": 0.0004997501249375312,
+          "r_align": 21.682955034656096,
+          "label": "RECOVERABLE",
+          "sigma2_1": 837.7282969776578,
+          "boot_donor": {
+            "q05": 54.74885515448283,
+            "q50": 420.99596100482984,
+            "q95": 2709.523871944793,
+            "share_k0": 0.0
+          },
+          "boot_time": {
+            "q05": 211.19863741442038,
+            "q50": 357.0953091514733,
+            "q95": 730.3158555940812
+          },
+          "diff_space": {
+            "k": 1,
+            "d": 31.739501255755183,
+            "p_align": 0.5462268865567217,
+            "sigma2_1": 975.6013750645747
+          },
+          "sensitivity": {
+            "primary_full": {
+              "k": 1,
+              "d": 310.9991199306162,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_full": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            },
+            "primary_trimmed": {
+              "k": 1,
+              "d": 272.83367362700534,
+              "label": "RECOVERABLE"
+            },
+            "gate_lrv_trimmed": {
+              "k": 0,
+              "d": 0.0,
+              "label": "FRAGILE-INVISIBLE"
+            }
+          },
+          "stability_agree": 2,
+          "stability_pass": false,
+          "cv_rank_k": 1,
+          "ungated_k": 1,
+          "unit": "Rhode Island",
+          "rmse": 5.5226782315885625
+        }
+      ],
+      "placebo_label_counts": {
+        "RECOVERABLE": 8
+      },
+      "all_placebos_recoverable": true
+    }
+  },
+  "closure": {
+    "primary": "aadr",
+    "certification_only": true,
+    "applied_value": "INCREMENTAL-ONLY",
+    "reason": "annual all-suicide proxy does not reproduce restricted monthly handgun-suicide outcome and was inspected before freeze"
+  }
+}

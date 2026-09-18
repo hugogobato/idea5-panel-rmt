@@ -1,0 +1,663 @@
+{
+  "source": "FBI Crime Data Explorer",
+  "base_endpoint": "https://cde.ucr.cjis.gov/LATEST/summarized/state",
+  "offense": "violent-crime",
+  "from": "01-1999",
+  "to": "12-2017",
+  "series_type": "estimates",
+  "states": [
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY"
+  ],
+  "rows": 11400,
+  "requests": [
+    {
+      "state": "AL",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/AL/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "AK",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/AK/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "AZ",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/AZ/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "AR",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/AR/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "CA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/CA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "CO",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/CO/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "CT",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/CT/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "DE",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/DE/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "FL",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/FL/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "GA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/GA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "HI",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/HI/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "ID",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/ID/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "IL",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/IL/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "IN",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/IN/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "IA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/IA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "KS",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/KS/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "KY",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/KY/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "LA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/LA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "ME",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/ME/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MD",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MD/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MI",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MI/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MN",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MN/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MS",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MS/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MO",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MO/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "MT",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/MT/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NE",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NE/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NV",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NV/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NH",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NH/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NJ",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NJ/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NM",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NM/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NY",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NY/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "NC",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/NC/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "ND",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/ND/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "OH",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/OH/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "OK",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/OK/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "OR",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/OR/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "PA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/PA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "RI",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/RI/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "SC",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/SC/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "SD",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/SD/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "TN",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/TN/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "TX",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/TX/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "UT",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/UT/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "VT",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/VT/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "VA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/VA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "WA",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/WA/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "WV",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/WV/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "WI",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/WI/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    },
+    {
+      "state": "WY",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/WY/violent-crime?from=01-1999&to=12-2017&type=estimates",
+      "cde_properties": {
+        "max_data_date": {
+          "UCR": "08/2026"
+        },
+        "last_refresh_date": {
+          "UCR": "08/15/2026"
+        }
+      }
+    }
+  ]
+}
